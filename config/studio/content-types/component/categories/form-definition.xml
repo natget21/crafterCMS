@@ -103,9 +103,9 @@
 				</field>
 				<field>
 					<type>input</type>
-					<id>categoryname_s</id>
+					<id>name_s</id>
 					<iceId></iceId>
-					<title>Category name</title>
+					<title>name</title>
 					<description></description>
 					<defaultValue></defaultValue>
 					<help></help>
@@ -152,7 +152,7 @@
 				<field>
 					<type>checkbox-group</type>
 					<id>macrocategories_o</id>
-					<iceId></iceId>
+					<iceId>categoryname_s</iceId>
 					<title>Macro categories</title>
 					<description></description>
 					<defaultValue></defaultValue>
