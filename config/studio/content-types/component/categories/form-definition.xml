@@ -103,9 +103,9 @@
 				</field>
 				<field>
 					<type>input</type>
-					<id>name_s</id>
+					<id>categoryname_s</id>
 					<iceId></iceId>
-					<title>name</title>
+					<title>Category name</title>
 					<description></description>
 					<defaultValue></defaultValue>
 					<help></help>
@@ -150,40 +150,55 @@
 					</constraints>
 				</field>
 				<field>
-					<type>checkbox-group</type>
+					<type>node-selector</type>
 					<id>macrocategories_o</id>
-					<iceId>categoryname_s</iceId>
+					<iceId></iceId>
 					<title>Macro categories</title>
 					<description></description>
 					<defaultValue></defaultValue>
 					<help></help>
 					<properties>
 						<property>
-							<name>datasource</name>
-							<value>macrocategories</value>
-							<type>datasource:item:singleSelection</type>
-						</property>
-						<property>
-							<name>selectAll</name>
+							<name>minSize</name>
 							<value></value>
-							<type>boolean</type>
+							<type>int</type>
 						</property>
 						<property>
-							<name>listDirection</name>
-							<value>[{&quot;value&quot;:&quot;horizontal&quot;,&quot;label&quot;:&quot;Horizonal&quot;,&quot;selected&quot;:true},{&quot;value&quot;:&quot;vertical&quot;,&quot;label&quot;:&quot;Vertical&quot;,&quot;selected&quot;:false}]</value>
-							<type>dropdown</type>
+							<name>maxSize</name>
+							<value></value>
+							<type>int</type>
+						</property>
+						<property>
+							<name>itemManager</name>
+							<value>macrocategories</value>
+							<type>datasource:item</type>
 						</property>
 						<property>
 							<name>readonly</name>
 							<value></value>
 							<type>boolean</type>
 						</property>
+						<property>
+							<name>disableFlattening</name>
+							<value></value>
+							<type>boolean</type>
+						</property>
+						<property>
+							<name>useSingleValueFilename</name>
+							<value></value>
+							<type>boolean</type>
+						</property>
+						<property>
+							<name>useMVS</name>
+							<value></value>
+							<type>boolean</type>
+						</property>
 					</properties>
 					<constraints>
 						<constraint>
-							<name>minSize</name>
+							<name>allowDuplicates</name>
 							<value><![CDATA[]]></value>
-							<type>int</type>
+							<type>boolean</type>
 						</constraint>
 					</constraints>
 				</field>
