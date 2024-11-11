@@ -77,6 +77,21 @@
 							<value>50</value>
 							<type>int</type>
 						</property>
+						<property>
+							<name>readonly</name>
+							<value></value>
+							<type>boolean</type>
+						</property>
+						<property>
+							<name>tokenize</name>
+							<value>false</value>
+							<type>boolean</type>
+						</property>
+						<property>
+							<name>escapeContent</name>
+							<value>false</value>
+							<type>boolean</type>
+						</property>
 					</properties>
 					<constraints>
 						<constraint>
@@ -135,8 +150,8 @@
 					</constraints>
 				</field>
 				<field>
-					<type>dropdown</type>
-					<id>macrocategories_s</id>
+					<type>checkbox-group</type>
+					<id>macrocategories_o</id>
 					<iceId></iceId>
 					<title>Macro categories</title>
 					<description></description>
@@ -146,12 +161,17 @@
 						<property>
 							<name>datasource</name>
 							<value>macrocategories</value>
-							<type>datasource:item</type>
+							<type>datasource:item:singleSelection</type>
 						</property>
 						<property>
-							<name>emptyvalue</name>
-							<value>false</value>
+							<name>selectAll</name>
+							<value></value>
 							<type>boolean</type>
+						</property>
+						<property>
+							<name>listDirection</name>
+							<value>[{&quot;value&quot;:&quot;horizontal&quot;,&quot;label&quot;:&quot;Horizonal&quot;,&quot;selected&quot;:true},{&quot;value&quot;:&quot;vertical&quot;,&quot;label&quot;:&quot;Vertical&quot;,&quot;selected&quot;:false}]</value>
+							<type>dropdown</type>
 						</property>
 						<property>
 							<name>readonly</name>
@@ -161,9 +181,9 @@
 					</properties>
 					<constraints>
 						<constraint>
-							<name>required</name>
-							<value><![CDATA[true]]></value>
-							<type>boolean</type>
+							<name>minSize</name>
+							<value><![CDATA[]]></value>
+							<type>int</type>
 						</constraint>
 					</constraints>
 				</field>
