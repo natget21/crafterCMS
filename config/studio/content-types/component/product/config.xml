@@ -1,5 +1,5 @@
 <content-type name="/component/product" is-wcm-type="true">
-	<label>Product</label>
+	<label>item:Product</label>
 	<form>/component/product</form>
 	<form-path>simple</form-path>
 	<model-instance-path>NOT-USED-BY-SIMPLE-FORM-ENGINE</model-instance-path>
