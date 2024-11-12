@@ -579,7 +579,7 @@
 						</property>
 						<property>
 							<name>contentTypes</name>
-							<value>/component/itemproductcategory</value>
+							<value>/component/categories</value>
 								<type>contentTypes</type>
 						</property>
 						<property>
