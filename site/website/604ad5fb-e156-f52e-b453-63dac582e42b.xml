@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component>
+	<content-type>/component/macrocategories</content-type>
+	<display-template/>
+	<no-template-required>true</no-template-required>
+	<merge-strategy>inherit-levels</merge-strategy>
+	<objectGroupId>604a</objectGroupId>
+	<objectId>604ad5fb-e156-f52e-b453-63dac582e42b</objectId>
+	<file-name>604ad5fb-e156-f52e-b453-63dac582e42b.xml</file-name>
+	<folder-name/>
+	<internal-name>PRODOTTI</internal-name>
+	<categoryname_s>PRODOTTI</categoryname_s>
+	<tags_s/>
+	<description_s/>
+	<createdDate>2024-11-12T07:55:47.301Z</createdDate>
+	<createdDate_dt>2024-11-12T07:55:47.301Z</createdDate_dt>
+	<lastModifiedDate>2024-11-12T07:55:47.301Z</lastModifiedDate>
+	<lastModifiedDate_dt>2024-11-12T07:55:47.301Z</lastModifiedDate_dt>
+</component>
