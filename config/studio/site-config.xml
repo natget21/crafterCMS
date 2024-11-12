@@ -24,7 +24,7 @@
     <wem-project>ecomerce-project</wem-project>
     <display-name>ecomerce-project</display-name>
     <!-- Site URLs. Default to http://localhost:8080 if blank -->
-    <site-urls>
+     <site-urls>
         <authoring-url/>
         <staging-url/>
         <live-url/>
@@ -111,7 +111,7 @@
         Prevent deleting, renaming or cutting root folders of sidebar
     -->
     <protected-folders-patterns>
-        <pattern>^/([^ !$`&amp;*()/+]|(\\[ !$`&amp;*()+]))+$</pattern>
+        <pattern>/site/items</pattern>
     </protected-folders-patterns>
     <repository rootPrefix="/site">
         <!-- default inheritance file name -->
@@ -145,6 +145,7 @@
                 <pattern>/site/component-bindings/([^&lt;]+)\.xml</pattern>
                 <pattern>/site/indexes/([^&lt;]+)\.xml</pattern>
                 <pattern>/site/resources/([^&lt;]+)\.xml</pattern>
+                <pattern>/site/items/([^&lt;]+)\.xml</pattern>
             </pattern-group>
             <pattern-group name="asset">
                 <pattern>/static-assets/([^&lt;"']+)</pattern>
