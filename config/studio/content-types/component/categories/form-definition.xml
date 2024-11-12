@@ -193,12 +193,12 @@
 					<properties>
 						<property>
 							<name>minSize</name>
-							<value></value>
+							<value>1</value>
 							<type>int</type>
 						</property>
 						<property>
 							<name>maxSize</name>
-							<value></value>
+							<value>1</value>
 							<type>int</type>
 						</property>
 						<property>
@@ -208,7 +208,7 @@
 						</property>
 						<property>
 							<name>readonly</name>
-							<value></value>
+							<value>false</value>
 							<type>boolean</type>
 						</property>
 						<property>
