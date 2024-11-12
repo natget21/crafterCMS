@@ -49,7 +49,6 @@
                         <locale>en</locale>
                     </configuration>
                 </widget>
-
                 <widget id="craftercms.components.PathNavigatorTree">
                     <configuration>
                         <id>StaticAssets</id>

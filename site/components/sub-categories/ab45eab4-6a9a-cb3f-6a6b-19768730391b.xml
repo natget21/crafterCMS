@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component>
+	<content-type>/component/itemproductcategory</content-type>
+	<display-template/>
+	<no-template-required>true</no-template-required>
+	<merge-strategy>inherit-levels</merge-strategy>
+	<objectGroupId>ab45</objectGroupId>
+	<objectId>ab45eab4-6a9a-cb3f-6a6b-19768730391b</objectId>
+	<file-name>ab45eab4-6a9a-cb3f-6a6b-19768730391b.xml</file-name>
+	<folder-name/>
+	<internal-name>Consulenza manageriale</internal-name>
+	<categoryName_s>Consulenza manageriale</categoryName_s>
+	<description_s/>
+	<createdDate>2024-11-12T08:07:30.436Z</createdDate>
+	<createdDate_dt>2024-11-12T08:07:30.436Z</createdDate_dt>
+	<lastModifiedDate>2024-11-12T08:07:30.436Z</lastModifiedDate>
+	<lastModifiedDate_dt>2024-11-12T08:07:30.436Z</lastModifiedDate_dt>
+</component>

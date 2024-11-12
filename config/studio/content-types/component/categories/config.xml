@@ -1,5 +1,5 @@
 <content-type name="/component/categories" is-wcm-type="true">
-	<label>Categories</label>
+	<label>Item:Categories</label>
 	<form>/component/categories</form>
 	<form-path>simple</form-path>
 	<model-instance-path>NOT-USED-BY-SIMPLE-FORM-ENGINE</model-instance-path>

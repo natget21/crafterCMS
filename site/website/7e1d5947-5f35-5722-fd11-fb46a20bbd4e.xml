@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component>
+	<content-type>/component/macrocategories</content-type>
+	<display-template/>
+	<no-template-required>true</no-template-required>
+	<merge-strategy>inherit-levels</merge-strategy>
+	<objectGroupId>7e1d</objectGroupId>
+	<objectId>7e1d5947-5f35-5722-fd11-fb46a20bbd4e</objectId>
+	<file-name>7e1d5947-5f35-5722-fd11-fb46a20bbd4e.xml</file-name>
+	<folder-name/>
+	<internal-name>SERVIZI</internal-name>
+	<categoryname_s>SERVIZI</categoryname_s>
+	<tags_s/>
+	<description_s/>
+	<createdDate>2024-11-12T07:56:47.731Z</createdDate>
+	<createdDate_dt>2024-11-12T07:56:47.731Z</createdDate_dt>
+	<lastModifiedDate>2024-11-12T07:56:47.731Z</lastModifiedDate>
+	<lastModifiedDate_dt>2024-11-12T07:56:47.731Z</lastModifiedDate_dt>
+</component>

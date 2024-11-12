@@ -1,5 +1,5 @@
 <form>
-	<title>Categories</title>
+	<title>Item:Categories</title>
 	<description></description>
 	<objectType>component</objectType>
 	<content-type>/component/categories</content-type>
@@ -150,53 +150,33 @@
 					</constraints>
 				</field>
 				<field>
-					<type>node-selector</type>
-					<id>macrocategories_o</id>
+					<type>dropdown</type>
+					<id>macroCategory_s</id>
 					<iceId></iceId>
-					<title>Macro categories</title>
+					<title>Macro Category</title>
 					<description></description>
 					<defaultValue></defaultValue>
 					<help></help>
 					<properties>
 						<property>
-							<name>minSize</name>
-							<value></value>
-							<type>int</type>
-						</property>
-						<property>
-							<name>maxSize</name>
-							<value></value>
-							<type>int</type>
-						</property>
-						<property>
-							<name>itemManager</name>
+							<name>datasource</name>
 							<value>macrocategories</value>
 							<type>datasource:item</type>
+						</property>
+						<property>
+							<name>emptyvalue</name>
+							<value></value>
+							<type>boolean</type>
 						</property>
 						<property>
 							<name>readonly</name>
 							<value></value>
 							<type>boolean</type>
 						</property>
-						<property>
-							<name>disableFlattening</name>
-							<value></value>
-							<type>boolean</type>
-						</property>
-						<property>
-							<name>useSingleValueFilename</name>
-							<value></value>
-							<type>boolean</type>
-						</property>
-						<property>
-							<name>useMVS</name>
-							<value></value>
-							<type>boolean</type>
-						</property>
 					</properties>
 					<constraints>
 						<constraint>
-							<name>allowDuplicates</name>
+							<name>required</name>
 							<value><![CDATA[]]></value>
 							<type>boolean</type>
 						</constraint>
