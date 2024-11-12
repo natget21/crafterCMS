@@ -251,7 +251,7 @@
 						</property>
 						<property>
 							<name>componentPath</name>
-							<value>/site/components/macrocategories</value>
+							<value>/site/components/Macro-Categories</value>
 								<type>string</type>
 						</property>
 					</properties>
