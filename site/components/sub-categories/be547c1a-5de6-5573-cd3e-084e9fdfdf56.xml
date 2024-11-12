@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component>
+	<content-type>/component/itemproductcategory</content-type>
+	<display-template/>
+	<no-template-required>true</no-template-required>
+	<merge-strategy>inherit-levels</merge-strategy>
+	<objectGroupId>be54</objectGroupId>
+	<objectId>be547c1a-5de6-5573-cd3e-084e9fdfdf56</objectId>
+	<file-name>be547c1a-5de6-5573-cd3e-084e9fdfdf56.xml</file-name>
+	<folder-name/>
+	<internal-name>Orientamento e Assessment</internal-name>
+	<categoryName_s>Orientamento e Assessment</categoryName_s>
+	<description_s/>
+	<createdDate>2024-11-12T08:06:41.009Z</createdDate>
+	<createdDate_dt>2024-11-12T08:06:41.009Z</createdDate_dt>
+	<lastModifiedDate>2024-11-12T08:06:41.009Z</lastModifiedDate>
+	<lastModifiedDate_dt>2024-11-12T08:06:41.009Z</lastModifiedDate_dt>
+</component>
