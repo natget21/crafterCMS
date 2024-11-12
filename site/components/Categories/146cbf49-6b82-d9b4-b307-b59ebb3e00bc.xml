@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component>
+	<content-type>/component/categories</content-type>
+	<display-template/>
+	<no-template-required>true</no-template-required>
+	<merge-strategy>inherit-levels</merge-strategy>
+	<objectGroupId>146c</objectGroupId>
+	<objectId>146cbf49-6b82-d9b4-b307-b59ebb3e00bc</objectId>
+	<file-name>146cbf49-6b82-d9b4-b307-b59ebb3e00bc.xml</file-name>
+	<folder-name/>
+	<internal-name>SKILLS AND TRAINING</internal-name>
+	<categoryname_s>SKILLS AND TRAINING</categoryname_s>
+	<createdDate>2024-11-12T08:05:19.922Z</createdDate>
+	<createdDate_dt>2024-11-12T08:05:19.922Z</createdDate_dt>
+	<lastModifiedDate>2024-11-12T08:05:19.922Z</lastModifiedDate>
+	<lastModifiedDate_dt>2024-11-12T08:05:19.922Z</lastModifiedDate_dt>
+</component>
