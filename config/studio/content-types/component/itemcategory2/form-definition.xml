@@ -205,16 +205,16 @@
 				</field>
 				<field>
 					<type>dropdown</type>
-					<id>macroCategories_s</id>
+					<id>macroCategory_s</id>
 					<iceId></iceId>
-					<title>MacroCategories</title>
+					<title>MacroCategory</title>
 					<description></description>
 					<defaultValue></defaultValue>
 					<help></help>
 					<properties>
 						<property>
 							<name>datasource</name>
-							<value>macroCategories</value>
+							<value>macrocategories</value>
 							<type>datasource:item</type>
 						</property>
 						<property>
@@ -242,48 +242,18 @@
 		</section>
 	</sections>
 	<datasources>				<datasource>
-					<type>components</type>
-					<id>macroCategories</id>
-					<title>MacroCategories</title>
+					<type>simpleTaxonomy</type>
+					<id>macrocategories</id>
+					<title>Macro categories</title>
 					<interface>item</interface>
 					<properties>
 						<property>
-							<name>allowEmbedded</name>
-							<value>true</value>
-								<type>boolean</type>
+							<name>dataType</name>
+							<value>[{&quot;value&quot;:&quot;value&quot;,&quot;label&quot;:&quot;&quot;,&quot;selected&quot;:false},{&quot;value&quot;:&quot;value_s&quot;,&quot;label&quot;:&quot;String&quot;,&quot;selected&quot;:true},{&quot;value&quot;:&quot;value_i&quot;,&quot;label&quot;:&quot;Integer&quot;,&quot;selected&quot;:false},{&quot;value&quot;:&quot;value_f&quot;,&quot;label&quot;:&quot;Float&quot;,&quot;selected&quot;:false},{&quot;value&quot;:&quot;value_dt&quot;,&quot;label&quot;:&quot;Date&quot;,&quot;selected&quot;:false},{&quot;value&quot;:&quot;value_html&quot;,&quot;label&quot;:&quot;Data Type&quot;,&quot;selected&quot;:false}]</value>
+								<type>dropdown</type>
 						</property>
 						<property>
-							<name>allowShared</name>
-							<value>true</value>
-								<type>boolean</type>
-						</property>
-						<property>
-							<name>enableBrowse</name>
-							<value>true</value>
-								<type>boolean</type>
-						</property>
-						<property>
-							<name>enableSearch</name>
-							<value>false</value>
-								<type>boolean</type>
-						</property>
-						<property>
-							<name>baseRepoPath</name>
-							<value>/site/components</value>
-								<type>string</type>
-						</property>
-						<property>
-							<name>baseBrowsePath</name>
-							<value>/site/components</value>
-								<type>string</type>
-						</property>
-						<property>
-							<name>contentTypes</name>
-							<value>/component/itemmacrocategory2</value>
-								<type>contentTypes</type>
-						</property>
-						<property>
-							<name>tags</name>
+							<name>componentPath</name>
 							<value></value>
 								<type>string</type>
 						</property>
