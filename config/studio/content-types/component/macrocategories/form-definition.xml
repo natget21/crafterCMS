@@ -5,7 +5,7 @@
 	<content-type>/component/macrocategories</content-type>
 	<imageThumbnail></imageThumbnail>
 	<quickCreate>false</quickCreate>
-	<quickCreatePath></quickCreatePath>
+	<quickCreatePath>/macro/</quickCreatePath>
 	<properties>		<property>
 			<name>display-template</name>
 			<label>Display Template</label>
