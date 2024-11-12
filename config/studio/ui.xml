@@ -54,7 +54,7 @@
                         <id>Taxonomy</id>
                         <label>Taxonomy</label>
 						<icon id="@mui/icons-material/LocalOfferOutlined"/>
-                        <rootPath>/site/components/taxonomy</rootPath>
+                        <rootPath>/site/components/Taxonomy</rootPath>
                         <locale>en</locale>
                     </configuration>
                 </widget>
