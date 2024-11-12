@@ -279,8 +279,8 @@
 					</constraints>
 				</field>
 				<field>
-					<type>dropdown</type>
-					<id>company_s</id>
+					<type>node-selector</type>
+					<id>company_o</id>
 					<iceId></iceId>
 					<title>Company</title>
 					<description></description>
@@ -288,65 +288,105 @@
 					<help></help>
 					<properties>
 						<property>
-							<name>datasource</name>
-							<value>companies</value>
-							<type>datasource:item</type>
+							<name>minSize</name>
+							<value>1</value>
+							<type>int</type>
 						</property>
 						<property>
-							<name>emptyvalue</name>
-							<value></value>
-							<type>boolean</type>
+							<name>maxSize</name>
+							<value>1</value>
+							<type>int</type>
+						</property>
+						<property>
+							<name>itemManager</name>
+							<value>companies</value>
+							<type>datasource:item</type>
 						</property>
 						<property>
 							<name>readonly</name>
 							<value></value>
 							<type>boolean</type>
 						</property>
+						<property>
+							<name>disableFlattening</name>
+							<value></value>
+							<type>boolean</type>
+						</property>
+						<property>
+							<name>useSingleValueFilename</name>
+							<value></value>
+							<type>boolean</type>
+						</property>
+						<property>
+							<name>useMVS</name>
+							<value></value>
+							<type>boolean</type>
+						</property>
 					</properties>
 					<constraints>
 						<constraint>
-							<name>required</name>
+							<name>allowDuplicates</name>
 							<value><![CDATA[]]></value>
 							<type>boolean</type>
 						</constraint>
 					</constraints>
 				</field>
 				<field>
-					<type>dropdown</type>
-					<id>macroCatagory_s</id>
+					<type>node-selector</type>
+					<id>macroCategory_o</id>
 					<iceId></iceId>
-					<title>Macro Catagory</title>
+					<title>MacroCategory</title>
 					<description></description>
 					<defaultValue></defaultValue>
 					<help></help>
 					<properties>
 						<property>
-							<name>datasource</name>
-							<value>macroCategory</value>
-							<type>datasource:item</type>
+							<name>minSize</name>
+							<value>1</value>
+							<type>int</type>
 						</property>
 						<property>
-							<name>emptyvalue</name>
-							<value></value>
-							<type>boolean</type>
+							<name>maxSize</name>
+							<value>1</value>
+							<type>int</type>
+						</property>
+						<property>
+							<name>itemManager</name>
+							<value>macroCategory</value>
+							<type>datasource:item</type>
 						</property>
 						<property>
 							<name>readonly</name>
 							<value></value>
 							<type>boolean</type>
 						</property>
+						<property>
+							<name>disableFlattening</name>
+							<value></value>
+							<type>boolean</type>
+						</property>
+						<property>
+							<name>useSingleValueFilename</name>
+							<value></value>
+							<type>boolean</type>
+						</property>
+						<property>
+							<name>useMVS</name>
+							<value></value>
+							<type>boolean</type>
+						</property>
 					</properties>
 					<constraints>
 						<constraint>
-							<name>required</name>
+							<name>allowDuplicates</name>
 							<value><![CDATA[]]></value>
 							<type>boolean</type>
 						</constraint>
 					</constraints>
 				</field>
 				<field>
-					<type>dropdown</type>
-					<id>category_s</id>
+					<type>node-selector</type>
+					<id>category_o</id>
 					<iceId></iceId>
 					<title>Category</title>
 					<description></description>
@@ -354,57 +394,97 @@
 					<help></help>
 					<properties>
 						<property>
-							<name>datasource</name>
-							<value>categories</value>
-							<type>datasource:item</type>
+							<name>minSize</name>
+							<value>1</value>
+							<type>int</type>
 						</property>
 						<property>
-							<name>emptyvalue</name>
-							<value></value>
-							<type>boolean</type>
+							<name>maxSize</name>
+							<value>1</value>
+							<type>int</type>
+						</property>
+						<property>
+							<name>itemManager</name>
+							<value>categories</value>
+							<type>datasource:item</type>
 						</property>
 						<property>
 							<name>readonly</name>
 							<value></value>
 							<type>boolean</type>
 						</property>
+						<property>
+							<name>disableFlattening</name>
+							<value></value>
+							<type>boolean</type>
+						</property>
+						<property>
+							<name>useSingleValueFilename</name>
+							<value></value>
+							<type>boolean</type>
+						</property>
+						<property>
+							<name>useMVS</name>
+							<value></value>
+							<type>boolean</type>
+						</property>
 					</properties>
 					<constraints>
 						<constraint>
-							<name>required</name>
+							<name>allowDuplicates</name>
 							<value><![CDATA[]]></value>
 							<type>boolean</type>
 						</constraint>
 					</constraints>
 				</field>
 				<field>
-					<type>dropdown</type>
-					<id>subCategory_s</id>
+					<type>node-selector</type>
+					<id>subCategory_o</id>
 					<iceId></iceId>
-					<title>Sub Category</title>
+					<title>SubCategory</title>
 					<description></description>
 					<defaultValue></defaultValue>
 					<help></help>
 					<properties>
 						<property>
-							<name>datasource</name>
-							<value>subCategories</value>
-							<type>datasource:item</type>
+							<name>minSize</name>
+							<value>1</value>
+							<type>int</type>
 						</property>
 						<property>
-							<name>emptyvalue</name>
-							<value></value>
-							<type>boolean</type>
+							<name>maxSize</name>
+							<value>1</value>
+							<type>int</type>
+						</property>
+						<property>
+							<name>itemManager</name>
+							<value>subCategories</value>
+							<type>datasource:item</type>
 						</property>
 						<property>
 							<name>readonly</name>
 							<value></value>
 							<type>boolean</type>
 						</property>
+						<property>
+							<name>disableFlattening</name>
+							<value></value>
+							<type>boolean</type>
+						</property>
+						<property>
+							<name>useSingleValueFilename</name>
+							<value></value>
+							<type>boolean</type>
+						</property>
+						<property>
+							<name>useMVS</name>
+							<value></value>
+							<type>boolean</type>
+						</property>
 					</properties>
 					<constraints>
 						<constraint>
-							<name>required</name>
+							<name>allowDuplicates</name>
 							<value><![CDATA[]]></value>
 							<type>boolean</type>
 						</constraint>
