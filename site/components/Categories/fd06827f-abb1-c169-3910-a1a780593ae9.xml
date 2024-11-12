@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component>
+	<content-type>/component/categories</content-type>
+	<display-template/>
+	<no-template-required>true</no-template-required>
+	<merge-strategy>inherit-levels</merge-strategy>
+	<objectGroupId>fd06</objectGroupId>
+	<objectId>fd06827f-abb1-c169-3910-a1a780593ae9</objectId>
+	<file-name>fd06827f-abb1-c169-3910-a1a780593ae9.xml</file-name>
+	<folder-name/>
+	<internal-name>e-services </internal-name>
+	<categoryname_s>e-services </categoryname_s>
+	<createdDate>2024-11-12T08:03:34.126Z</createdDate>
+	<createdDate_dt>2024-11-12T08:03:34.126Z</createdDate_dt>
+	<lastModifiedDate>2024-11-12T08:03:34.126Z</lastModifiedDate>
+	<lastModifiedDate_dt>2024-11-12T08:03:34.126Z</lastModifiedDate_dt>
+</component>
