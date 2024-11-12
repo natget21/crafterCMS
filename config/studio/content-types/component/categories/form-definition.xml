@@ -150,43 +150,10 @@
 					</constraints>
 				</field>
 				<field>
-					<type>dropdown</type>
-					<id>macrocategories_s</id>
-					<iceId></iceId>
-					<title>Macrocategories</title>
-					<description></description>
-					<defaultValue></defaultValue>
-					<help></help>
-					<properties>
-						<property>
-							<name>datasource</name>
-							<value>macroCategories</value>
-							<type>datasource:item</type>
-						</property>
-						<property>
-							<name>emptyvalue</name>
-							<value></value>
-							<type>boolean</type>
-						</property>
-						<property>
-							<name>readonly</name>
-							<value></value>
-							<type>boolean</type>
-						</property>
-					</properties>
-					<constraints>
-						<constraint>
-							<name>required</name>
-							<value><![CDATA[]]></value>
-							<type>boolean</type>
-						</constraint>
-					</constraints>
-				</field>
-				<field>
 					<type>node-selector</type>
-					<id>macro_o</id>
+					<id>macroCategories_o</id>
 					<iceId></iceId>
-					<title>Macro</title>
+					<title>MacroCategories</title>
 					<description></description>
 					<defaultValue></defaultValue>
 					<help></help>
