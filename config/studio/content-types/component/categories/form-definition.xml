@@ -151,16 +151,16 @@
 				</field>
 				<field>
 					<type>dropdown</type>
-					<id>macrocategory_s</id>
+					<id>macrocategories_s</id>
 					<iceId></iceId>
-					<title>Macro category</title>
+					<title>Macrocategories</title>
 					<description></description>
 					<defaultValue></defaultValue>
 					<help></help>
 					<properties>
 						<property>
 							<name>datasource</name>
-							<value>macrocategory</value>
+							<value>macroCategories</value>
 							<type>datasource:item</type>
 						</property>
 						<property>
@@ -182,76 +182,53 @@
 						</constraint>
 					</constraints>
 				</field>
-				<field>
-					<type>node-selector</type>
-					<id>macro_o</id>
-					<iceId></iceId>
-					<title>Macro</title>
-					<description></description>
-					<defaultValue></defaultValue>
-					<help></help>
-					<properties>
-						<property>
-							<name>minSize</name>
-							<value></value>
-							<type>int</type>
-						</property>
-						<property>
-							<name>maxSize</name>
-							<value></value>
-							<type>int</type>
-						</property>
-						<property>
-							<name>itemManager</name>
-							<value>macrocategory</value>
-							<type>datasource:item</type>
-						</property>
-						<property>
-							<name>readonly</name>
-							<value></value>
-							<type>boolean</type>
-						</property>
-						<property>
-							<name>disableFlattening</name>
-							<value></value>
-							<type>boolean</type>
-						</property>
-						<property>
-							<name>useSingleValueFilename</name>
-							<value></value>
-							<type>boolean</type>
-						</property>
-						<property>
-							<name>useMVS</name>
-							<value></value>
-							<type>boolean</type>
-						</property>
-					</properties>
-					<constraints>
-						<constraint>
-							<name>allowDuplicates</name>
-							<value><![CDATA[]]></value>
-							<type>boolean</type>
-						</constraint>
-					</constraints>
-				</field>
 			</fields>
 		</section>
 	</sections>
 	<datasources>				<datasource>
-					<type>simpleTaxonomy</type>
-					<id>macrocategory</id>
-					<title>Macro category</title>
+					<type>components</type>
+					<id>macroCategories</id>
+					<title>MacroCategories</title>
 					<interface>item</interface>
 					<properties>
 						<property>
-							<name>dataType</name>
-							<value>[{&quot;value&quot;:&quot;value&quot;,&quot;label&quot;:&quot;&quot;,&quot;selected&quot;:false},{&quot;value&quot;:&quot;value_s&quot;,&quot;label&quot;:&quot;String&quot;,&quot;selected&quot;:true},{&quot;value&quot;:&quot;value_i&quot;,&quot;label&quot;:&quot;Integer&quot;,&quot;selected&quot;:false},{&quot;value&quot;:&quot;value_f&quot;,&quot;label&quot;:&quot;Float&quot;,&quot;selected&quot;:false},{&quot;value&quot;:&quot;value_dt&quot;,&quot;label&quot;:&quot;Date&quot;,&quot;selected&quot;:false},{&quot;value&quot;:&quot;value_html&quot;,&quot;label&quot;:&quot;Data Type&quot;,&quot;selected&quot;:false}]</value>
-								<type>dropdown</type>
+							<name>allowEmbedded</name>
+							<value>true</value>
+								<type>boolean</type>
 						</property>
 						<property>
-							<name>componentPath</name>
-							<value>/site/components/Macro-Categories</value>
+							<name>allowShared</name>
+							<value>true</value>
+								<type>boolean</type>
+						</property>
+						<property>
+							<name>enableBrowse</name>
+							<value>true</value>
+								<type>boolean</type>
+						</property>
+						<property>
+							<name>enableSearch</name>
+							<value>false</value>
+								<type>boolean</type>
+						</property>
+						<property>
+							<name>baseRepoPath</name>
+							<value>/site/components</value>
+								<type>string</type>
+						</property>
+						<property>
+							<name>baseBrowsePath</name>
+							<value>/site/components</value>
+								<type>string</type>
+						</property>
+						<property>
+							<name>contentTypes</name>
+							<value>/component/macrocategories</value>
+								<type>contentTypes</type>
+						</property>
+						<property>
+							<name>tags</name>
+							<value></value>
 								<type>string</type>
 						</property>
 					</properties>
