@@ -8,38 +8,38 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>${document.title}</title>
-    <#include "/components/head.ftl">
+    <#include "/templates/web/fragments/head.ftl">
 </head>
 <body>
 
     <#-- Preloader -->
-    <#include "/components/preloader.ftl">
+    <#include "/templates/web/fragments/preloader.ftl">
 
     <#-- Header -->
-    <#include "/components/header.ftl">
+    <#include "/templates/web/fragments/header.ftl">
 
     <#-- Main Banner -->
-    <#include "/components/banner.ftl">
+    <#include "/templates/web/components/banner.ftl">
 
     <#-- Sections (Men, Women, Kids) -->
-    <#include "/components/men.ftl">
-    <#include "/components/women.ftl">
-    <#include "/components/kids.ftl">
+    <#include "/templates/web/components/men.ftl">
+    <#include "/templates/web/components/women.ftl">
+    <#include "/templates/web/components/kids.ftl">
 
     <#-- Explore Section -->
-    <#include "/components/explore.ftl">
+    <#include "/templates/web/components/explore.ftl">
 
     <#-- Social Media -->
-    <#include "/components/social.ftl">
+    <#include "/templates/web/components/social.ftl">
 
     <#-- Subscribe Section -->
-    <#include "/components/subscribe.ftl">
+    <#include "/templates/web/components/subscribe.ftl">
 
     <#-- Footer -->
-    <#include "/components/footer.ftl">
+    <#include "/templates/web/fragments/footer.ftl">
     
     <!-- Scripts -->
-    <#include "/components/scripts.ftl">
+    <#include "/templates/web/fragments/scripts.ftl">
 
 </body>
 </html>
