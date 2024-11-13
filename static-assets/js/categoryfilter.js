@@ -11,7 +11,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 async function fetchCategoriesByMacrocategory(macrocategoryId) {
     // Replace 'YOUR_SITE' with your actual CrafterCMS site name
-    const response = await fetch(`/api/1/site/content_store/children.json?url=/site/categories&crafterSite=YOUR_SITE`);
+    const response = await fetch(`/api/1/site/content_store/children.json?url=/site/categories&crafterSite=hubmanagment`);
     const data = await response.json();
     
     // Filter categories by macrocategory ID
