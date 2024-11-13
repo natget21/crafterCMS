@@ -233,12 +233,12 @@
 						</property>
 						<property>
 							<name>baseRepoPath</name>
-							<value>/site/components</value>
+							<value>/site/components/macro_categories</value>
 								<type>string</type>
 						</property>
 						<property>
 							<name>baseBrowsePath</name>
-							<value>/site/components</value>
+							<value>/site/components/macro_categories</value>
 								<type>string</type>
 						</property>
 						<property>
