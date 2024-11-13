@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component>
+	<content-type>/component/categories</content-type>
+	<display-template/>
+	<no-template-required>true</no-template-required>
+	<merge-strategy>inherit-levels</merge-strategy>
+	<objectGroupId>399a</objectGroupId>
+	<objectId>399aea81-9871-80fa-672f-26c5449b1bba</objectId>
+	<file-name>399aea81-9871-80fa-672f-26c5449b1bba.xml</file-name>
+	<folder-name/>
+	<internal-name>ACCESS TO FINANCE</internal-name>
+	<categoryname_s>ACCESS TO FINANCE</categoryname_s>
+	<macrocategory_o item-list="true">	<item>	<key>/site/components/macro_categories/374fbd2e-727f-a324-cf65-e02b65d87a48.xml</key>
+	<value>service</value>
+	<include>/site/components/macro_categories/374fbd2e-727f-a324-cf65-e02b65d87a48.xml</include>
+	<disableFlattening>false</disableFlattening>
+	</item></macrocategory_o>
+	<createdDate>2024-11-13T14:05:44.621Z</createdDate>
+	<createdDate_dt>2024-11-13T14:05:44.621Z</createdDate_dt>
+	<lastModifiedDate>2024-11-13T14:05:44.621Z</lastModifiedDate>
+	<lastModifiedDate_dt>2024-11-13T14:05:44.621Z</lastModifiedDate_dt>
+</component>
