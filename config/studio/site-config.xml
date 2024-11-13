@@ -146,6 +146,9 @@
                 <pattern>/site/indexes/([^&lt;]+)\.xml</pattern>
                 <pattern>/site/resources/([^&lt;]+)\.xml</pattern>
             </pattern-group>
+            <pattern-group name="taxonomy">
+                <pattern>/site/taxonomy/([^&lt;]+)\.xml</pattern>
+            </pattern-group>
             <pattern-group name="asset">
                 <pattern>/static-assets/([^&lt;"']+)</pattern>
             </pattern-group>
