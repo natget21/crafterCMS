@@ -12,11 +12,11 @@
 	<categoryname_s>Networking, Ecosystem e Open Innovation</categoryname_s>
 	<createdDate>2024-11-12T08:05:51.619Z</createdDate>
 	<createdDate_dt>2024-11-12T08:05:51.619Z</createdDate_dt>
-	<lastModifiedDate>2024-11-12T16:29:16.330Z</lastModifiedDate>
-	<lastModifiedDate_dt>2024-11-12T16:29:16.330Z</lastModifiedDate_dt>
-	<macroCategories_o item-list="true">	<item>	<key>/site/components/Macro-Categories/95d87ae7-4f58-60f3-e2b3-eee4883b4788.xml</key>
-	<value>SERVIZI</value>
-	<include>/site/components/Macro-Categories/95d87ae7-4f58-60f3-e2b3-eee4883b4788.xml</include>
+	<lastModifiedDate>2024-11-13T13:56:20.199Z</lastModifiedDate>
+	<lastModifiedDate_dt>2024-11-13T13:56:20.199Z</lastModifiedDate_dt>
+	<macrocategory_o item-list="true">	<item>	<key>/site/components/macro_categories/374fbd2e-727f-a324-cf65-e02b65d87a48.xml</key>
+	<value>service</value>
+	<include>/site/components/macro_categories/374fbd2e-727f-a324-cf65-e02b65d87a48.xml</include>
 	<disableFlattening>false</disableFlattening>
-	</item></macroCategories_o>
+	</item></macrocategory_o>
 </component>
