@@ -1,8 +1,8 @@
 <form>
-	<title>Item:Categories</title>
+	<title>Item: Sub Category</title>
 	<description></description>
 	<objectType>component</objectType>
-	<content-type>/component/categories</content-type>
+	<content-type>/component/subcategory</content-type>
 	<imageThumbnail></imageThumbnail>
 	<quickCreate>false</quickCreate>
 	<quickCreatePath></quickCreatePath>
@@ -26,7 +26,7 @@
 		</property>
 	</properties>
 	<sections>		<section>
-			<title>Categories Properties</title>
+			<title>sub category Properties</title>
 			<description></description>
 			<defaultOpen>true</defaultOpen>
 			<fields>
@@ -77,21 +77,6 @@
 							<value>50</value>
 							<type>int</type>
 						</property>
-						<property>
-							<name>readonly</name>
-							<value></value>
-							<type>boolean</type>
-						</property>
-						<property>
-							<name>tokenize</name>
-							<value>false</value>
-							<type>boolean</type>
-						</property>
-						<property>
-							<name>escapeContent</name>
-							<value>false</value>
-							<type>boolean</type>
-						</property>
 					</properties>
 					<constraints>
 						<constraint>
@@ -103,9 +88,9 @@
 				</field>
 				<field>
 					<type>input</type>
-					<id>categoryname_s</id>
+					<id>subCategoryName_s</id>
 					<iceId></iceId>
-					<title>Category name</title>
+					<title>Sub Category Name</title>
 					<description></description>
 					<defaultValue></defaultValue>
 					<help></help>
@@ -139,7 +124,7 @@
 					<constraints>
 						<constraint>
 							<name>required</name>
-							<value><![CDATA[true]]></value>
+							<value><![CDATA[]]></value>
 							<type>boolean</type>
 						</constraint>
 						<constraint>
@@ -151,9 +136,9 @@
 				</field>
 				<field>
 					<type>node-selector</type>
-					<id>macrocategory_o</id>
+					<id>category_o</id>
 					<iceId></iceId>
-					<title>macrocategory</title>
+					<title>Category</title>
 					<description></description>
 					<defaultValue></defaultValue>
 					<help></help>
@@ -170,7 +155,7 @@
 						</property>
 						<property>
 							<name>itemManager</name>
-							<value>macrocategory</value>
+							<value>category</value>
 							<type>datasource:item</type>
 						</property>
 						<property>
@@ -207,8 +192,8 @@
 	</sections>
 	<datasources>				<datasource>
 					<type>components</type>
-					<id>macrocategory</id>
-					<title>macrocategory</title>
+					<id>category</id>
+					<title>category</title>
 					<interface>item</interface>
 					<properties>
 						<property>
@@ -233,17 +218,17 @@
 						</property>
 						<property>
 							<name>baseRepoPath</name>
-							<value>/site/components/macro_categories</value>
+							<value>/site/components/categories</value>
 								<type>string</type>
 						</property>
 						<property>
 							<name>baseBrowsePath</name>
-							<value>/site/components/macro_categories</value>
+							<value>/site/components/categories</value>
 								<type>string</type>
 						</property>
 						<property>
 							<name>contentTypes</name>
-							<value>/component/macrocategories</value>
+							<value>/component/categories</value>
 								<type>contentTypes</type>
 						</property>
 						<property>

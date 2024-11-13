@@ -51,6 +51,15 @@
                 </widget>
                 <widget id="craftercms.components.PathNavigatorTree">
                     <configuration>
+                        <id>Taxonomy</id>
+                        <label>Taxonomy</label>
+						<icon id="@mui/icons-material/LocalOfferOutlined"/>
+                        <rootPath>/site/components/taxonomy</rootPath>
+                        <locale>en</locale>
+                    </configuration>
+                </widget>
+                <widget id="craftercms.components.PathNavigatorTree">
+                    <configuration>
                         <id>StaticAssets</id>
                         <label>Static Assets</label>
                         <icon id="@mui/icons-material/ImageOutlined"/>

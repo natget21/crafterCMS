@@ -1,21 +1,21 @@
 <form>
-	<title>Item:Macro Category</title>
+	<title>Page: Homepage</title>
 	<description></description>
-	<objectType>component</objectType>
-	<content-type>/component/macrocategories</content-type>
+	<objectType>page</objectType>
+	<content-type>/page/homepage</content-type>
 	<imageThumbnail></imageThumbnail>
 	<quickCreate>false</quickCreate>
 	<quickCreatePath></quickCreatePath>
 	<properties>		<property>
 			<name>display-template</name>
 			<label>Display Template</label>
-			<value></value>
+			<value>/templates/web/pages/index.ftl</value>
 			<type>template</type>
 		</property>
 		<property>
 			<name>no-template-required</name>
 			<label>No Template Required</label>
-			<value>true</value>
+			<value></value>
 			<type>boolean</type>
 		</property>
 		<property>
@@ -26,15 +26,15 @@
 		</property>
 	</properties>
 	<sections>		<section>
-			<title>Macro Categories Properties</title>
+			<title>homepage Properties</title>
 			<description></description>
 			<defaultOpen>true</defaultOpen>
 			<fields>
 				<field>
-					<type>auto-filename</type>
+					<type>file-name</type>
 					<id>file-name</id>
 					<iceId></iceId>
-					<title>Component ID</title>
+					<title>Page URL</title>
 					<description></description>
 					<defaultValue></defaultValue>
 					<help></help>
@@ -87,37 +87,17 @@
 					</constraints>
 				</field>
 				<field>
-					<type>input</type>
-					<id>categoryname_s</id>
+					<type>page-nav-order</type>
+					<id>placeInNav</id>
 					<iceId></iceId>
-					<title>Macro Category Name</title>
+					<title>Place in Nav</title>
 					<description></description>
 					<defaultValue></defaultValue>
 					<help></help>
 					<properties>
 						<property>
-							<name>size</name>
-							<value>50</value>
-							<type>int</type>
-						</property>
-						<property>
-							<name>maxlength</name>
-							<value>50</value>
-							<type>int</type>
-						</property>
-						<property>
 							<name>readonly</name>
 							<value></value>
-							<type>boolean</type>
-						</property>
-						<property>
-							<name>tokenize</name>
-							<value>false</value>
-							<type>boolean</type>
-						</property>
-						<property>
-							<name>escapeContent</name>
-							<value>false</value>
 							<type>boolean</type>
 						</property>
 					</properties>
@@ -126,19 +106,14 @@
 							<name>required</name>
 							<value><![CDATA[]]></value>
 							<type>boolean</type>
-						</constraint>
-						<constraint>
-							<name>pattern</name>
-							<value><![CDATA[]]></value>
-							<type>string</type>
 						</constraint>
 					</constraints>
 				</field>
 				<field>
 					<type>input</type>
-					<id>tags_s</id>
+					<id>navLabel</id>
 					<iceId></iceId>
-					<title>Tags</title>
+					<title>Nav Label</title>
 					<description></description>
 					<defaultValue></defaultValue>
 					<help></help>
@@ -153,80 +128,12 @@
 							<value>50</value>
 							<type>int</type>
 						</property>
-						<property>
-							<name>readonly</name>
-							<value></value>
-							<type>boolean</type>
-						</property>
-						<property>
-							<name>tokenize</name>
-							<value>false</value>
-							<type>boolean</type>
-						</property>
-						<property>
-							<name>escapeContent</name>
-							<value>false</value>
-							<type>boolean</type>
-						</property>
 					</properties>
 					<constraints>
 						<constraint>
 							<name>required</name>
-							<value><![CDATA[]]></value>
+							<value><![CDATA[true]]></value>
 							<type>boolean</type>
-						</constraint>
-						<constraint>
-							<name>pattern</name>
-							<value><![CDATA[]]></value>
-							<type>string</type>
-						</constraint>
-					</constraints>
-				</field>
-				<field>
-					<type>input</type>
-					<id>description_s</id>
-					<iceId></iceId>
-					<title>Description</title>
-					<description></description>
-					<defaultValue></defaultValue>
-					<help></help>
-					<properties>
-						<property>
-							<name>size</name>
-							<value>50</value>
-							<type>int</type>
-						</property>
-						<property>
-							<name>maxlength</name>
-							<value>50</value>
-							<type>int</type>
-						</property>
-						<property>
-							<name>readonly</name>
-							<value></value>
-							<type>boolean</type>
-						</property>
-						<property>
-							<name>tokenize</name>
-							<value>false</value>
-							<type>boolean</type>
-						</property>
-						<property>
-							<name>escapeContent</name>
-							<value>false</value>
-							<type>boolean</type>
-						</property>
-					</properties>
-					<constraints>
-						<constraint>
-							<name>required</name>
-							<value><![CDATA[]]></value>
-							<type>boolean</type>
-						</constraint>
-						<constraint>
-							<name>pattern</name>
-							<value><![CDATA[]]></value>
-							<type>string</type>
 						</constraint>
 					</constraints>
 				</field>
