@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component>
+	<content-type>/component/macrocategories</content-type>
+	<display-template/>
+	<no-template-required>true</no-template-required>
+	<merge-strategy>inherit-levels</merge-strategy>
+	<objectGroupId>374f</objectGroupId>
+	<objectId>374fbd2e-727f-a324-cf65-e02b65d87a48</objectId>
+	<file-name>374fbd2e-727f-a324-cf65-e02b65d87a48.xml</file-name>
+	<folder-name/>
+	<internal-name>service</internal-name>
+	<categoryname_s>Service</categoryname_s>
+	<tags_s/>
+	<description_s/>
+	<createdDate>2024-11-13T08:17:29.506Z</createdDate>
+	<createdDate_dt>2024-11-13T08:17:29.506Z</createdDate_dt>
+	<lastModifiedDate>2024-11-13T08:17:29.506Z</lastModifiedDate>
+	<lastModifiedDate_dt>2024-11-13T08:17:29.506Z</lastModifiedDate_dt>
+</component>
