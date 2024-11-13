@@ -3,7 +3,7 @@
         <div class="row">
             <div class="col-12">
                 <nav class="main-nav">
-                    <a href="/" class="logo"><img src="/static/images/logo.png" alt="Logo"></a>
+                    <a href="/" class="logo"><img src="/static-assets/images/logo.png" alt="Logo"></a>
                     <ul class="nav">
                         <li><a href="#top">Home</a></li>
                         <li><a href="#men">Men’s</a></li>
