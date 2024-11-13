@@ -1,5 +1,5 @@
 <form>
-	<title>sample Page</title>
+	<title>page: Sample Page</title>
 	<description>A Simple Page</description>
 	<objectType>page</objectType>
 	<content-type>/page/entry</content-type>
