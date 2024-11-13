@@ -34,6 +34,9 @@
 
     <#-- Footer -->
     <#include "/components/footer.ftl">
+    
+    <!-- Scripts -->
+    <#include "/components/scripts.ftl">
 
 </body>
 </html>
