@@ -1,4 +1,7 @@
+<#import "/templates/system/common/crafter.ftl" as crafter />
+
 <#-- index.ftl -->
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
