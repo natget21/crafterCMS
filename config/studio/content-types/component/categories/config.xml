@@ -10,9 +10,4 @@
 	<quickCreatePath></quickCreatePath>
 	<noThumbnail>true</noThumbnail>
 	<image-thumbnail></image-thumbnail>
-	<paths>
-		<includes>
-			<pattern>^/site/component/categories/.*</pattern>
-		</includes>
-	</paths>
 </content-type>
