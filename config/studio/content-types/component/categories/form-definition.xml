@@ -198,7 +198,7 @@
 						</property>
 						<property>
 							<name>componentPath</name>
-							<value></value>
+							<value>/component/macrocategories</value>
 								<type>string</type>
 						</property>
 					</properties>
