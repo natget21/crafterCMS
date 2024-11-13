@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", function () {
-    const macrocategorySelector = document.querySelector("[name='macrocategories']");
-    const categorySelector = document.querySelector("[name='categories']");
+document.querySelector("#macroCategory_o"); // for an element with id="macrocategoryId"
+document.querySelector("#category_o"); // for an element with id="categoryId"
 
     macrocategorySelector.addEventListener("change", async function () {
         const selectedMacrocategory = macrocategorySelector.value;
