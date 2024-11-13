@@ -19,21 +19,21 @@
     <#include "/templates/web/fragments/header.ftl">
 
     <#-- Main Banner -->
-    <#include "/templates/web/components/banner.ftl">
+    <#-- <#include "/templates/web/components/banner.ftl"> -->
 
     <#-- Sections (Men, Women, Kids) -->
-    <#include "/templates/web/components/men.ftl">
-    <#include "/templates/web/components/women.ftl">
-    <#include "/templates/web/components/kids.ftl">
+    <#-- <#include "/templates/web/components/men.ftl"> -->
+    <#-- <#include "/templates/web/components/women.ftl"> -->
+    <#-- <#include "/templates/web/components/kids.ftl"> -->
 
     <#-- Explore Section -->
-    <#include "/templates/web/components/explore.ftl">
+    <#-- <#include "/templates/web/components/explore.ftl"> -->
 
     <#-- Social Media -->
-    <#include "/templates/web/components/social.ftl">
+    <#-- <#include "/templates/web/components/social.ftl"> -->
 
     <#-- Subscribe Section -->
-    <#include "/templates/web/components/subscribe.ftl">
+    <#-- <#include "/templates/web/components/subscribe.ftl"> -->
 
     <#-- Footer -->
     <#include "/templates/web/fragments/footer.ftl">
