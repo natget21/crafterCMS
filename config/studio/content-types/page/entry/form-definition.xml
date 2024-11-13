@@ -1,5 +1,5 @@
 <form>
-	<title>A Page</title>
+	<title>sample Page</title>
 	<description>A Simple Page</description>
 	<objectType>page</objectType>
 	<content-type>/page/entry</content-type>
@@ -9,13 +9,13 @@
 	<properties>		<property>
 			<name>display-template</name>
 			<label>Display Template</label>
-			<value>/templates/web/entry.ftl</value>
+			<value>/templates/web/pages/sample.ftl</value>
 			<type>template</type>
 		</property>
 		<property>
 			<name>no-template-required</name>
 			<label>No Template Required</label>
-			<value>true</value>
+			<value>false</value>
 			<type>boolean</type>
 		</property>
 		<property>
