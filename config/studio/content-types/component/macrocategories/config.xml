@@ -12,7 +12,7 @@
 	<image-thumbnail></image-thumbnail>
 	<paths>
 		<includes>
-			<pattern>^/site/components/macrocategories/.*</pattern>
+			<pattern>^/site/components/macro_categories/.*</pattern>
 		</includes>
 	</paths>
 </content-type>
