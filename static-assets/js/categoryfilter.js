@@ -15,7 +15,7 @@ async function fetchCategoriesByMacrocategory(macrocategoryId) {
     const data = await response.json();
     
     // Filter categories by macrocategory ID
-    return data.children.filter(item => item.macrocategory === macrocategoryId);
+    return data.children.filter(item => item.macrocategory_o === macrocategoryId);
 }
 
 function updateCategoryOptions(categorySelector, categories) {
@@ -26,7 +26,7 @@ function updateCategoryOptions(categorySelector, categories) {
     categories.forEach(category => {
         const option = document.createElement("option");
         option.value = category.name;
-        option.textContent = category.label || category.name;
+        option.textContent = category.label || category.categoryname_s;
         categorySelector.appendChild(option);
     });
 }
