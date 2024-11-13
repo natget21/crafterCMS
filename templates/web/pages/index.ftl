@@ -36,7 +36,7 @@
     <#-- <#include "/templates/web/components/subscribe.ftl"> -->
 
     <#-- Footer -->
-    <#include "/templates/web/fragments/footer.ftl">
+    <#-- <#include "/templates/web/fragments/footer.ftl"> -->
     
     <!-- Scripts -->
     <#include "/templates/web/fragments/scripts.ftl">
