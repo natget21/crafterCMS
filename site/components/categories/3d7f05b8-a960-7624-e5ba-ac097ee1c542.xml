@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component>
+	<content-type>/component/categories</content-type>
+	<display-template/>
+	<no-template-required>true</no-template-required>
+	<merge-strategy>inherit-levels</merge-strategy>
+	<objectGroupId>3d7f</objectGroupId>
+	<objectId>3d7f05b8-a960-7624-e5ba-ac097ee1c542</objectId>
+	<file-name>3d7f05b8-a960-7624-e5ba-ac097ee1c542.xml</file-name>
+	<folder-name/>
+	<internal-name>CONSULENZA </internal-name>
+	<categoryname_s>CONSULENZA </categoryname_s>
+	<macrocategory_o item-list="true">	<item>	<key>/site/components/macro_categories/374fbd2e-727f-a324-cf65-e02b65d87a48.xml</key>
+	<value>service</value>
+	<include>/site/components/macro_categories/374fbd2e-727f-a324-cf65-e02b65d87a48.xml</include>
+	<disableFlattening>false</disableFlattening>
+	</item></macrocategory_o>
+	<createdDate>2024-11-13T14:06:18.161Z</createdDate>
+	<createdDate_dt>2024-11-13T14:06:18.161Z</createdDate_dt>
+	<lastModifiedDate>2024-11-13T14:06:18.161Z</lastModifiedDate>
+	<lastModifiedDate_dt>2024-11-13T14:06:18.161Z</lastModifiedDate_dt>
+</component>
