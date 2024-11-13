@@ -208,5 +208,53 @@
 			</fields>
 		</section>
 	</sections>
-	<datasources>	</datasources>
+	<datasources>				<datasource>
+					<type>components</type>
+					<id>macroCategory</id>
+					<title>macroCategory</title>
+					<interface>item</interface>
+					<properties>
+						<property>
+							<name>allowEmbedded</name>
+							<value>true</value>
+								<type>boolean</type>
+						</property>
+						<property>
+							<name>allowShared</name>
+							<value>true</value>
+								<type>boolean</type>
+						</property>
+						<property>
+							<name>enableBrowse</name>
+							<value>true</value>
+								<type>boolean</type>
+						</property>
+						<property>
+							<name>enableSearch</name>
+							<value>false</value>
+								<type>boolean</type>
+						</property>
+						<property>
+							<name>baseRepoPath</name>
+							<value>/site/components</value>
+								<type>string</type>
+						</property>
+						<property>
+							<name>baseBrowsePath</name>
+							<value>/site/components</value>
+								<type>string</type>
+						</property>
+						<property>
+							<name>contentTypes</name>
+							<value>/component/macrocategories</value>
+								<type>contentTypes</type>
+						</property>
+						<property>
+							<name>tags</name>
+							<value></value>
+								<type>string</type>
+						</property>
+					</properties>
+				</datasource>
+	</datasources>
 </form>
