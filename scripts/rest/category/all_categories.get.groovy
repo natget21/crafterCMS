@@ -125,9 +125,6 @@
 
 // get macroCategories ----works
 
-// Initialize the QueryService
-def queryService = applicationContext.getBean("queryService")
-
 // Define the path where Macro Categories are stored
 def macroCategoryPath = "/site/components/macro_categories" // Adjust based on your site structure
 
@@ -140,14 +137,16 @@ def macroCategoryQuery = """
 }
 """
 
-// Execute the query to fetch all macro categories
-def macroCategoryResults = queryService.search(SiteContext.current.site, macroCategoryQuery, macroCategoryPath, 0, 100)
+// Execute the search using searchClient
+def macroCategoryResults = searchClient.search(macroCategoryQuery, macroCategoryPath, 0, 100)
 
 // Process the query results to extract necessary details
 def macroCategories = macroCategoryResults.documents.collect { macroCategory ->
     [
-        id: macroCategory["localId"],
-        name: macroCategory["macro_category_name_s"]  // Adjust field name as needed for the macro category name
+        componentId: macroCategory["componentId"],  // Unique ID of the macro category
+        internalName: macroCategory["internalName"], // Human-readable name of the macro category
+        localId: macroCategory["localId"],          // Path-relative ID of the macro category
+        name: macroCategory["macro_category_name_s"]               // Adjust field name if "name_s" is different in your model
     ]
 }
 
