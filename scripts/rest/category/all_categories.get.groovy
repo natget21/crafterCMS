@@ -148,7 +148,7 @@ def macroCategoryResults = queryService.search(SiteContext.current.site, macroCa
 def macroCategories = macroCategoryResults.documents.collect { macroCategory ->
     [
         id: macroCategory["localId"],
-        name: macroCategory["name_s"]  // Adjust field name as needed for the macro category name
+        name: macroCategory["macro_category_name_s"]  // Adjust field name as needed for the macro category name
     ]
 }
 
