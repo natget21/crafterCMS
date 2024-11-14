@@ -11,6 +11,3 @@ contentLifecycleParams.applicationContext = applicationContext;
 
 def controller = new CommonLifecycleApi(contentLifecycleParams);
 controller.execute();
-// Inject JavaScript file reference into the placeholder field
-def scriptPath = "/static-assets/js/categoryfilter.js"
-contentModel.put("scriptInjection", "<script src='" + scriptPath + "'></script>");
