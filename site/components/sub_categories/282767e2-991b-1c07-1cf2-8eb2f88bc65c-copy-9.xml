@@ -7,9 +7,9 @@
 	<objectGroupId>7472b512</objectGroupId>
 	<objectId>7472b512-8d0e-4424-862b-d08cb277ddf3</objectId>
 	<file-name>282767e2-991b-1c07-1cf2-8eb2f88bc65c-copy-9.xml</file-name>
-	<folder-name>sub_categories</folder-name>
-	<internal-name>Crowdfunding (Copy 9)</internal-name>
-	<subCategoryName_s>Crowdfunding</subCategoryName_s>
+	<folder-name/>
+	<internal-name>Misure fiscali</internal-name>
+	<subCategoryName_s>Misure fiscali</subCategoryName_s>
 	<category_o item-list="true">	<item>	<key>/site/components/categories/b433e04d-b38c-8349-62a6-5e4c3665a612.xml</key>
 	<value>api</value>
 	<include>/site/components/categories/b433e04d-b38c-8349-62a6-5e4c3665a612.xml</include>
@@ -17,6 +17,6 @@
 	</item></category_o>
 	<createdDate>2024-11-14T09:02:09.880Z</createdDate>
 	<createdDate_dt>2024-11-14T09:02:09.880Z</createdDate_dt>
-	<lastModifiedDate>2024-11-14T09:02:09.880Z</lastModifiedDate>
-	<lastModifiedDate_dt>2024-11-14T09:02:09.880Z</lastModifiedDate_dt>
+	<lastModifiedDate>2024-11-14T09:02:11.958Z</lastModifiedDate>
+	<lastModifiedDate_dt>2024-11-14T09:02:11.958Z</lastModifiedDate_dt>
 </component>
