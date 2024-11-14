@@ -1,7 +1,11 @@
 import groovy.xml.XmlSlurper
 
-// Ensure contentLoader is available directly in the script
-def contentLoader = binding.getVariable("contentLoader") // or use just contentLoader if it's automatically available
+// Check if contentLoader is available
+def contentLoader = binding.getVariable("contentLoader") ?: applicationContext?.getBean("contentLoader")
+
+if (!contentLoader) {
+    throw new RuntimeException("ContentLoader is not available")
+}
 
 def fetchCategoryDetails(categoryPath) {
     // Load the content from the given category path
