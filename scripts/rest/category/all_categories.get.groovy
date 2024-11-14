@@ -75,12 +75,6 @@
 
 
 
-import org.craftercms.engine.service.context.SiteContext
-import org.craftercms.engine.service.QueryService
-
-// Initialize the QueryService to query content
-def queryService = applicationContext.getBean("queryService")
-
 // Define the path where the Category content type is located
 def categoryContentTypePath = "/site/components/categories" 
 
