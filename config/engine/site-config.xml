@@ -21,10 +21,4 @@
 
 <site>
     <version>4.0.1</version>
-    <endpoints>
-    <endpoint>
-        <url-pattern>/api/1/site/custom/subcategories</url-pattern>
-        <script>/scripts/SubCategoryApi.groovy</script>
-    </endpoint>
-</endpoints>
 </site>
