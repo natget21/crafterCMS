@@ -8,15 +8,15 @@
 	<objectId>b433e04d-b38c-8349-62a6-5e4c3665a612</objectId>
 	<file-name>b433e04d-b38c-8349-62a6-5e4c3665a612.xml</file-name>
 	<folder-name/>
-	<internal-name>api</internal-name>
-	<categoryname_s>api</categoryname_s>
-	<macrocategory_o item-list="true">	<item>	<key>/site/components/macro_categories/feb5455a-5e17-5bc9-15a7-ae708ca00361.xml</key>
-	<value>product</value>
-	<include>/site/components/macro_categories/feb5455a-5e17-5bc9-15a7-ae708ca00361.xml</include>
+	<internal-name>API</internal-name>
+	<categoryname_s>API</categoryname_s>
+	<macrocategory_o item-list="true">	<item>	<key>/site/components/macro_categories/374fbd2e-727f-a324-cf65-e02b65d87a48.xml</key>
+	<value>service</value>
+	<include>/site/components/macro_categories/374fbd2e-727f-a324-cf65-e02b65d87a48.xml</include>
 	<disableFlattening>false</disableFlattening>
 	</item></macrocategory_o>
 	<createdDate>2024-11-13T08:54:54.299Z</createdDate>
 	<createdDate_dt>2024-11-13T08:54:54.299Z</createdDate_dt>
-	<lastModifiedDate>2024-11-13T13:57:41.111Z</lastModifiedDate>
-	<lastModifiedDate_dt>2024-11-13T13:57:41.111Z</lastModifiedDate_dt>
+	<lastModifiedDate>2024-11-14T08:51:45.549Z</lastModifiedDate>
+	<lastModifiedDate_dt>2024-11-14T08:51:45.549Z</lastModifiedDate_dt>
 </component>

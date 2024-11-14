@@ -4,19 +4,19 @@
 	<display-template/>
 	<no-template-required>true</no-template-required>
 	<merge-strategy>inherit-levels</merge-strategy>
-	<objectGroupId>e027</objectGroupId>
-	<objectId>e027bda8-4bb4-0c4b-9c12-060aedf28bd5</objectId>
-	<file-name>e027bda8-4bb4-0c4b-9c12-060aedf28bd5.xml</file-name>
+	<objectGroupId>639eb3ea</objectGroupId>
+	<objectId>639eb3ea-ec72-4d11-8998-5489368d32b2</objectId>
+	<file-name>3e7854fd-db5b-a6b8-a9ac-94cb8c2d2e0a-copy-3.xml</file-name>
 	<folder-name/>
-	<internal-name>TEST BEFORE INVEST</internal-name>
-	<categoryname_s>TEST BEFORE INVEST</categoryname_s>
-	<createdDate>2024-11-12T08:05:35.356Z</createdDate>
-	<createdDate_dt>2024-11-12T08:05:35.356Z</createdDate_dt>
-	<lastModifiedDate>2024-11-13T13:56:58.581Z</lastModifiedDate>
-	<lastModifiedDate_dt>2024-11-13T13:56:58.581Z</lastModifiedDate_dt>
+	<internal-name>SKILLS AND TRAINING</internal-name>
+	<categoryname_s>SKILLS AND TRAINING</categoryname_s>
 	<macrocategory_o item-list="true">	<item>	<key>/site/components/macro_categories/374fbd2e-727f-a324-cf65-e02b65d87a48.xml</key>
 	<value>service</value>
 	<include>/site/components/macro_categories/374fbd2e-727f-a324-cf65-e02b65d87a48.xml</include>
 	<disableFlattening>false</disableFlattening>
 	</item></macrocategory_o>
+	<createdDate>2024-11-14T08:50:19.994Z</createdDate>
+	<createdDate_dt>2024-11-14T08:50:19.994Z</createdDate_dt>
+	<lastModifiedDate>2024-11-14T08:50:22.050Z</lastModifiedDate>
+	<lastModifiedDate_dt>2024-11-14T08:50:22.050Z</lastModifiedDate_dt>
 </component>

@@ -4,19 +4,19 @@
 	<display-template/>
 	<no-template-required>true</no-template-required>
 	<merge-strategy>inherit-levels</merge-strategy>
-	<objectGroupId>3d7f</objectGroupId>
-	<objectId>3d7f05b8-a960-7624-e5ba-ac097ee1c542</objectId>
-	<file-name>3d7f05b8-a960-7624-e5ba-ac097ee1c542.xml</file-name>
+	<objectGroupId>215c1526</objectGroupId>
+	<objectId>215c1526-be85-45d7-9697-16ed4c065e29</objectId>
+	<file-name>3e7854fd-db5b-a6b8-a9ac-94cb8c2d2e0a-copy-1.xml</file-name>
 	<folder-name/>
-	<internal-name>CONSULENZA </internal-name>
-	<categoryname_s>CONSULENZA </categoryname_s>
+	<internal-name>CONSULENZA</internal-name>
+	<categoryname_s>CONSULENZA</categoryname_s>
 	<macrocategory_o item-list="true">	<item>	<key>/site/components/macro_categories/374fbd2e-727f-a324-cf65-e02b65d87a48.xml</key>
 	<value>service</value>
 	<include>/site/components/macro_categories/374fbd2e-727f-a324-cf65-e02b65d87a48.xml</include>
 	<disableFlattening>false</disableFlattening>
 	</item></macrocategory_o>
-	<createdDate>2024-11-13T14:06:18.161Z</createdDate>
-	<createdDate_dt>2024-11-13T14:06:18.161Z</createdDate_dt>
-	<lastModifiedDate>2024-11-13T14:06:18.161Z</lastModifiedDate>
-	<lastModifiedDate_dt>2024-11-13T14:06:18.161Z</lastModifiedDate_dt>
+	<createdDate>2024-11-14T08:45:01.233Z</createdDate>
+	<createdDate_dt>2024-11-14T08:45:01.233Z</createdDate_dt>
+	<lastModifiedDate>2024-11-14T08:45:08.796Z</lastModifiedDate>
+	<lastModifiedDate_dt>2024-11-14T08:45:08.796Z</lastModifiedDate_dt>
 </component>

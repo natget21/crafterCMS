@@ -4,19 +4,19 @@
 	<display-template/>
 	<no-template-required>true</no-template-required>
 	<merge-strategy>inherit-levels</merge-strategy>
-	<objectGroupId>3d86</objectGroupId>
-	<objectId>3d86f20c-a1dc-b30a-9b0c-dacc18a6d851</objectId>
-	<file-name>3d86f20c-a1dc-b30a-9b0c-dacc18a6d851.xml</file-name>
+	<objectGroupId>ad9df6b6</objectGroupId>
+	<objectId>ad9df6b6-8610-4a13-9994-91b64e79ddba</objectId>
+	<file-name>3e7854fd-db5b-a6b8-a9ac-94cb8c2d2e0a-copy-4.xml</file-name>
 	<folder-name/>
-	<internal-name>Networking, Ecosystem e Open Innovation</internal-name>
-	<categoryname_s>Networking, Ecosystem e Open Innovation</categoryname_s>
-	<createdDate>2024-11-12T08:05:51.619Z</createdDate>
-	<createdDate_dt>2024-11-12T08:05:51.619Z</createdDate_dt>
-	<lastModifiedDate>2024-11-13T13:56:20.199Z</lastModifiedDate>
-	<lastModifiedDate_dt>2024-11-13T13:56:20.199Z</lastModifiedDate_dt>
+	<internal-name>TEST BEFORE INVEST</internal-name>
+	<categoryname_s>TEST BEFORE INVEST</categoryname_s>
 	<macrocategory_o item-list="true">	<item>	<key>/site/components/macro_categories/374fbd2e-727f-a324-cf65-e02b65d87a48.xml</key>
 	<value>service</value>
 	<include>/site/components/macro_categories/374fbd2e-727f-a324-cf65-e02b65d87a48.xml</include>
 	<disableFlattening>false</disableFlattening>
 	</item></macrocategory_o>
+	<createdDate>2024-11-14T08:50:52.207Z</createdDate>
+	<createdDate_dt>2024-11-14T08:50:52.207Z</createdDate_dt>
+	<lastModifiedDate>2024-11-14T08:50:54.258Z</lastModifiedDate>
+	<lastModifiedDate_dt>2024-11-14T08:50:54.258Z</lastModifiedDate_dt>
 </component>

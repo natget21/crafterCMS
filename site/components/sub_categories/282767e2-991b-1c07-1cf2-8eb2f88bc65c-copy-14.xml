@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component>
+	<content-type>/component/subcategory</content-type>
+	<display-template/>
+	<no-template-required>true</no-template-required>
+	<merge-strategy>inherit-levels</merge-strategy>
+	<objectGroupId>2a3cbe3d</objectGroupId>
+	<objectId>2a3cbe3d-63c9-4b55-8f6f-57f94b566e89</objectId>
+	<file-name>282767e2-991b-1c07-1cf2-8eb2f88bc65c-copy-14.xml</file-name>
+	<folder-name/>
+	<internal-name>Proof-of-Concept (PoC)</internal-name>
+	<subCategoryName_s>Proof-of-Concept (PoC)</subCategoryName_s>
+	<category_o item-list="true">	<item>	<key>/site/components/categories/b433e04d-b38c-8349-62a6-5e4c3665a612.xml</key>
+	<value>api</value>
+	<include>/site/components/categories/b433e04d-b38c-8349-62a6-5e4c3665a612.xml</include>
+	<disableFlattening>false</disableFlattening>
+	</item></category_o>
+	<createdDate>2024-11-14T09:04:23.689Z</createdDate>
+	<createdDate_dt>2024-11-14T09:04:23.689Z</createdDate_dt>
+	<lastModifiedDate>2024-11-14T09:04:25.799Z</lastModifiedDate>
+	<lastModifiedDate_dt>2024-11-14T09:04:25.799Z</lastModifiedDate_dt>
+</component>

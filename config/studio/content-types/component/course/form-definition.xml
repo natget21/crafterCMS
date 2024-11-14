@@ -1,8 +1,8 @@
 <form>
-	<title>item:Product</title>
+	<title>item: Course</title>
 	<description></description>
 	<objectType>component</objectType>
-	<content-type>/component/product</content-type>
+	<content-type>/component/course</content-type>
 	<imageThumbnail></imageThumbnail>
 	<quickCreate>false</quickCreate>
 	<quickCreatePath></quickCreatePath>
@@ -26,7 +26,7 @@
 		</property>
 	</properties>
 	<sections>		<section>
-			<title>Product Properties</title>
+			<title>Course Properties</title>
 			<description></description>
 			<defaultOpen>true</defaultOpen>
 			<fields>
@@ -87,10 +87,63 @@
 					</constraints>
 				</field>
 				<field>
-					<type>input</type>
-					<id>productName_s</id>
+					<type>node-selector</type>
+					<id>subcategory_o</id>
 					<iceId></iceId>
-					<title>Product Name</title>
+					<title>sub category</title>
+					<description></description>
+					<defaultValue></defaultValue>
+					<help></help>
+					<properties>
+						<property>
+							<name>minSize</name>
+							<value>1</value>
+							<type>int</type>
+						</property>
+						<property>
+							<name>maxSize</name>
+							<value>1</value>
+							<type>int</type>
+						</property>
+						<property>
+							<name>itemManager</name>
+							<value>sub_category</value>
+							<type>datasource:item</type>
+						</property>
+						<property>
+							<name>readonly</name>
+							<value>false</value>
+							<type>boolean</type>
+						</property>
+						<property>
+							<name>disableFlattening</name>
+							<value></value>
+							<type>boolean</type>
+						</property>
+						<property>
+							<name>useSingleValueFilename</name>
+							<value></value>
+							<type>boolean</type>
+						</property>
+						<property>
+							<name>useMVS</name>
+							<value></value>
+							<type>boolean</type>
+						</property>
+					</properties>
+					<constraints>
+						<constraint>
+							<name>allowDuplicates</name>
+							<value><![CDATA[]]></value>
+							<type>boolean</type>
+						</constraint>
+					</constraints>
+				</field>
+				<field>
+					<type>input</type>
+					<id>nome_s</id>
+					<iceId></iceId>
+					<title>nome</title>
 					<description></description>
 					<defaultValue></defaultValue>
 					<help></help>
@@ -124,7 +177,7 @@
 					<constraints>
 						<constraint>
 							<name>required</name>
-							<value><![CDATA[true]]></value>
+							<value><![CDATA[]]></value>
 							<type>boolean</type>
 						</constraint>
 						<constraint>
@@ -136,9 +189,9 @@
 				</field>
 				<field>
 					<type>input</type>
-					<id>description_s</id>
+					<id>partner_s</id>
 					<iceId></iceId>
-					<title>Description</title>
+					<title>partner</title>
 					<description></description>
 					<defaultValue></defaultValue>
 					<help></help>
@@ -183,10 +236,10 @@
 					</constraints>
 				</field>
 				<field>
-					<type>numeric-input</type>
-					<id>price_i</id>
+					<type>input</type>
+					<id>costo_s</id>
 					<iceId></iceId>
-					<title>Price</title>
+					<title>costo</title>
 					<description></description>
 					<defaultValue></defaultValue>
 					<help></help>
@@ -197,14 +250,9 @@
 							<type>int</type>
 						</property>
 						<property>
-							<name>maxValue</name>
-							<value></value>
-							<type>minMax</type>
-						</property>
-						<property>
-							<name>minValue</name>
-							<value></value>
-							<type>minMax</type>
+							<name>maxlength</name>
+							<value>50</value>
+							<type>int</type>
 						</property>
 						<property>
 							<name>readonly</name>
@@ -213,6 +261,11 @@
 						</property>
 						<property>
 							<name>tokenize</name>
+							<value>false</value>
+							<type>boolean</type>
+						</property>
+						<property>
+							<name>escapeContent</name>
 							<value>false</value>
 							<type>boolean</type>
 						</property>
@@ -231,42 +284,37 @@
 					</constraints>
 				</field>
 				<field>
-					<type>image-picker</type>
-					<id>mainImage_s</id>
+					<type>input</type>
+					<id>durata_s</id>
 					<iceId></iceId>
-					<title>Main Image</title>
+					<title>durata</title>
 					<description></description>
 					<defaultValue></defaultValue>
 					<help></help>
 					<properties>
 						<property>
-							<name>width</name>
-							<value>{ &quot;exact&quot;:&quot;&quot;, &quot;min&quot;:&quot;&quot;, &quot;max&quot;:&quot;&quot; }</value>
-							<type>range</type>
-						</property>
-						<property>
-							<name>height</name>
-							<value>{ &quot;exact&quot;:&quot;&quot;, &quot;min&quot;:&quot;&quot;, &quot;max&quot;:&quot;&quot; }</value>
-							<type>range</type>
-						</property>
-						<property>
-							<name>thumbnailWidth</name>
-							<value></value>
+							<name>size</name>
+							<value>50</value>
 							<type>int</type>
 						</property>
 						<property>
-							<name>thumbnailHeight</name>
-							<value></value>
+							<name>maxlength</name>
+							<value>50</value>
 							<type>int</type>
-						</property>
-						<property>
-							<name>imageManager</name>
-							<value></value>
-							<type>datasource:image</type>
 						</property>
 						<property>
 							<name>readonly</name>
 							<value></value>
+							<type>boolean</type>
+						</property>
+						<property>
+							<name>tokenize</name>
+							<value>false</value>
+							<type>boolean</type>
+						</property>
+						<property>
+							<name>escapeContent</name>
+							<value>false</value>
 							<type>boolean</type>
 						</property>
 					</properties>
@@ -276,84 +324,31 @@
 							<value><![CDATA[]]></value>
 							<type>boolean</type>
 						</constraint>
-					</constraints>
-				</field>
-				<field>
-					<type>node-selector</type>
-					<id>company_o</id>
-					<iceId></iceId>
-					<title>Company</title>
-					<description></description>
-					<defaultValue></defaultValue>
-					<help></help>
-					<properties>
-						<property>
-							<name>minSize</name>
-							<value>1</value>
-							<type>int</type>
-						</property>
-						<property>
-							<name>maxSize</name>
-							<value>1</value>
-							<type>int</type>
-						</property>
-						<property>
-							<name>itemManager</name>
-							<value>companies</value>
-							<type>datasource:item</type>
-						</property>
-						<property>
-							<name>readonly</name>
-							<value></value>
-							<type>boolean</type>
-						</property>
-						<property>
-							<name>disableFlattening</name>
-							<value></value>
-							<type>boolean</type>
-						</property>
-						<property>
-							<name>useSingleValueFilename</name>
-							<value></value>
-							<type>boolean</type>
-						</property>
-						<property>
-							<name>useMVS</name>
-							<value></value>
-							<type>boolean</type>
-						</property>
-					</properties>
-					<constraints>
 						<constraint>
-							<name>allowDuplicates</name>
+							<name>pattern</name>
 							<value><![CDATA[]]></value>
-							<type>boolean</type>
+							<type>string</type>
 						</constraint>
 					</constraints>
 				</field>
 				<field>
-					<type>node-selector</type>
-					<id>macroCategory_o</id>
+					<type>input</type>
+					<id>modalita_s</id>
 					<iceId></iceId>
-					<title>MacroCategory</title>
+					<title>modalita</title>
 					<description></description>
 					<defaultValue></defaultValue>
 					<help></help>
 					<properties>
 						<property>
-							<name>minSize</name>
-							<value>1</value>
+							<name>size</name>
+							<value>50</value>
 							<type>int</type>
 						</property>
 						<property>
-							<name>maxSize</name>
-							<value>1</value>
+							<name>maxlength</name>
+							<value>50</value>
 							<type>int</type>
-						</property>
-						<property>
-							<name>itemManager</name>
-							<value>macroCategory</value>
-							<type>datasource:item</type>
 						</property>
 						<property>
 							<name>readonly</name>
@@ -361,52 +356,47 @@
 							<type>boolean</type>
 						</property>
 						<property>
-							<name>disableFlattening</name>
-							<value></value>
+							<name>tokenize</name>
+							<value>false</value>
 							<type>boolean</type>
 						</property>
 						<property>
-							<name>useSingleValueFilename</name>
-							<value></value>
-							<type>boolean</type>
-						</property>
-						<property>
-							<name>useMVS</name>
-							<value></value>
+							<name>escapeContent</name>
+							<value>false</value>
 							<type>boolean</type>
 						</property>
 					</properties>
 					<constraints>
 						<constraint>
-							<name>allowDuplicates</name>
+							<name>required</name>
 							<value><![CDATA[]]></value>
 							<type>boolean</type>
+						</constraint>
+						<constraint>
+							<name>pattern</name>
+							<value><![CDATA[]]></value>
+							<type>string</type>
 						</constraint>
 					</constraints>
 				</field>
 				<field>
-					<type>node-selector</type>
-					<id>category_o</id>
+					<type>input</type>
+					<id>obiettivo_s</id>
 					<iceId></iceId>
-					<title>Category</title>
+					<title>obiettivo</title>
 					<description></description>
 					<defaultValue></defaultValue>
 					<help></help>
 					<properties>
 						<property>
-							<name>minSize</name>
-							<value>1</value>
+							<name>size</name>
+							<value>50</value>
 							<type>int</type>
 						</property>
 						<property>
-							<name>maxSize</name>
-							<value>1</value>
+							<name>maxlength</name>
+							<value>50</value>
 							<type>int</type>
-						</property>
-						<property>
-							<name>itemManager</name>
-							<value>categories</value>
-							<type>datasource:item</type>
 						</property>
 						<property>
 							<name>readonly</name>
@@ -414,52 +404,47 @@
 							<type>boolean</type>
 						</property>
 						<property>
-							<name>disableFlattening</name>
-							<value></value>
+							<name>tokenize</name>
+							<value>false</value>
 							<type>boolean</type>
 						</property>
 						<property>
-							<name>useSingleValueFilename</name>
-							<value></value>
-							<type>boolean</type>
-						</property>
-						<property>
-							<name>useMVS</name>
-							<value></value>
+							<name>escapeContent</name>
+							<value>false</value>
 							<type>boolean</type>
 						</property>
 					</properties>
 					<constraints>
 						<constraint>
-							<name>allowDuplicates</name>
+							<name>required</name>
 							<value><![CDATA[]]></value>
 							<type>boolean</type>
+						</constraint>
+						<constraint>
+							<name>pattern</name>
+							<value><![CDATA[]]></value>
+							<type>string</type>
 						</constraint>
 					</constraints>
 				</field>
 				<field>
-					<type>node-selector</type>
-					<id>subCategory_o</id>
+					<type>input</type>
+					<id>contenuto_s</id>
 					<iceId></iceId>
-					<title>SubCategory</title>
+					<title>contenuto</title>
 					<description></description>
 					<defaultValue></defaultValue>
 					<help></help>
 					<properties>
 						<property>
-							<name>minSize</name>
-							<value>1</value>
+							<name>size</name>
+							<value>50</value>
 							<type>int</type>
 						</property>
 						<property>
-							<name>maxSize</name>
-							<value>1</value>
+							<name>maxlength</name>
+							<value>50</value>
 							<type>int</type>
-						</property>
-						<property>
-							<name>itemManager</name>
-							<value>subCategories</value>
-							<type>datasource:item</type>
 						</property>
 						<property>
 							<name>readonly</name>
@@ -467,26 +452,122 @@
 							<type>boolean</type>
 						</property>
 						<property>
-							<name>disableFlattening</name>
-							<value></value>
+							<name>tokenize</name>
+							<value>false</value>
 							<type>boolean</type>
 						</property>
 						<property>
-							<name>useSingleValueFilename</name>
-							<value></value>
-							<type>boolean</type>
-						</property>
-						<property>
-							<name>useMVS</name>
-							<value></value>
+							<name>escapeContent</name>
+							<value>false</value>
 							<type>boolean</type>
 						</property>
 					</properties>
 					<constraints>
 						<constraint>
-							<name>allowDuplicates</name>
+							<name>required</name>
 							<value><![CDATA[]]></value>
 							<type>boolean</type>
+						</constraint>
+						<constraint>
+							<name>pattern</name>
+							<value><![CDATA[]]></value>
+							<type>string</type>
+						</constraint>
+					</constraints>
+				</field>
+				<field>
+					<type>input</type>
+					<id>rivolto_s</id>
+					<iceId></iceId>
+					<title>rivolto</title>
+					<description></description>
+					<defaultValue></defaultValue>
+					<help></help>
+					<properties>
+						<property>
+							<name>size</name>
+							<value>50</value>
+							<type>int</type>
+						</property>
+						<property>
+							<name>maxlength</name>
+							<value>50</value>
+							<type>int</type>
+						</property>
+						<property>
+							<name>readonly</name>
+							<value></value>
+							<type>boolean</type>
+						</property>
+						<property>
+							<name>tokenize</name>
+							<value>false</value>
+							<type>boolean</type>
+						</property>
+						<property>
+							<name>escapeContent</name>
+							<value>false</value>
+							<type>boolean</type>
+						</property>
+					</properties>
+					<constraints>
+						<constraint>
+							<name>required</name>
+							<value><![CDATA[]]></value>
+							<type>boolean</type>
+						</constraint>
+						<constraint>
+							<name>pattern</name>
+							<value><![CDATA[]]></value>
+							<type>string</type>
+						</constraint>
+					</constraints>
+				</field>
+				<field>
+					<type>input</type>
+					<id>maxpartecipanti_s</id>
+					<iceId></iceId>
+					<title>maxpartecipanti</title>
+					<description></description>
+					<defaultValue></defaultValue>
+					<help></help>
+					<properties>
+						<property>
+							<name>size</name>
+							<value>50</value>
+							<type>int</type>
+						</property>
+						<property>
+							<name>maxlength</name>
+							<value>50</value>
+							<type>int</type>
+						</property>
+						<property>
+							<name>readonly</name>
+							<value></value>
+							<type>boolean</type>
+						</property>
+						<property>
+							<name>tokenize</name>
+							<value>false</value>
+							<type>boolean</type>
+						</property>
+						<property>
+							<name>escapeContent</name>
+							<value>false</value>
+							<type>boolean</type>
+						</property>
+					</properties>
+					<constraints>
+						<constraint>
+							<name>required</name>
+							<value><![CDATA[]]></value>
+							<type>boolean</type>
+						</constraint>
+						<constraint>
+							<name>pattern</name>
+							<value><![CDATA[]]></value>
+							<type>string</type>
 						</constraint>
 					</constraints>
 				</field>
@@ -495,18 +576,18 @@
 	</sections>
 	<datasources>				<datasource>
 					<type>components</type>
-					<id>companies</id>
-					<title>Companies</title>
+					<id>sub_category</id>
+					<title>sub-category</title>
 					<interface>item</interface>
 					<properties>
 						<property>
 							<name>allowEmbedded</name>
-							<value>true</value>
+							<value>false</value>
 								<type>boolean</type>
 						</property>
 						<property>
 							<name>allowShared</name>
-							<value>true</value>
+							<value>false</value>
 								<type>boolean</type>
 						</property>
 						<property>
@@ -521,161 +602,17 @@
 						</property>
 						<property>
 							<name>baseRepoPath</name>
-							<value>/site/components</value>
+							<value>/site/components/sub_categories</value>
 								<type>string</type>
 						</property>
 						<property>
 							<name>baseBrowsePath</name>
-							<value>/site/components</value>
+							<value>/site/components/sub_categories</value>
 								<type>string</type>
 						</property>
 						<property>
 							<name>contentTypes</name>
-							<value>/component/company</value>
-								<type>contentTypes</type>
-						</property>
-						<property>
-							<name>tags</name>
-							<value></value>
-								<type>string</type>
-						</property>
-					</properties>
-				</datasource>
-				<datasource>
-					<type>components</type>
-					<id>categories</id>
-					<title>Categories</title>
-					<interface>item</interface>
-					<properties>
-						<property>
-							<name>allowEmbedded</name>
-							<value>true</value>
-								<type>boolean</type>
-						</property>
-						<property>
-							<name>allowShared</name>
-							<value>true</value>
-								<type>boolean</type>
-						</property>
-						<property>
-							<name>enableBrowse</name>
-							<value>true</value>
-								<type>boolean</type>
-						</property>
-						<property>
-							<name>enableSearch</name>
-							<value>false</value>
-								<type>boolean</type>
-						</property>
-						<property>
-							<name>baseRepoPath</name>
-							<value>/site/components</value>
-								<type>string</type>
-						</property>
-						<property>
-							<name>baseBrowsePath</name>
-							<value>/site/components</value>
-								<type>string</type>
-						</property>
-						<property>
-							<name>contentTypes</name>
-							<value>/component/categories</value>
-								<type>contentTypes</type>
-						</property>
-						<property>
-							<name>tags</name>
-							<value></value>
-								<type>string</type>
-						</property>
-					</properties>
-				</datasource>
-				<datasource>
-					<type>components</type>
-					<id>macroCategory</id>
-					<title>Macro Category</title>
-					<interface>item</interface>
-					<properties>
-						<property>
-							<name>allowEmbedded</name>
-							<value>true</value>
-								<type>boolean</type>
-						</property>
-						<property>
-							<name>allowShared</name>
-							<value>true</value>
-								<type>boolean</type>
-						</property>
-						<property>
-							<name>enableBrowse</name>
-							<value>true</value>
-								<type>boolean</type>
-						</property>
-						<property>
-							<name>enableSearch</name>
-							<value>false</value>
-								<type>boolean</type>
-						</property>
-						<property>
-							<name>baseRepoPath</name>
-							<value>/site/components</value>
-								<type>string</type>
-						</property>
-						<property>
-							<name>baseBrowsePath</name>
-							<value>/site/components</value>
-								<type>string</type>
-						</property>
-						<property>
-							<name>contentTypes</name>
-							<value>/component/macrocategories</value>
-								<type>contentTypes</type>
-						</property>
-						<property>
-							<name>tags</name>
-							<value></value>
-								<type>string</type>
-						</property>
-					</properties>
-				</datasource>
-				<datasource>
-					<type>components</type>
-					<id>subCategories</id>
-					<title>Sub Categories</title>
-					<interface>item</interface>
-					<properties>
-						<property>
-							<name>allowEmbedded</name>
-							<value>true</value>
-								<type>boolean</type>
-						</property>
-						<property>
-							<name>allowShared</name>
-							<value>true</value>
-								<type>boolean</type>
-						</property>
-						<property>
-							<name>enableBrowse</name>
-							<value>true</value>
-								<type>boolean</type>
-						</property>
-						<property>
-							<name>enableSearch</name>
-							<value>false</value>
-								<type>boolean</type>
-						</property>
-						<property>
-							<name>baseRepoPath</name>
-							<value>/site/components</value>
-								<type>string</type>
-						</property>
-						<property>
-							<name>baseBrowsePath</name>
-							<value>/site/components</value>
-								<type>string</type>
-						</property>
-						<property>
-							<name>contentTypes</name>
-							<value>/component/itemproductcategory</value>
+							<value>/component/subcategory</value>
 								<type>contentTypes</type>
 						</property>
 						<property>

@@ -1,6 +1,6 @@
-<content-type name="/component/itemproduct" is-wcm-type="true">
-	<label>Item: Product</label>
-	<form>/component/itemproduct</form>
+<content-type name="/component/course" is-wcm-type="true">
+	<label>item: Course</label>
+	<form>/component/course</form>
 	<form-path>simple</form-path>
 	<model-instance-path>NOT-USED-BY-SIMPLE-FORM-ENGINE</model-instance-path>
 	<file-extension>xml</file-extension>
@@ -12,7 +12,7 @@
 	<image-thumbnail></image-thumbnail>
 	<paths>
 		<includes>
-			<pattern>^/site/components/products/.*</pattern>
+			<pattern>^/site/components/items/course/.*</pattern>
 		</includes>
 	</paths>
 </content-type>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component>
+	<content-type>/component/subcategory</content-type>
+	<display-template/>
+	<no-template-required>true</no-template-required>
+	<merge-strategy>inherit-levels</merge-strategy>
+	<objectGroupId>31eedce1</objectGroupId>
+	<objectId>31eedce1-2dc0-431a-8e3c-d997cbac9aa1</objectId>
+	<file-name>282767e2-991b-1c07-1cf2-8eb2f88bc65c-copy-18.xml</file-name>
+	<folder-name/>
+	<internal-name>Eventi di Disseminazione ed Exploitation</internal-name>
+	<subCategoryName_s>Eventi di Disseminazione ed Exploitation</subCategoryName_s>
+	<category_o item-list="true">	<item>	<key>/site/components/categories/b433e04d-b38c-8349-62a6-5e4c3665a612.xml</key>
+	<value>api</value>
+	<include>/site/components/categories/b433e04d-b38c-8349-62a6-5e4c3665a612.xml</include>
+	<disableFlattening>false</disableFlattening>
+	</item></category_o>
+	<createdDate>2024-11-14T09:06:08.021Z</createdDate>
+	<createdDate_dt>2024-11-14T09:06:08.021Z</createdDate_dt>
+	<lastModifiedDate>2024-11-14T09:06:09.761Z</lastModifiedDate>
+	<lastModifiedDate_dt>2024-11-14T09:06:09.761Z</lastModifiedDate_dt>
+</component>
