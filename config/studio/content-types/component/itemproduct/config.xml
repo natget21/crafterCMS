@@ -15,9 +15,4 @@
 			<pattern>^/site/components/products/.*</pattern>
 		</includes>
 	</paths>
-	<field>
-    <name>scriptInjection</name>
-    <type>hidden</type>
-    <default-value><![CDATA[<script src="/static-assets/js/categoryfilter.js"></script>]]></default-value>
-</field>
 </content-type>
