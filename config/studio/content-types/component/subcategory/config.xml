@@ -15,4 +15,10 @@
 			<pattern>^/site/components/sub_categories/.*</pattern>
 		</includes>
 	</paths>
+	   <endpoints>
+        <endpoint>
+            <url-pattern>/api/1/site/custom/subcategories</url-pattern>
+            <script>/site/components/sub_categories/controller.groovy</script>
+        </endpoint>
+    </endpoints>
 </content-type>
