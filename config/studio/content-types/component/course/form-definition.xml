@@ -1,5 +1,5 @@
 <form>
-	<title>Course</title>
+	<title>item: Course</title>
 	<description></description>
 	<objectType>component</objectType>
 	<content-type>/component/course</content-type>
