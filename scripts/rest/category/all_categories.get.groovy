@@ -123,22 +123,37 @@
 
 // return topNavItems
 
-// get components ----works
-def sitemap = []
+// get macroCategories ----works
+import org.craftercms.engine.service.QueryService
 
-parseSiteItem = { siteItem ->
-    if (siteItem.isFolder()) {
-        def children = siteItem.childItems;
-        children.each { child ->
-            parseSiteItem(child);
-        }
-    } else {
-        def contentType = siteItem.queryValue('content-type')
-            def storeUrl = siteItem.getStoreUrl();
-            def location = urlTransformationService.transform('storeUrlToFullRenderUrl', storeUrl);
-            sitemap.add(location);
-        
-    }
+// Initialize the QueryService
+def queryService = applicationContext.getBean("queryService")
+
+// Define the path where Macro Categories are stored
+def macroCategoryPath = "/site/components/macro_categories" // Adjust based on your site structure
+
+// Define the query to get all macro categories
+def macroCategoryQuery = """
+{
+  "query": {
+    "match_all": {}
+  }
+}
+"""
+
+// Execute the query to fetch all macro categories
+def macroCategoryResults = queryService.search(SiteContext.current.site, macroCategoryQuery, macroCategoryPath, 0, 100)
+
+// Process the query results to extract necessary details
+def macroCategories = macroCategoryResults.documents.collect { macroCategory ->
+    [
+        id: macroCategory["localId"],
+        name: macroCategory["name_s"]  // Adjust field name as needed for the macro category name
+    ]
 }
 
-return parseSiteItem
+// Return the response
+return [
+    status: 200,
+    macroCategories: macroCategories
+]
