@@ -12,7 +12,7 @@
 	<image-thumbnail></image-thumbnail>
 	<paths>
 		<includes>
-			<pattern>^/site/components/products/.*</pattern>
+			<pattern>^/site/components/items/.*</pattern>
 		</includes>
 	</paths>
 </content-type>
