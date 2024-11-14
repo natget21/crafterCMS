@@ -7,9 +7,9 @@
 	<objectGroupId>32cf7af8</objectGroupId>
 	<objectId>32cf7af8-f255-439b-8d7a-5348043c91b3</objectId>
 	<file-name>3e7854fd-db5b-a6b8-a9ac-94cb8c2d2e0a-copy-2.xml</file-name>
-	<folder-name>categories</folder-name>
-	<internal-name>CONSULENZA (Copy 2)</internal-name>
-	<categoryname_s>CONSULENZA</categoryname_s>
+	<folder-name/>
+	<internal-name>ACCESS TO FINANCE</internal-name>
+	<categoryname_s>ACCESS TO FINANCE</categoryname_s>
 	<macrocategory_o item-list="true">	<item>	<key>/site/components/macro_categories/374fbd2e-727f-a324-cf65-e02b65d87a48.xml</key>
 	<value>service</value>
 	<include>/site/components/macro_categories/374fbd2e-727f-a324-cf65-e02b65d87a48.xml</include>
@@ -17,6 +17,6 @@
 	</item></macrocategory_o>
 	<createdDate>2024-11-14T08:46:54.847Z</createdDate>
 	<createdDate_dt>2024-11-14T08:46:54.847Z</createdDate_dt>
-	<lastModifiedDate>2024-11-14T08:46:54.847Z</lastModifiedDate>
-	<lastModifiedDate_dt>2024-11-14T08:46:54.847Z</lastModifiedDate_dt>
+	<lastModifiedDate>2024-11-14T08:46:57.165Z</lastModifiedDate>
+	<lastModifiedDate_dt>2024-11-14T08:46:57.165Z</lastModifiedDate_dt>
 </component>
