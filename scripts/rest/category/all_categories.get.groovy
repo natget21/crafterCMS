@@ -124,7 +124,6 @@
 // return topNavItems
 
 // get macroCategories ----works
-import org.craftercms.engine.service.QueryService
 
 // Initialize the QueryService
 def queryService = applicationContext.getBean("queryService")
