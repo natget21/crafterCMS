@@ -582,12 +582,12 @@
 					<properties>
 						<property>
 							<name>allowEmbedded</name>
-							<value>true</value>
+							<value>false</value>
 								<type>boolean</type>
 						</property>
 						<property>
 							<name>allowShared</name>
-							<value>true</value>
+							<value>false</value>
 								<type>boolean</type>
 						</property>
 						<property>
@@ -602,12 +602,12 @@
 						</property>
 						<property>
 							<name>baseRepoPath</name>
-							<value>/site/components/items/course</value>
+							<value>/site/components/sub_categories</value>
 								<type>string</type>
 						</property>
 						<property>
 							<name>baseBrowsePath</name>
-							<value>/site/components/items/course</value>
+							<value>/site/components/sub_categories</value>
 								<type>string</type>
 						</property>
 						<property>
