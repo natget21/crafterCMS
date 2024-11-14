@@ -75,32 +75,46 @@
 
 
 
-// Define the path where the Category content type is located
-def categoryContentTypePath = "/site/components/categories" 
+// // Define the path where the Category content type is located
+// def categoryContentTypePath = "/site/components/categories" 
 
-// Define a query to get all categories
-def categoriesQuery = """
-{
-  "query": {
-    "match_all": {}
-  }
+// // Define a query to get all categories
+// def categoriesQuery = """
+// {
+//   "query": {
+//     "match_all": {}
+//   }
+// }
+// """
+
+// // Execute the query to fetch all categories
+// def categoryResults = queryService.search(SiteContext.current.site, categoriesQuery, categoryContentTypePath, 0, 100)
+
+// // Process the query results to extract necessary details
+// def categories = categoryResults.documents.collect { category ->
+//     [
+//         id: category["localId"],
+//         name: category["name_s"] // Adjust based on your field name for the category title
+//     ]
+// }
+
+// // Return the response
+// return [
+//     status: 200,
+//     categories: categories
+// ]
+
+
+
+
+def siteContextManager = applicationContext["crafter.siteContextManager"]
+def siteContextList = siteContextManager.listContexts()
+def siteNames = []
+
+siteContextList.each { siteContext ->
+    def name = siteContext.getSiteName()
+    siteNames.add(name)
 }
-"""
 
-// Execute the query to fetch all categories
-def categoryResults = queryService.search(SiteContext.current.site, categoriesQuery, categoryContentTypePath, 0, 100)
-
-// Process the query results to extract necessary details
-def categories = categoryResults.documents.collect { category ->
-    [
-        id: category["localId"],
-        name: category["name_s"] // Adjust based on your field name for the category title
-    ]
-}
-
-// Return the response
-return [
-    status: 200,
-    categories: categories
-]
+return siteNames
 
