@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component>
+	<content-type>/component/subcategory</content-type>
+	<display-template/>
+	<no-template-required>true</no-template-required>
+	<merge-strategy>inherit-levels</merge-strategy>
+	<objectGroupId>3f5f7801</objectGroupId>
+	<objectId>3f5f7801-65d4-4c99-a6b5-e76b5f4639ce</objectId>
+	<file-name>282767e2-991b-1c07-1cf2-8eb2f88bc65c-copy-5.xml</file-name>
+	<folder-name>sub_categories</folder-name>
+	<internal-name>Change Management (Copy 5)</internal-name>
+	<subCategoryName_s>Change Management</subCategoryName_s>
+	<category_o item-list="true">	<item>	<key>/site/components/categories/b433e04d-b38c-8349-62a6-5e4c3665a612.xml</key>
+	<value>api</value>
+	<include>/site/components/categories/b433e04d-b38c-8349-62a6-5e4c3665a612.xml</include>
+	<disableFlattening>false</disableFlattening>
+	</item></category_o>
+	<createdDate>2024-11-14T08:55:23.317Z</createdDate>
+	<createdDate_dt>2024-11-14T08:55:23.317Z</createdDate_dt>
+	<lastModifiedDate>2024-11-14T08:55:23.317Z</lastModifiedDate>
+	<lastModifiedDate_dt>2024-11-14T08:55:23.317Z</lastModifiedDate_dt>
+</component>
