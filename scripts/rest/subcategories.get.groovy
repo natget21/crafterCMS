@@ -1,5 +1,8 @@
 import groovy.xml.XmlSlurper
 
+// Ensure contentLoader is available
+def contentLoader = binding.getVariable("contentLoader") ?: applicationContext.getBean("contentLoader")
+
 def fetchCategoryDetails(categoryPath) {
     def categoryFile = contentLoader.loadContent(categoryPath)
     if (!categoryFile) throw new Exception("Category not found")
@@ -18,11 +21,11 @@ def fetchSubCategories() {
     if (subCategories) {
         subCategories.each { subCategory ->
             def details = [:]
-            details['name'] = subCategory.subCategoryName_s.text()
+            details['name'] = subCategory.subCategoryName_s?.text()
 
             // Fetch referenced categories
             def categories = []
-            subCategory.category_o.item.each { item ->
+            subCategory.category_o?.item?.each { item ->
                 def categoryDetails = fetchCategoryDetails(item.key.text())
                 categories << categoryDetails
             }
