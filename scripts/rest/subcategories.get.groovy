@@ -23,26 +23,8 @@ def fetchCategoryDetails(categoryPath) {
 def fetchSubCategories() {
     // Load the subcategories content using siteItemService
     def subCategoriesItem = siteItemService.getSiteItem("/components/sub_categories")
-    def subCategoryList = []
-
-    if (subCategoriesItem) {
-        def subCategories = new XmlSlurper().parseText(subCategoriesItem.contentAsString)
-
-        subCategories.each { subCategory ->
-            def details = [:]
-            details['name'] = subCategory.subCategoryName_s?.text()
-
-            // Fetch the referenced categories for this subcategory
-            def categories = []
-            subCategory.category_o?.item?.each { item ->
-                def categoryDetails = fetchCategoryDetails(item.key.text())
-                categories << categoryDetails
-            }
-            details['categories'] = categories
-            subCategoryList << details
-        }
-    }
-    return subCategoryList
+ 
+    return subCategoriesItem
 }
 
 // Fetch the subcategories and return the result
