@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component>
+	<content-type>/component/subcategory</content-type>
+	<display-template/>
+	<no-template-required>true</no-template-required>
+	<merge-strategy>inherit-levels</merge-strategy>
+	<objectGroupId>b2caf882</objectGroupId>
+	<objectId>b2caf882-fa08-467f-9e9d-4855603b84d6</objectId>
+	<file-name>282767e2-991b-1c07-1cf2-8eb2f88bc65c-copy-3.xml</file-name>
+	<folder-name>sub_categories</folder-name>
+	<internal-name>Consulenza manageriale (Copy 3)</internal-name>
+	<subCategoryName_s>Consulenza manageriale</subCategoryName_s>
+	<category_o item-list="true">	<item>	<key>/site/components/categories/b433e04d-b38c-8349-62a6-5e4c3665a612.xml</key>
+	<value>api</value>
+	<include>/site/components/categories/b433e04d-b38c-8349-62a6-5e4c3665a612.xml</include>
+	<disableFlattening>false</disableFlattening>
+	</item></category_o>
+	<createdDate>2024-11-14T08:54:33.304Z</createdDate>
+	<createdDate_dt>2024-11-14T08:54:33.304Z</createdDate_dt>
+	<lastModifiedDate>2024-11-14T08:54:33.304Z</lastModifiedDate>
+	<lastModifiedDate_dt>2024-11-14T08:54:33.304Z</lastModifiedDate_dt>
+</component>
