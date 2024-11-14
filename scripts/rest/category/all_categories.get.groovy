@@ -21,7 +21,7 @@ import org.craftercms.engine.service.QueryService
 def queryService = applicationContext.getBean("queryService")
 
 // Define the product content type path
-def productContentTypePath = "/site/components" // Adjust this path based on your setup
+def productContentTypePath = "/site/components/items/course" // Adjust this path based on your setup
 
 // Define the query to get all product entries
 def productsQuery = """
@@ -37,28 +37,28 @@ def productResults = queryService.search(SiteContext.current.site, productsQuery
 
 // Collect data for each product including its category and subcategory details
 def productsWithCategories = productResults.documents.collect { product ->
-    // Get the category and subcategory references
-    def categoryRef = product["category_o"][0]
-    def subcategoryRef = product["subcategory_o"][0]
+    // // Get the category and subcategory references
+    // def categoryRef = product["category_o"][0]
+    // def subcategoryRef = product["subcategory_o"][0]
 
-    // Query the category details
-    def categoryDetails = queryService.getSiteItem(SiteContext.current.site, categoryRef)
+    // // Query the category details
+    // def categoryDetails = queryService.getSiteItem(SiteContext.current.site, categoryRef)
 
-    // Query the subcategory details
-    def subcategoryDetails = queryService.getSiteItem(SiteContext.current.site, subcategoryRef)
+    // // Query the subcategory details
+    // def subcategoryDetails = queryService.getSiteItem(SiteContext.current.site, subcategoryRef)
 
     // Return the product details with its category and subcategory information
     return [
         id: product["localId"],
-        title: product["title_s"], // Adjust this based on your content model
-        category: categoryDetails ? [
-            id: categoryDetails["localId"],
-            name: categoryDetails["name_s"] // Adjust field name as needed
-        ] : null,
-        subcategory: subcategoryDetails ? [
-            id: subcategoryDetails["localId"],
-            name: subcategoryDetails["name_s"] // Adjust field name as needed
-        ] : null
+        title: product["nome_s"], // Adjust this based on your content model
+        // category: categoryDetails ? [
+        //     id: categoryDetails["localId"],
+        //     name: categoryDetails["name_s"] // Adjust field name as needed
+        // ] : null,
+        // subcategory: subcategoryDetails ? [
+        //     id: subcategoryDetails["localId"],
+        //     name: subcategoryDetails["name_s"] // Adjust field name as needed
+        // ] : null
     ]
 }
 
