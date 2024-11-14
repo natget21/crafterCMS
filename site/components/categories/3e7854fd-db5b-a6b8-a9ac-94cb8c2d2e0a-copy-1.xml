@@ -7,9 +7,9 @@
 	<objectGroupId>215c1526</objectGroupId>
 	<objectId>215c1526-be85-45d7-9697-16ed4c065e29</objectId>
 	<file-name>3e7854fd-db5b-a6b8-a9ac-94cb8c2d2e0a-copy-1.xml</file-name>
-	<folder-name>categories</folder-name>
-	<internal-name>e-service (Copy 1)</internal-name>
-	<categoryname_s>E-Service</categoryname_s>
+	<folder-name/>
+	<internal-name>CONSULENZA</internal-name>
+	<categoryname_s>CONSULENZA</categoryname_s>
 	<macrocategory_o item-list="true">	<item>	<key>/site/components/macro_categories/374fbd2e-727f-a324-cf65-e02b65d87a48.xml</key>
 	<value>service</value>
 	<include>/site/components/macro_categories/374fbd2e-727f-a324-cf65-e02b65d87a48.xml</include>
@@ -17,6 +17,6 @@
 	</item></macrocategory_o>
 	<createdDate>2024-11-14T08:45:01.233Z</createdDate>
 	<createdDate_dt>2024-11-14T08:45:01.233Z</createdDate_dt>
-	<lastModifiedDate>2024-11-14T08:45:01.233Z</lastModifiedDate>
-	<lastModifiedDate_dt>2024-11-14T08:45:01.233Z</lastModifiedDate_dt>
+	<lastModifiedDate>2024-11-14T08:45:08.796Z</lastModifiedDate>
+	<lastModifiedDate_dt>2024-11-14T08:45:08.796Z</lastModifiedDate_dt>
 </component>
