@@ -7,9 +7,9 @@
 	<objectGroupId>4f6f712b</objectGroupId>
 	<objectId>4f6f712b-0b68-43fe-bfc8-b22dd2a84cf7</objectId>
 	<file-name>282767e2-991b-1c07-1cf2-8eb2f88bc65c-copy-16.xml</file-name>
-	<folder-name>sub_categories</folder-name>
-	<internal-name>DEMO (Copy 16)</internal-name>
-	<subCategoryName_s>DEMO</subCategoryName_s>
+	<folder-name/>
+	<internal-name>Eventi di Brokeraggio</internal-name>
+	<subCategoryName_s>Eventi di Brokeraggio</subCategoryName_s>
 	<category_o item-list="true">	<item>	<key>/site/components/categories/b433e04d-b38c-8349-62a6-5e4c3665a612.xml</key>
 	<value>api</value>
 	<include>/site/components/categories/b433e04d-b38c-8349-62a6-5e4c3665a612.xml</include>
@@ -17,6 +17,6 @@
 	</item></category_o>
 	<createdDate>2024-11-14T09:05:16.345Z</createdDate>
 	<createdDate_dt>2024-11-14T09:05:16.345Z</createdDate_dt>
-	<lastModifiedDate>2024-11-14T09:05:16.345Z</lastModifiedDate>
-	<lastModifiedDate_dt>2024-11-14T09:05:16.345Z</lastModifiedDate_dt>
+	<lastModifiedDate>2024-11-14T09:05:18.528Z</lastModifiedDate>
+	<lastModifiedDate_dt>2024-11-14T09:05:18.528Z</lastModifiedDate_dt>
 </component>
