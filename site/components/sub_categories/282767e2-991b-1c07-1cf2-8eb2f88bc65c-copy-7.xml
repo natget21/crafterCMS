@@ -8,8 +8,8 @@
 	<objectId>e38ffde6-f36b-4c7c-8c46-b5c9bdf8913a</objectId>
 	<file-name>282767e2-991b-1c07-1cf2-8eb2f88bc65c-copy-7.xml</file-name>
 	<folder-name/>
-	<internal-name>Crowdfunding</internal-name>
-	<subCategoryName_s>Crowdfunding</subCategoryName_s>
+	<internal-name>Corporate Finance</internal-name>
+	<subCategoryName_s>Corporate Finance</subCategoryName_s>
 	<category_o item-list="true">	<item>	<key>/site/components/categories/b433e04d-b38c-8349-62a6-5e4c3665a612.xml</key>
 	<value>api</value>
 	<include>/site/components/categories/b433e04d-b38c-8349-62a6-5e4c3665a612.xml</include>
@@ -17,6 +17,6 @@
 	</item></category_o>
 	<createdDate>2024-11-14T08:57:17.740Z</createdDate>
 	<createdDate_dt>2024-11-14T08:57:17.740Z</createdDate_dt>
-	<lastModifiedDate>2024-11-14T08:57:19.633Z</lastModifiedDate>
-	<lastModifiedDate_dt>2024-11-14T08:57:19.633Z</lastModifiedDate_dt>
+	<lastModifiedDate>2024-11-14T08:58:30.834Z</lastModifiedDate>
+	<lastModifiedDate_dt>2024-11-14T08:58:30.834Z</lastModifiedDate_dt>
 </component>
