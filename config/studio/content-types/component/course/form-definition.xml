@@ -92,7 +92,7 @@
 					<iceId></iceId>
 					<title>sub category</title>
 					<description></description>
-					<defaultValue>282767e2-991b-1c07-1cf2-8eb2f88bc65c-copy-12.xml</defaultValue>
+					<defaultValue></defaultValue>
 					<help></help>
 					<properties>
 						<property>
@@ -112,7 +112,7 @@
 						</property>
 						<property>
 							<name>readonly</name>
-							<value>true</value>
+							<value>false</value>
 							<type>boolean</type>
 						</property>
 						<property>
