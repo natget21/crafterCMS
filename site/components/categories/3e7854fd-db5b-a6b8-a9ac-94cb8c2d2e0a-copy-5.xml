@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component>
+	<content-type>/component/categories</content-type>
+	<display-template/>
+	<no-template-required>true</no-template-required>
+	<merge-strategy>inherit-levels</merge-strategy>
+	<objectGroupId>8e245ab1</objectGroupId>
+	<objectId>8e245ab1-7ab3-4870-898a-0b4432debbd0</objectId>
+	<file-name>3e7854fd-db5b-a6b8-a9ac-94cb8c2d2e0a-copy-5.xml</file-name>
+	<folder-name>categories</folder-name>
+	<internal-name>TEST BEFORE INVEST (Copy 5)</internal-name>
+	<categoryname_s>TEST BEFORE INVEST</categoryname_s>
+	<macrocategory_o item-list="true">	<item>	<key>/site/components/macro_categories/374fbd2e-727f-a324-cf65-e02b65d87a48.xml</key>
+	<value>service</value>
+	<include>/site/components/macro_categories/374fbd2e-727f-a324-cf65-e02b65d87a48.xml</include>
+	<disableFlattening>false</disableFlattening>
+	</item></macrocategory_o>
+	<createdDate>2024-11-14T08:51:17.908Z</createdDate>
+	<createdDate_dt>2024-11-14T08:51:17.908Z</createdDate_dt>
+	<lastModifiedDate>2024-11-14T08:51:17.908Z</lastModifiedDate>
+	<lastModifiedDate_dt>2024-11-14T08:51:17.908Z</lastModifiedDate_dt>
+</component>
