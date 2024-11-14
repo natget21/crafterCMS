@@ -1,3 +1,3 @@
-def contentLoader = binding.getVariable("contentLoader") ?: applicationContext.getBean("contentLoader")
-def content = contentLoader.loadContent("/path/to/some/content")
+def contentLoader = applicationContext.getBean("contentLoader")  // Or try getting it in a different way
+def content = contentLoader.loadContent("/site/components/sub_categories")
 return content ? "Content found" : "Content not found"
