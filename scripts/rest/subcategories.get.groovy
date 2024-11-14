@@ -1,6 +1,2 @@
-import groovy.xml.XmlSlurper
-
-// Ensure siteItemService is available for content fetching
-def siteItem =siteItemService;
-
-return siteItem;
+def item = siteItemService.getSiteItem("/components/sub_categories")
+return item;
