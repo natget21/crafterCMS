@@ -141,4 +141,4 @@ parseSiteItem = { siteItem ->
     }
 }
 
-return sitemap
+return parseSiteItem
