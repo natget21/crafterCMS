@@ -106,15 +106,20 @@
 
 
 
+def topNavItems = [:]
+def siteDir = siteItemService.getSiteTree("/site/website", 2)
 
-def siteContextManager = applicationContext["crafter.siteContextManager"]
-def siteContextList = siteContextManager.listContexts()
-def siteNames = []
-
-siteContextList.each { siteContext ->
-    def name = siteContext.getSiteName()
-    siteNames.add(name)
+if (siteDir) {
+    def dirs = siteDir.childItems
+    dirs.each { dir ->
+        def dirName = dir.getStoreName()
+        def dirItem = siteItemService.getSiteItem("/site/website/${dirName}/index.xml")
+        if (dirItem != null) {
+            def dirDisplayName = dirItem.queryValue('internal-name')
+            topNavItems.put(dirName, dirDisplayName)
+        }
+    }
 }
 
-return siteNames
+return topNavItems
 
