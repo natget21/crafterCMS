@@ -1,5 +1,5 @@
 <form>
-	<title>Item: Product</title>
+	<title>Item: Items</title>
 	<description></description>
 	<objectType>component</objectType>
 	<content-type>/component/itemproduct</content-type>
@@ -90,7 +90,7 @@
 					<type>input</type>
 					<id>productName_s</id>
 					<iceId></iceId>
-					<title>Product Name</title>
+					<title>Item Name</title>
 					<description></description>
 					<defaultValue></defaultValue>
 					<help></help>
