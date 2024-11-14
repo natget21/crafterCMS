@@ -88,7 +88,7 @@
 				</field>
 				<field>
 					<type>input</type>
-					<id>categoryname_s</id>
+					<id>macro_category_name_s</id>
 					<iceId></iceId>
 					<title>Macro Category Name</title>
 					<description></description>
