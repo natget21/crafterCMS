@@ -1,19 +1,19 @@
 import groovy.xml.XmlSlurper
 
-// Check if contentLoader is available
-def contentLoader = binding.getVariable("contentLoader") ?: applicationContext?.getBean("contentLoader")
+// Ensure siteItemService is available for content fetching
+def siteItemService = binding.getVariable("siteItemService") ?: applicationContext?.getBean("siteItemService")
 
-if (!contentLoader) {
-    throw new RuntimeException("ContentLoader is not available")
+if (!siteItemService) {
+    throw new RuntimeException("siteItemService is not available")
 }
 
 def fetchCategoryDetails(categoryPath) {
-    // Load the content from the given category path
-    def categoryFile = contentLoader.loadContent(categoryPath)
-    if (!categoryFile) throw new Exception("Category not found at path: " + categoryPath)
+    // Load the category content using siteItemService
+    def categoryItem = siteItemService.getSiteItem(categoryPath)
+    if (!categoryItem) throw new Exception("Category not found at path: " + categoryPath)
 
     // Parse the XML content to extract category details
-    def xmlContent = new XmlSlurper().parseText(categoryFile.contentAsString)
+    def xmlContent = new XmlSlurper().parseText(categoryItem.contentAsString)
     return [
         name: xmlContent.categoryname_s?.text(),
         description: xmlContent.description?.text()
@@ -21,11 +21,13 @@ def fetchCategoryDetails(categoryPath) {
 }
 
 def fetchSubCategories() {
-    // Load the subcategories content
-    def subCategories = contentLoader.loadContent("/site/components/sub_categories")
+    // Load the subcategories content using siteItemService
+    def subCategoriesItem = siteItemService.getSiteItem("/site/components/sub_categories")
     def subCategoryList = []
 
-    if (subCategories) {
+    if (subCategoriesItem) {
+        def subCategories = new XmlSlurper().parseText(subCategoriesItem.contentAsString)
+
         subCategories.each { subCategory ->
             def details = [:]
             details['name'] = subCategory.subCategoryName_s?.text()
