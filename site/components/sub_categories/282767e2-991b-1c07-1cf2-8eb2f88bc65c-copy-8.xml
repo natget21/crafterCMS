@@ -7,8 +7,8 @@
 	<objectGroupId>de1bac7e</objectGroupId>
 	<objectId>de1bac7e-c42e-4508-8a89-087edd94525b</objectId>
 	<file-name>282767e2-991b-1c07-1cf2-8eb2f88bc65c-copy-8.xml</file-name>
-	<folder-name>sub_categories</folder-name>
-	<internal-name>Crowdfunding (Copy 8)</internal-name>
+	<folder-name/>
+	<internal-name>Crowdfunding</internal-name>
 	<subCategoryName_s>Crowdfunding</subCategoryName_s>
 	<category_o item-list="true">	<item>	<key>/site/components/categories/b433e04d-b38c-8349-62a6-5e4c3665a612.xml</key>
 	<value>api</value>
@@ -17,6 +17,6 @@
 	</item></category_o>
 	<createdDate>2024-11-14T08:57:45.857Z</createdDate>
 	<createdDate_dt>2024-11-14T08:57:45.857Z</createdDate_dt>
-	<lastModifiedDate>2024-11-14T08:57:45.857Z</lastModifiedDate>
-	<lastModifiedDate_dt>2024-11-14T08:57:45.857Z</lastModifiedDate_dt>
+	<lastModifiedDate>2024-11-14T08:57:47.849Z</lastModifiedDate>
+	<lastModifiedDate_dt>2024-11-14T08:57:47.849Z</lastModifiedDate_dt>
 </component>
