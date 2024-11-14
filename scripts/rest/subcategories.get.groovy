@@ -1,14 +1,13 @@
 import groovy.xml.XmlSlurper
-import org.craftercms.engine.exception.HttpStatusException
 
 def fetchCategoryDetails(categoryPath) {
     def categoryFile = contentLoader.loadContent(categoryPath)
-    if (!categoryFile) throw new HttpStatusException(404, "Category not found")
+    if (!categoryFile) throw new Exception("Category not found")
 
     def xmlContent = new XmlSlurper().parseText(categoryFile.contentAsString)
     return [
-        name       : xmlContent.categoryname_s.text(),
-        description: xmlContent.description.text()
+        name: xmlContent.categoryname_s?.text(),
+        description: xmlContent.description?.text()
     ]
 }
 
