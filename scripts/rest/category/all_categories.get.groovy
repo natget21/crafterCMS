@@ -105,21 +105,40 @@
 // ]
 
 
+// //get pages ----works
+// def topNavItems = [:]
+// def siteDir = siteItemService.getSiteTree("/site/website", 2)
 
-def topNavItems = [:]
-def siteDir = siteItemService.getSiteTree("/site/website", 2)
+// if (siteDir) {
+//     def dirs = siteDir.childItems
+//     dirs.each { dir ->
+//         def dirName = dir.getStoreName()
+//         def dirItem = siteItemService.getSiteItem("/site/website/${dirName}/index.xml")
+//         if (dirItem != null) {
+//             def dirDisplayName = dirItem.queryValue('internal-name')
+//             topNavItems.put(dirName, dirDisplayName)
+//         }
+//     }
+// }
 
-if (siteDir) {
-    def dirs = siteDir.childItems
-    dirs.each { dir ->
-        def dirName = dir.getStoreName()
-        def dirItem = siteItemService.getSiteItem("/site/website/${dirName}/index.xml")
-        if (dirItem != null) {
-            def dirDisplayName = dirItem.queryValue('internal-name')
-            topNavItems.put(dirName, dirDisplayName)
+// return topNavItems
+
+// get components ----works
+def sitemap = []
+
+parseSiteItem = { siteItem ->
+    if (siteItem.isFolder()) {
+        def children = siteItem.childItems;
+        children.each { child ->
+            parseSiteItem(child);
         }
+    } else {
+        def contentType = siteItem.queryValue('content-type')
+            def storeUrl = siteItem.getStoreUrl();
+            def location = urlTransformationService.transform('storeUrlToFullRenderUrl', storeUrl);
+            sitemap.add(location);
+        
     }
 }
 
-return topNavItems
-
+return sitemap
