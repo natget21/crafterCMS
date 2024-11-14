@@ -188,8 +188,8 @@
 					</constraints>
 				</field>
 				<field>
-					<type>input</type>
-					<id>description_s</id>
+					<type>textarea</type>
+					<id>description_t</id>
 					<iceId></iceId>
 					<title>description</title>
 					<description></description>
@@ -197,23 +197,23 @@
 					<help></help>
 					<properties>
 						<property>
-							<name>size</name>
-							<value>50</value>
+							<name>rows</name>
+							<value>5</value>
 							<type>int</type>
 						</property>
 						<property>
 							<name>maxlength</name>
-							<value>50</value>
+							<value>100000</value>
 							<type>int</type>
+						</property>
+						<property>
+							<name>allowResize</name>
+							<value>true</value>
+							<type>boolean</type>
 						</property>
 						<property>
 							<name>readonly</name>
 							<value></value>
-							<type>boolean</type>
-						</property>
-						<property>
-							<name>tokenize</name>
-							<value>false</value>
 							<type>boolean</type>
 						</property>
 						<property>
@@ -227,11 +227,6 @@
 							<name>required</name>
 							<value><![CDATA[]]></value>
 							<type>boolean</type>
-						</constraint>
-						<constraint>
-							<name>pattern</name>
-							<value><![CDATA[]]></value>
-							<type>string</type>
 						</constraint>
 					</constraints>
 				</field>
