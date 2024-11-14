@@ -29,4 +29,4 @@ def fetchSubCategories() {
 
 // Fetch the subcategories and return the result
 def result = fetchSubCategories()
-return result
+return siteItemService.getSiteItem("/components/sub_categories")
