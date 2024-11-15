@@ -13,7 +13,7 @@ def component = siteItemService.getSiteItem(componentPath)
 
 if (component?.item?.descriptorUrl) {
     def descriptorPath = component.item.descriptorUrl
-    def descriptor = siteItemService.getSiteItem(descriptorPath)
+    def descriptor = siteItemService.getSiteTree(descriptorPath)
     if (descriptor?.getAsXml()) {
         def xmlContent = new XmlSlurper().parseText(descriptor.getAsXml())
         def fields = []
