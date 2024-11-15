@@ -176,4 +176,8 @@ def searchResponse = searchClient.search(r -> r
 def itemsFound = searchResponse.hits().total().value()
 def items = searchResponse.hits().hits()*.source()
 
-return items
+return [
+    status: 200,
+    itemsFound:itemsFound,
+    macrocategories: items
+]
