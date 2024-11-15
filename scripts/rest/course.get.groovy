@@ -23,10 +23,10 @@ def courseList = []
             def subCategoryFile = siteItemService.getSiteItem(subCategoryPath)
             def subCategoryDetails = [
                     name: subCategoryFile.item?.descriptorDom?.component?.subCategoryName_s,
-                    description: subCategoryFile.item?.descriptorDom?.component?.description
+                    description: subCategoryFile.item?.descriptorDom?.component?.description,
             ]
 
-                subCategories << subCategoryPath
+                subCategories << subCategoryDetails
         }
         details['subCategories'] = subCategories
         courseList << details
