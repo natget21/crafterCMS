@@ -26,9 +26,9 @@ def courseList = []
             //         description: subCategoryFile.item?.descriptorDom?.component?.description
             // ]
 
-            //     subCategories << subCategoryFile
+                subCategories << subCategoryPath
         }
-        details['subCategories'] = subCategoryPath
+        details['subCategories'] = subCategories
         courseList << details
         }
     }
