@@ -39,7 +39,7 @@ if (siteDir) {
     def dirs = siteDir.childItems
     dirs.each { dir ->
         def dirName = dir.getStoreName()
-        def dirItem = siteItemService.getSiteItem("/${dirName}/form-definition.xml")
+        def dirItem = siteItemService.getSiteItem("/config/studio/content-types/component/${dirName}/form-definition.xml")
         if (dirItem != null) {
             // def dirDisplayName = dirItem.queryValue('internal-name')
             topNavItems.put(dirName, dirItem)
