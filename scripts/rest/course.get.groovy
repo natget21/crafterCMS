@@ -30,7 +30,7 @@ def courseList = []
                     def macroCategoryPath = macroCategoryItem.key?.text
                     def macroCategoryFile = siteItemService.getSiteItem(macroCategoryPath)
                     def macroCategoryDetails = [
-                        name: macroCategoryFile.item?.descriptorDom?.component?.macroCategoryName_s,
+                        name: macroCategoryFile.item?.descriptorDom?.component?.macro_category_name_s,
                         description: macroCategoryFile.item?.descriptorDom?.component?.description,
                     ]
                     macroCategories << macroCategoryDetails
