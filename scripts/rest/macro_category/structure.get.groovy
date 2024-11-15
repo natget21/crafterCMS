@@ -41,8 +41,8 @@ if (siteDir) {
         def dirName = dir.getStoreName()
         def dirItem = siteItemService.getSiteItem("/config/studio/content-types/component/${dirName}/form-definition.xml")
         if (dirItem != null) {
-            // def dirDisplayName = dirItem.queryValue('internal-name')
-            topNavItems.put(dirName, dirItem)
+            def data = dirItem.queryValue('item')
+            topNavItems.put(dirName, data)
         }
     }
 }
