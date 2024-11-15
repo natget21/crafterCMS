@@ -35,7 +35,7 @@ import groovy.xml.XmlSlurper
                 categories << categoryFile
         }
         details['categories'] = categories
-        subCategoryList << details1
+        subCategoryList << details
         }
     }
     return subCategoryList
