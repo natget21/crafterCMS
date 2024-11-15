@@ -3,7 +3,7 @@
 def contentTypePath = "/config/content-types/categories.content-type.xml" // Adjust for your setup
 
 // Retrieve the content type descriptor using siteItemService
-def contentTypeDescriptor = siteItemService.getSiteItem(siteContext.current.site, contentTypePath)
+def contentTypeDescriptor = siteItemService.getSiteItem(siteContext, contentTypePath)
 
 // Check if the descriptor is null (file doesn't exist)
 if (!contentTypeDescriptor) {
