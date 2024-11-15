@@ -26,15 +26,15 @@ import groovy.xml.XmlSlurper
             def categories = []
             siteItem.item?.descriptorDom?.component?.category_o?.item?.each { categoryItem ->
                 def categoryPath = categoryItem.key
-                def categoryFile = contentLoader.loadContent(categoryPath)
-
-                def xmlContent = new XmlSlurper().parseText(categoryFile.contentAsString)
-                def categoryDetails = [
-                        name       : xmlContent.categoryname_s.text(),
-                        description: xmlContent.description.text()
+                def categoryFile = siteItemService.getSiteTree(categoryPath, -1)
+                categoryFile.childItems.each { category ->
+                 def categoryDetails = [
+                        name : siteItem.item?.descriptorDom?.component?.categoryname_s,
+                        description: siteItem.item?.descriptorDom?.component?.description
                  ]
-                // Include the item value with each category detail
-                categoryDetails['value'] = categoryItem.value.text()
+                    
+                }
+
                 categories << categoryDetails
             }
             details['categories'] = categories
