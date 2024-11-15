@@ -5,14 +5,14 @@ def searchResponse = searchClient.search(r -> r
                 .match(m -> m
                   .field('content-type')
                   .query(v -> v
-                    .stringValue('/component/subcategory')
+                    .stringValue('/component/course')
                   )
                 )
               )
             .must(m -> m
                 .wildcard(w -> w
                     .field("localId")
-                    .value("/site/components/sub_categories/*")
+                    .value("/site/components/items/*")
                 )
             )
         )
