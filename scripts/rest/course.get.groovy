@@ -20,11 +20,11 @@ def courseList = []
             def subCategories = []
             course.item?.descriptorDom?.component?.subcategory_o?.item?.each { subCategoryItem ->
             def subCategoryPath = subCategoryItem.key?.text
-            def subCategoryFile = siteItemService.getSiteItem(categoryPath)
-            // def subCategoryDetails = [
-            //         name: subCategoryFile.item?.descriptorDom?.component?.subCategoryName_s,
-            //         description: subCategoryFile.item?.descriptorDom?.component?.description
-            // ]
+            def subCategoryFile = siteItemService.getSiteItem(subCategoryPath)
+            def subCategoryDetails = [
+                    name: subCategoryFile.item?.descriptorDom?.component?.subCategoryName_s,
+                    description: subCategoryFile.item?.descriptorDom?.component?.description
+            ]
 
                 subCategories << subCategoryPath
         }
