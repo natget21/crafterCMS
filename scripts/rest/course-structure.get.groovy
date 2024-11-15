@@ -67,25 +67,26 @@ if (siteTree) {
     items.each { siteItem ->
         parseSiteItem(siteItem);
     }
+    return items
 }
 
-response.setContentType("application/xml;charset=UTF-8")
+// response.setContentType("application/xml;charset=UTF-8")
 
-def writer = response.getWriter()
-def xml = new MarkupBuilder(writer)
-def xmlHelper = new MarkupBuilderHelper(xml)
+// def writer = response.getWriter()
+// def xml = new MarkupBuilder(writer)
+// def xmlHelper = new MarkupBuilderHelper(xml)
 
-xmlHelper.xmlDeclaration(version:"1.0", encoding:"UTF-8")
+// xmlHelper.xmlDeclaration(version:"1.0", encoding:"UTF-8")
 
-xml.urlset(xmlns:"http://www.sitemaps.org/schemas/sitemap/0.9") {
-    sitemap.each { location ->
-        url {
-            loc(location)
-            changefreq("daily")
-        }
-    }
-}
+// xml.urlset(xmlns:"http://www.sitemaps.org/schemas/sitemap/0.9") {
+//     sitemap.each { location ->
+//         url {
+//             loc(location)
+//             changefreq("daily")
+//         }
+//     }
+// }
 
-response.flushBuffer()
+// response.flushBuffer()
 
-return null
+// return null
