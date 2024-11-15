@@ -31,6 +31,9 @@ def contentTypePath = "/site/components/categories" // Adjust this based on your
 
 // Query an item to inspect its structure
 def items = siteItemService.getChildren(siteContext.current, contentTypePath)
+
+logger.info("items are "+items)
+
 def sampleItem = items?.first()  // Use the first item as a sample
 
 def fields = sampleItem?.properties?.keySet()?.collect { fieldName ->
