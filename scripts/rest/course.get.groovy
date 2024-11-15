@@ -28,7 +28,7 @@ def courseList = []
 
             //     subCategories << subCategoryFile
         }
-        details['subCategories'] = subCategories
+        details['subCategories'] = subCategoryPath
         courseList << details
         }
     }
