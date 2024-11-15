@@ -1,5 +1,5 @@
 // Define the path to the content type descriptor
-def contentTypePath = "/site/components/category.content-type.xml" // Adjust path
+def contentTypePath = "/site/components/categories.content-type.xml" // Adjust path
 
 // Fetch the content type descriptor
 def contentTypeDescriptor = siteItemService.getSiteItem(SiteContext.current.site, contentTypePath)
