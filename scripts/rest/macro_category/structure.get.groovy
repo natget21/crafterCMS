@@ -33,17 +33,17 @@
 
 
 def topNavItems = [:]
-def siteDir = siteItemService.getSiteTree("/config/studio/content-types/component/categories", 3)
+def siteDir = siteItemService.getSiteTree("/config/studio/content-types/component")
 
 if (siteDir) {
     def dirs = siteDir.childItems
     dirs.each { dir ->
         def dirName = dir.getStoreName()
-        // def dirItem = siteItemService.getSiteItem("/${dirName}/form-definition.xml")
-        // if (dirItem != null) {
+        def dirItem = siteItemService.getSiteItem("/${dirName}/form-definition.xml")
+        if (dirItem != null) {
             // def dirDisplayName = dirItem.queryValue('internal-name')
-            topNavItems.put(dirName, dirName)
-        // }
+            topNavItems.put(dirName, dirItem)
+        }
     }
 }
 
