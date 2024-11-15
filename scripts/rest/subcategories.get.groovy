@@ -25,7 +25,7 @@ import groovy.xml.XmlSlurper
 
             def categories = []
             siteItem.item?.descriptorDom?.component?.category_o?.item?.each { categoryItem ->
-                def categoryPath = categoryItem.key.text()
+                def categoryPath = categoryItem.key
                 def categoryFile = contentLoader.loadContent(categoryPath)
 
                 def xmlContent = new XmlSlurper().parseText(categoryFile.contentAsString)
