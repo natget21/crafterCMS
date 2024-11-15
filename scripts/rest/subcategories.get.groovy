@@ -33,7 +33,7 @@
             //     categories << categoryDetails
             // }
             details['categories'] = categories
-            subCategoryList << siteItem
+            subCategoryList << details
         }
     }
     return subCategoryList
