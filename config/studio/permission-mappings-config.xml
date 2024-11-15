@@ -295,7 +295,7 @@
         </rule>
     </role>
    <role name="api">
-    <rule regex="/api/course\.json">
+    <rule regex="/api/course.json">
         <allowed-permissions>
             <permission>content_read</permission>
         </allowed-permissions>
