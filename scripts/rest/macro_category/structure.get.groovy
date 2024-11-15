@@ -41,7 +41,7 @@ if (siteDir) {
         def dirName = dir.getStoreName()
         def dirItem = siteItemService.getSiteItem("/config/studio/content-types/component/${dirName}/form-definition.xml")
         if (dirItem != null) {
-        def data = dirItem.getChildItems()
+        def data = dirItem.geetDom()
         topNavItems.put(dirName, data)
         }
     }
