@@ -9,4 +9,4 @@
             fields <<field
         }
 
-    return fields
+    return component
