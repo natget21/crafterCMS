@@ -28,13 +28,11 @@ import groovy.xml.XmlSlurper
             def categoryPath = categoryItem.key?.text
             def categoryFile = siteItemService.getSiteItem(categoryPath)
             
-            if (categoryFile && categoryFile.descriptorDom) {
                 def categoryDetails = [
                     name: categoryFile.descriptorDom?.component?.categoryname_s,
                     description: categoryFile.descriptorDom?.component?.description
                 ]
                 categories << categoryFile
-            }
         }
         details['categories'] = categories
         subCategoryList << details
