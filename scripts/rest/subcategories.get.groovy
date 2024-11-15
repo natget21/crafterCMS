@@ -38,14 +38,14 @@ def fetchSubCategories() {
 
             // Fetch additional category details for each item in category_o
             def categories = []
-            siteItem.descriptorDom?.component?.category_o?.item?.each { categoryItem ->
-                def categoryPath = categoryItem.key.text()
-                def categoryDetails = fetchCategoryDetails(categoryPath)
+            // siteItem.descriptorDom?.component?.category_o?.item?.each { categoryItem ->
+            //     def categoryPath = categoryItem.key.text()
+            //     def categoryDetails = fetchCategoryDetails(categoryPath)
                 
-                // Include the item value with each category detail
-                categoryDetails['value'] = categoryItem.value.text()
-                categories << categoryDetails
-            }
+            //     // Include the item value with each category detail
+            //     categoryDetails['value'] = categoryItem.value.text()
+            //     categories << categoryDetails
+            // }
             details['categories'] = categories
             subCategoryList << details
         }
