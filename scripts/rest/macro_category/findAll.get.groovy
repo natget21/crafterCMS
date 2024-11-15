@@ -158,19 +158,27 @@
 // ]
 
 
+
+
 def searchResponse = searchClient.search(r -> r
-  .query(q -> q
-    .bool(b -> b
-      .should(s -> s
-        .match(m -> m
-          .field('content-type')
-          .query(v -> v
-            .stringValue('/component/macrocategories')
-          )
+    .query(q -> q
+        .bool(b -> b
+            .should(s -> s
+                .match(m -> m
+                  .field('content-type')
+                  .query(v -> v
+                    .stringValue('/component/macrocategories')
+                  )
+                )
+              )
+            .must(m -> m
+                .wildcard(w -> w
+                    .field("localId")
+                    .value("/site/components/macro_categories/*")
+                )
+            )
         )
-      )
     )
-  )
 , Map)
 
 def itemsFound = searchResponse.hits().total().value()
