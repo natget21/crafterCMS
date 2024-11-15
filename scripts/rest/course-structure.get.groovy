@@ -14,29 +14,28 @@ def component = siteItemService.getSiteItem(componentPath)
 if (component?.item?.descriptorUrl) {
     def descriptorPath = component.item.descriptorUrl
     def descriptor = siteItemService.getSiteItem(descriptorPath)
-return descriptor
-    // if (descriptor?.getAsXml()) {
-    //     def xmlContent = new XmlSlurper().parseText(descriptor.getAsXml())
-    //     def fields = []
+    if (descriptor?.getAsXml()) {
+        def xmlContent = new XmlSlurper().parseText(descriptor.getAsXml())
+        def fields = []
 
-    //     xmlContent.fields.field.each { field ->
-    //         fields << [
-    //             name: field.@name.toString(),
-    //             type: field.@type.toString(),
-    //             label: field.@label?.toString() ?: "",
-    //             required: field.@required?.toBoolean() ?: false
-    //         ]
-    //     }
+        xmlContent.fields.field.each { field ->
+            fields << [
+                name: field.@name.toString(),
+                type: field.@type.toString(),
+                label: field.@label?.toString() ?: "",
+                required: field.@required?.toBoolean() ?: false
+            ]
+        }
 
-    //     result.success = true
-    //     result.fields = fields
-    // } else {
-    //     result.success = false
-    //     result.message = "Descriptor XML not found at ${descriptorPath}."
-    // }
+        result.success = true
+        result.fields = fields
+    } else {
+        result.success = false
+        result.message = "Descriptor XML not found at ${descriptorPath}."
+    }
 } else {
-    // result.success = false
-    // result.message = "Descriptor URL missing for component at ${componentPath}."
+    result.success = false
+    result.message = "Descriptor URL missing for component at ${componentPath}."
 }
 
-// return result
+return result
