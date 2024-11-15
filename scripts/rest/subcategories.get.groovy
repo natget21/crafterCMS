@@ -17,10 +17,11 @@
 
     if (siteTree && siteTree.childItems) {
         siteTree.childItems.each { siteItem ->
-        
+         def children = siteItem.childItems;
+          children.each { child ->
             def details = [
-                name: siteItem.name,
-                description: siteItem.descriptorDom?.component?.description
+                name: child.name,
+                description: child.descriptorDom?.component?.description
             ]
 
             // Fetch additional category details for each item in category_o
@@ -35,6 +36,7 @@
             // }
             details['categories'] = categories
             subCategoryList << details
+        }
         }
     }
     return subCategoryList
