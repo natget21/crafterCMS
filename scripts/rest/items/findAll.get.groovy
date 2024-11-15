@@ -8,7 +8,7 @@ def searchResponse = searchClient.search(r -> r
                     .stringValue('/component/course')
                   )
                 )
-              )
+            )
             .must(m -> m
                 .wildcard(w -> w
                     .field("localId")
