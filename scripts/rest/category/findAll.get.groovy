@@ -5,7 +5,7 @@ def searchResponse = searchClient.search(r -> r
         .match(m -> m
           .field('content-type')
           .query(v -> v
-            .stringValue('/component/macrocategories')
+            .stringValue('/component/categories')
           )
         )
       )
