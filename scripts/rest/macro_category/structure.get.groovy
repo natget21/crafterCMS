@@ -31,7 +31,6 @@
 //     fields: fields
 // ]
 
-import groovy.util.XmlParser
 
 def topNavItems = [:]
 def siteDir = siteItemService.getSiteTree("/config/studio/content-types/component",1)
