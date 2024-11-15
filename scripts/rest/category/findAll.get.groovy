@@ -13,11 +13,6 @@ def searchResponse = searchClient.search(r -> r
                     .value("/site/components/categories/*") // Filters by path
                 )
             )
-            .mustNot(m -> m
-                .exists(e -> e
-                    .field("_deleted") // Excludes deleted records
-                )
-            )
         )
     )
 , Map)
