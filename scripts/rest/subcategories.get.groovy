@@ -24,21 +24,20 @@ import groovy.xml.XmlSlurper
             ]
 
             def categories = []
-            siteItem.item?.descriptorDom?.component?.category_o?.item?.each { categoryItem ->
-                def categoryPath = categoryItem.key
-                def categoryFile = siteItemService.getSiteTree("/site/components/categories/b433e04d-b38c-8349-62a6-5e4c3665a612.xml", -1)
-                categoryFile.childItems.each { category ->
-                 def categoryDetails = [
-                        name : siteItem.item?.descriptorDom?.component?.categoryname_s,
-                        description: siteItem.item?.descriptorDom?.component?.description
-                 ]
-                    
-                }
-
+              siteItem.item?.descriptorDom?.component?.category_o?.item?.each { categoryItem ->
+            def categoryPath = categoryItem.key
+            def categoryFile = siteItemService.getSiteItem(categoryPath)
+            
+            if (categoryFile && categoryFile.descriptorDom) {
+                def categoryDetails = [
+                    name: categoryFile.descriptorDom?.component?.categoryname_s,
+                    description: categoryFile.descriptorDom?.component?.description
+                ]
                 categories << categoryDetails
             }
-            details['categories'] = categories
-            subCategoryList << details
+        }
+        details['categories'] = categories
+        subCategoryList << details
         }
     }
     return subCategoryList
