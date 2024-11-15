@@ -33,7 +33,7 @@
 
 
 def topNavItems = [:]
-def siteDir = siteItemService.getSiteTree("/config/studio/content-types/component")
+def siteDir = siteItemService.getSiteTree("/config/studio/content-types/component",1)
 
 if (siteDir) {
     def dirs = siteDir.childItems
