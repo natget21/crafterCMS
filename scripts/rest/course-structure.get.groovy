@@ -43,10 +43,9 @@ def contentModel = pageContext.contentModel // Or templateModel.get("contentMode
 
 // Assuming the contentModel has a descriptor XML
 def descriptorXml = contentModel.getAsXml()
-def xmlContent = new XmlSlurper().parseText(descriptorXml)
 
 def fields = []
-xmlContent.fields.field.each { field ->
+descriptorXml.fields.field.each { field ->
     fields << [
         name: field.@name.toString(),
         type: field.@type.toString(),
