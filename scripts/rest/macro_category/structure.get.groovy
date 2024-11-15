@@ -42,7 +42,7 @@ if (siteDir) {
         // def dirItem = siteItemService.getSiteItem("/${dirName}/form-definition.xml")
         // if (dirItem != null) {
             // def dirDisplayName = dirItem.queryValue('internal-name')
-            topNavItems.put(dirName, dir.getSiteItem())
+            topNavItems.put(dirName, dir.getSiteItem(dirName))
         // }
     }
 }
