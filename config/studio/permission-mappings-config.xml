@@ -294,4 +294,11 @@
             </allowed-permissions>
         </rule>
     </role>
+   <role name="api">
+    <rule regex="/api/course-structure\.json">
+        <allowed-permissions>
+            <permission>content_read</permission>
+        </allowed-permissions>
+    </rule>
+    </role>
 </permissions>
