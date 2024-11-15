@@ -1,4 +1,4 @@
-import groovy.util.XmlSlurper
+
 
 
     def component = siteItemService.getSiteItem("/site/components/items/course")
