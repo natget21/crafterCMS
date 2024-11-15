@@ -33,7 +33,7 @@
 
 
 def topNavItems = [:]
-def siteDir = siteItemService.getSiteTree("/site/website", 2)
+def siteDir = siteItemService.getSiteTree("/", 3)
 
 if (siteDir) {
     def dirs = siteDir.childItems
