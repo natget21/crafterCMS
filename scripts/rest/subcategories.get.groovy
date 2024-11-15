@@ -18,7 +18,7 @@
     if (siteTree && siteTree.childItems) {
         siteTree.childItems.each { siteItem ->
             def details = [
-                name: siteItem.descriptorDom?.component?.subCategoryName_s,
+                name: siteItem.descriptorDom.component.subCategoryName_s,
                 description: siteItem.descriptorDom?.component?.description
             ]
 
