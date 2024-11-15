@@ -24,7 +24,7 @@ import groovy.xml.XmlSlurper
             ]
 
             def categories = []
-              siteItem.item?.descriptorDom?.component?.category_o?.item?.each { categoryItem ->
+             siteItem.item?.descriptorDom?.component?.category_o?.item?.each { categoryItem ->
             def categoryPath = categoryItem.key?.text
             def categoryFile = siteItemService.getSiteItem(categoryPath)
             
@@ -33,7 +33,7 @@ import groovy.xml.XmlSlurper
                     name: categoryFile.descriptorDom?.component?.categoryname_s,
                     description: categoryFile.descriptorDom?.component?.description
                 ]
-                categories << categoryDetails
+                categories << categoryFile
             }
         }
         details['categories'] = categories
