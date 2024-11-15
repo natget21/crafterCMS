@@ -12,7 +12,6 @@ if (!contentTypeDescriptor) {
 }
 
 // Parse the XML content type descriptor
-def xmlParser = new XmlParser()
 def contentTypeXml = xmlParser.parseText(contentTypeDescriptor.text)
 
 // Extract metadata and fields
