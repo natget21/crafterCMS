@@ -1,16 +1,19 @@
 def searchResponse = searchClient.search(r -> r
     .query(q -> q
         .bool(b -> b
-            .must(m -> m
-                .term(t -> t
-                    .field("content-type")
-                    .value("/component/categories")
+            .should(s -> s
+                .match(m -> m
+                  .field('content-type')
+                  .query(v -> v
+                    .stringValue('/component/categories')
+                  )
                 )
+              )
             )
             .must(m -> m
                 .wildcard(w -> w
                     .field("localId")
-                    .value("/site/components/categories/*") // Filters by path
+                    .value("/site/components/categories/*")
                 )
             )
         )
