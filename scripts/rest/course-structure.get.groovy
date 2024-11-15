@@ -39,4 +39,4 @@ if (component?.item?.descriptorUrl) {
     result.message = "Descriptor URL missing for component at ${componentPath}."
 }
 
-return result
+return descriptor
