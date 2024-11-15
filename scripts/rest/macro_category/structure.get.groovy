@@ -42,7 +42,7 @@ if (siteDir) {
         def dirItem = siteItemService.getSiteItem("/config/studio/content-types/component/${dirName}/form-definition.xml")
         if (dirItem != null) {
             def data = dirItem['item']
-            topNavItems.put(dirName, dirItem)
+            topNavItems.put(dirName, data)
         }
     }
 }
