@@ -18,8 +18,8 @@
     if (siteTree && siteTree.childItems) {
         siteTree.childItems.each { siteItem ->
             def details = [
-                name: siteItem.name,
-                description: siteItem.descriptorDom?.component?.description
+                name: siteItem.item?.descriptorDom?.component?.subCategoryName_s,
+                description: siteItem.item?.descriptorDom?.component?.description
             ]
 
             // Fetch additional category details for each item in category_o
