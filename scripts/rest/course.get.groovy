@@ -6,7 +6,7 @@ def courseList = []
     if (siteTree && siteTree.childItems) {
         siteTree.childItems.each { course ->
             def details = [
-                nome_s: course.item?.descriptorDom?.component?.subCategoryName_s,
+                nome_s: course.item?.descriptorDom?.component?.nome_s,
                 partner_s:course.item?.descriptorDom?.component?.partner_s,
                 costo_s: course.item?.descriptorDom?.component?.costo_s,
                 durata_s: course.item?.descriptorDom?.component?.durata_s,
@@ -18,16 +18,16 @@ def courseList = []
             ]
 
             def subCategories = []
-        //     course.item?.descriptorDom?.component?.subcategory_o?.item?.each { subCategoryItem ->
-        //     def subCategoryPath = subCategoryItem.key?.text
-        //     def subCategoryFile = siteItemService.getSiteItem(categoryPath)
-        //     def subCategoryDetails = [
-        //             name: categoryFile.item?.descriptorDom?.component?.categoryname_s,
-        //             description: categoryFile.item?.descriptorDom?.component?.description
-        //     ]
+            course.item?.descriptorDom?.component?.subcategory_o?.item?.each { subCategoryItem ->
+            def subCategoryPath = subCategoryItem.key?.text
+            def subCategoryFile = siteItemService.getSiteItem(categoryPath)
+            def subCategoryDetails = [
+                    name: subCategoryFile.item?.descriptorDom?.component?.subCategoryName_s,
+                    description: subCategoryFile.item?.descriptorDom?.component?.description
+            ]
 
-        //         subCategories << subCategoryDetails
-        // }
+                subCategories << subCategoryDetails
+        }
         details['subCategories'] = subCategories
         courseList << details
         }
