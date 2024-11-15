@@ -24,7 +24,6 @@ def fetchCategoryDetails(categoryPath) {
     ]
 }
 
-def fetchSubCategories() {
     // Fetch the subcategories folder item
     def siteTree = siteItemService.getSiteTree("/site/components/sub_categories", -1)
     def subCategoryList = []
@@ -51,8 +50,3 @@ def fetchSubCategories() {
         }
     }
     return subCategoryList
-}
-
-// Fetch the subcategories and return the result
-def result = fetchSubCategories()
-return result
