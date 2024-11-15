@@ -22,16 +22,21 @@
                 description: siteItem.item?.descriptorDom?.component?.description
             ]
 
-            // Fetch additional category details for each item in category_o
             def categories = []
-            // siteItem.descriptorDom?.component?.category_o?.item?.each { categoryItem ->
-            //     def categoryPath = categoryItem.key.text()
-            //     def categoryDetails = fetchCategoryDetails(categoryPath)
-                
-            //     // Include the item value with each category detail
-            //     categoryDetails['value'] = categoryItem.value.text()
-            //     categories << categoryDetails
-            // }
+            siteItem.item?.descriptorDom?.component?.category_o?.item?.each { categoryItem ->
+                def categoryPath = categoryItem.key.text()
+                def categoryFile = contentLoader.loadContent(categoryPath)
+                if (!categoryFile) throw new HttpStatusException(404, "Category not found")
+
+                def xmlContent = new XmlSlurper().parseText(categoryFile.contentAsString)
+                def categoryDetails = [
+                        name       : xmlContent.categoryname_s.text(),
+                        description: xmlContent.description.text()
+                 ]
+                // Include the item value with each category detail
+                categoryDetails['value'] = categoryItem.value.text()
+                categories << categoryDetails
+            }
             details['categories'] = categories
             subCategoryList << details
         }
