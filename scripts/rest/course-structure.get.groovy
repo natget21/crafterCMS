@@ -39,54 +39,20 @@
 // }
 
 // return result
-import groovy.xml.MarkupBuilder
-import groovy.xml.MarkupBuilderHelper
+def contentModel = pageContext.contentModel // Or templateModel.get("contentModel")
 
-def sitemap = []
-def excludeContentTypes = ['/component/level-descriptor']
+// Assuming the contentModel has a descriptor XML
+def descriptorXml = contentModel.getAsXml()
+def xmlContent = new XmlSlurper().parseText(descriptorXml)
 
-parseSiteItem = { siteItem ->
-    if (siteItem.isFolder()) {
-        def children = siteItem.childItems;
-        children.each { child ->
-            parseSiteItem(child);
-        }
-    } else {
-        def contentType = siteItem.queryValue('content-type')
-        if (!excludeContentTypes.contains(contentType)) {
-            def storeUrl = siteItem.getStoreUrl();
-            def location = urlTransformationService.transform('storeUrlToFullRenderUrl', storeUrl);
-            sitemap.add(location);
-        }
-    }
+def fields = []
+xmlContent.fields.field.each { field ->
+    fields << [
+        name: field.@name.toString(),
+        type: field.@type.toString(),
+        label: field.@label?.toString() ?: "",
+        required: field.@required?.toBoolean() ?: false
+    ]
 }
 
-def siteTree = siteItemService.getSiteTree("/site/website", -1)
-if (siteTree) {
-    def items = siteTree.childItems;
-    items.each { siteItem ->
-        parseSiteItem(siteItem);
-    }
-    return items
-}
-
-// response.setContentType("application/xml;charset=UTF-8")
-
-// def writer = response.getWriter()
-// def xml = new MarkupBuilder(writer)
-// def xmlHelper = new MarkupBuilderHelper(xml)
-
-// xmlHelper.xmlDeclaration(version:"1.0", encoding:"UTF-8")
-
-// xml.urlset(xmlns:"http://www.sitemaps.org/schemas/sitemap/0.9") {
-//     sitemap.each { location ->
-//         url {
-//             loc(location)
-//             changefreq("daily")
-//         }
-//     }
-// }
-
-// response.flushBuffer()
-
-// return null
+return fields
