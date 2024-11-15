@@ -39,11 +39,11 @@ if (siteDir) {
     def dirs = siteDir.childItems
     dirs.each { dir ->
         def dirName = dir.getStoreName()
-        def dirItem = siteItemService.getSiteItem("/site/website/${dirName}/index.xml")
-        if (dirItem != null) {
-            def dirDisplayName = dirItem.queryValue('internal-name')
-            topNavItems.put(dirName, dirDisplayName)
-        }
+        // def dirItem = siteItemService.getSiteItem("/${dirName}/form-definition.xml")
+        // if (dirItem != null) {
+            // def dirDisplayName = dirItem.queryValue('internal-name')
+            topNavItems.put(dirName, dir.getSiteTree())
+        // }
     }
 }
 
