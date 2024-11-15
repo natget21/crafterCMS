@@ -9,7 +9,6 @@ def searchResponse = searchClient.search(r -> r
                   )
                 )
               )
-            )
             .must(m -> m
                 .wildcard(w -> w
                     .field("localId")
