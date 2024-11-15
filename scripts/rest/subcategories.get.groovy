@@ -26,7 +26,6 @@
             siteItem.item?.descriptorDom?.component?.category_o?.item?.each { categoryItem ->
                 def categoryPath = categoryItem.key.text()
                 def categoryFile = contentLoader.loadContent(categoryPath)
-                if (!categoryFile) throw new HttpStatusException(404, "Category not found")
 
                 def xmlContent = new XmlSlurper().parseText(categoryFile.contentAsString)
                 def categoryDetails = [
