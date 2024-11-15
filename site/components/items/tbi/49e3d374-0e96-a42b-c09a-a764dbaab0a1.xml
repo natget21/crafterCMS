@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component>
+	<content-type>/component/itemtbi</content-type>
+	<display-template/>
+	<no-template-required>true</no-template-required>
+	<merge-strategy>inherit-levels</merge-strategy>
+	<objectGroupId>49e3</objectGroupId>
+	<objectId>49e3d374-0e96-a42b-c09a-a764dbaab0a1</objectId>
+	<file-name>49e3d374-0e96-a42b-c09a-a764dbaab0a1.xml</file-name>
+	<folder-name/>
+	<internal-name>test tbi</internal-name>
+	<name_s>test tbi</name_s>
+	<duration_s>test tbi</duration_s>
+	<partners_s>test tbi</partners_s>
+	<subcategory_o item-list="true">	<item>	<key>/site/components/sub_categories/282767e2-991b-1c07-1cf2-8eb2f88bc65c-copy-2.xml</key>
+	<value>Change Management</value>
+	<include>/site/components/sub_categories/282767e2-991b-1c07-1cf2-8eb2f88bc65c-copy-2.xml</include>
+	<disableFlattening>false</disableFlattening>
+	</item></subcategory_o>
+	<description_t>test tbi</description_t>
+	<createdDate>2024-11-15T06:53:45.958Z</createdDate>
+	<createdDate_dt>2024-11-15T06:53:45.958Z</createdDate_dt>
+	<lastModifiedDate>2024-11-15T06:53:45.958Z</lastModifiedDate>
+	<lastModifiedDate_dt>2024-11-15T06:53:45.958Z</lastModifiedDate_dt>
+</component>
