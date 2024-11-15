@@ -18,16 +18,16 @@ def courseList = []
             ]
 
             def subCategories = []
-            course.item?.descriptorDom?.component?.subcategory_o?.item?.each { subCategoryItem ->
-            def subCategoryPath = subCategoryItem.key?.text
-            def subCategoryFile = siteItemService.getSiteItem(categoryPath)
-            def subCategoryDetails = [
-                    name: categoryFile.item?.descriptorDom?.component?.categoryname_s,
-                    description: categoryFile.item?.descriptorDom?.component?.description
-            ]
+        //     course.item?.descriptorDom?.component?.subcategory_o?.item?.each { subCategoryItem ->
+        //     def subCategoryPath = subCategoryItem.key?.text
+        //     def subCategoryFile = siteItemService.getSiteItem(categoryPath)
+        //     def subCategoryDetails = [
+        //             name: categoryFile.item?.descriptorDom?.component?.categoryname_s,
+        //             description: categoryFile.item?.descriptorDom?.component?.description
+        //     ]
 
-                subCategories << subCategoryDetails
-        }
+        //         subCategories << subCategoryDetails
+        // }
         details['subCategories'] = subCategories
         courseList << details
         }
