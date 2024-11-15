@@ -2,7 +2,7 @@
 
 
     def component = siteItemService.getSiteItem("/site/components/items/course")
-        def xmlContent = new XmlSlurper().parseText(component.getAsXml())
+        def xmlContent = component.getAsXml()
         def fields = []
 
         xmlContent.fields.field.each { field ->
