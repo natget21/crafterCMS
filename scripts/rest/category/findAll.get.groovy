@@ -19,5 +19,5 @@ def items = searchResponse.hits().hits()*.source()
 return [
     status: 200,
     itemsFound: itemsFound,
-    macroCategories: macroCategories
+    macroCategories: items
 ]
