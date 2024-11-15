@@ -11,19 +11,6 @@
 //     return subCategoryList;
 // }
 
-def fetchCategoryDetails(categoryPath) {
-    // Load the category content using siteItemService
-    def categoryItem = siteItemService.getSiteItem(categoryPath)
-    if (!categoryItem) throw new Exception("Category not found at path: " + categoryPath)
-
-    // Parse the XML content to extract category details
-    def xmlContent = new XmlSlurper().parseText(categoryItem.contentAsString)
-    return [
-        name: xmlContent.categoryname_s?.text(),
-        description: xmlContent.description?.text()
-    ]
-}
-
     // Fetch the subcategories folder item
     def siteTree = siteItemService.getSiteTree("/site/components/sub_categories", -1)
     def subCategoryList = []
