@@ -26,7 +26,7 @@ def courseList = []
                     description: subCategoryFile.item?.descriptorDom?.component?.description
             ]
 
-                subCategories << subCategoryDetails
+                subCategories << subCategoryFile
         }
         details['subCategories'] = subCategories
         courseList << details
