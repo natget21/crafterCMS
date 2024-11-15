@@ -1,3 +1,3 @@
-def subCategoriesItem = siteItemService.getSiteTree("/site/components/sub_categories")
+def subCategoriesItem = siteItemService.getChildren("/site/components/sub_categories")
 
 return subCategoriesItem;
