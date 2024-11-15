@@ -17,8 +17,6 @@
 
     if (siteTree && siteTree.childItems) {
         siteTree.childItems.each { siteItem ->
-         def children = siteItem.childItems;
-          children.each { child ->
             def details = [
                 name: child.name,
                 description: child.descriptorDom?.component?.description
@@ -35,8 +33,7 @@
             //     categories << categoryDetails
             // }
             details['categories'] = categories
-            subCategoryList << details
-        }
+            subCategoryList << siteItem
         }
     }
     return subCategoryList
