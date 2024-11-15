@@ -25,7 +25,7 @@ import groovy.xml.XmlSlurper
 
             def categories = []
               siteItem.item?.descriptorDom?.component?.category_o?.item?.each { categoryItem ->
-            def categoryPath = categoryItem.key
+            def categoryPath = categoryItem.key?.text
             def categoryFile = siteItemService.getSiteItem(categoryPath)
             
             if (categoryFile && categoryFile.descriptorDom) {
