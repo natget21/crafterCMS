@@ -21,4 +21,12 @@
 
 <site>
     <version>4.0.1</version>
+    <security>
+        <urlRestriction>
+            <restriction>
+                <url>/api/1/services/**</url>
+                <expression>isAuthenticated()</expression>
+            </restriction>
+        </urlRestriction>
+    </security>
 </site>
