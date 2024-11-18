@@ -233,11 +233,11 @@
         </monitor>
     </contentMonitoring>
 <security>
-  <login>
-    <formUrl /> (The URL of the login form page)
-    <defaultSuccessUrl /> (The URL to redirect to if the login was successful and the user could not be redirected to the previous page)
-    <alwaysUseDefaultSuccessUrl /> (Sets whether to always redirect to the default success URL after a successful login)
-    <failureUrl /> (The URL to redirect to if the login fails)
-  </login>
+   <login>
+      <formUrl>/studio/login</formUrl>
+      <defaultSuccessUrl>/studio</defaultSuccessUrl>
+      <alwaysUseDefaultSuccessUrl>false</alwaysUseDefaultSuccessUrl>
+      <failureUrl>/studio/login?login_error=true</failureUrl>
+   </login>
 </security>
 </site-config>
