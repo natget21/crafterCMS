@@ -60,12 +60,5 @@
             <pattern>.*</pattern>
          </patterns>
       </server>
-        <server>
-         <id>login-api</id>
-         <url></url>
-         <patterns>
-            <pattern>/api/1/services/.*</pattern>
-         </patterns>
-      </server>
    </servers>
 </proxy-config>
