@@ -24,9 +24,9 @@
                 <span>Password</span>
                 <input type="password" name="password" class="form-control" required />
             </label>
-             <div class="remember-me-container">
+             <label>
     <input type="checkbox" name="rememberMe" value="true" id="rememberMe">Remember Me</input>
-</div>
+ </label>
             <p class="forgot-pass"><a href="/path/to/forgot-password">Forgot password?</a></p>
             <button type="submit" class="submit btn btn-primary">Sign In</button>
         </Form>
