@@ -259,6 +259,7 @@ input {
     margin-bottom: 20px;
     background: #d4af7a;
     text-transform: uppercase;
+    display: block;
 }
 
 .fb-btn {
