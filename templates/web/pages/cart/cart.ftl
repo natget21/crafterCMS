@@ -32,6 +32,30 @@
 <body>
     <@crafter.body_top />
 
+    <!-- Sample Data -->
+    <#assign cart_items_o = [
+        {
+            "product_image_s": "/images/sample1.jpg",
+            "product_name_s": "Sample Product 1",
+            "product_price_s": "19.99",
+            "product_quantity_s": "1",
+            "product_total_s": "19.99"
+        },
+        {
+            "product_image_s": "/images/sample2.jpg",
+            "product_name_s": "Sample Product 2",
+            "product_price_s": "29.99",
+            "product_quantity_s": "1",
+            "product_total_s": "29.99"
+        }
+    ]>
+
+    <#assign cart_summary = {
+        "subtotal_s": "49.98",
+        "shipping_s": "5.00",
+        "total_s": "54.98"
+    }>
+
     <!-- Wrapper -->
     <div class="container-fluid">
         <div class="row px-xl-5">
@@ -47,7 +71,6 @@
                         </tr>
                     </thead>
                     <tbody class="align-middle">
-                        <#-- Loop through cart items -->
                         <@crafter.renderRepeatGroup
                             $field="cart_items_o"
                             $containerAttributes={'style': 'list-style: none; padding-left: 0;'}
@@ -62,7 +85,7 @@
                                 <td class="align-middle">
                                     <div class="input-group quantity mx-auto" style="width: 100px;">
                                         <div class="input-group-btn">
-                                            <button class="btn btn-sm btn-primary btn-minus" >
+                                            <button class="btn btn-sm btn-primary btn-minus">
                                                 <i class="fa fa-minus"></i>
                                             </button>
                                         </div>
