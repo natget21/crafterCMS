@@ -27,7 +27,7 @@
 </head>
 
 <body>
-
+<@crafter.body_top/>
     <!-- Cart Start -->
     <div class="container-fluid">
         <div class="row px-xl-5">
@@ -202,6 +202,10 @@
 
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
+    
+<#include "/templates/web/fragments/scripts.ftl">
+<@crafter.body_bottom/>
+
 </body>
 
 </html>
