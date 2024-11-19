@@ -17,13 +17,15 @@
         <div class="form sign-in" action="/crafter-security-login" method="post">
             <h2>Welcome</h2>
             <label>
-                <span>Email</span>
-                <input type="email" name="email" class="form-control" required />
+                <span>User name</span>
+                <input type="username" name="username" class="form-control" required />
             </label>
             <label>
                 <span>Password</span>
                 <input type="password" name="password" class="form-control" required />
             </label>
+              <input type="checkbox" name="rememberMe" value="true">Remember Me</input>
+            <br/>
             <p class="forgot-pass"><a href="/path/to/forgot-password">Forgot password?</a></p>
             <button type="submit" class="submit btn btn-primary">Sign In</button>
         </div>
