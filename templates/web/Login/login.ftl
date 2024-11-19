@@ -17,7 +17,7 @@
         <Form class="form sign-in" action="/crafter-security-login" method="post">
             <h2>Welcome</h2>
             <label>
-                <span>User name</span>
+                <span>Username</span>
                 <input type="username" name="username" class="form-control" required />
             </label>
             <label>
