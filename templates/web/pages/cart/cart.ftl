@@ -1,6 +1,7 @@
+<#import "/templates/system/common/crafter.ftl" as crafter />
+
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="utf-8">
     <title>MultiShop - Online Shop Website Template</title>
@@ -17,7 +18,13 @@
 
     <!-- Font Awesome -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+
+    <@crafter.head />
 </head>
+
 
 <body>
 <@crafter.body_top/>
@@ -180,9 +187,7 @@
 
 
     <!-- Back to Top -->
-    <a href="#" class="btn btn-primary back-to-top"><i class="fa fa-angle-double-up"></i></a>
-
-
+<a href="#" class="btn btn-primary back-to-top"><i class="fa fa-angle-double-up"></i></a>
 
     
 <#include "/templates/web/fragments/scripts.ftl">
