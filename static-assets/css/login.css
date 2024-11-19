@@ -294,3 +294,15 @@ input {
     -webkit-transform: translate3d(0, 0, 0);
     transform: translate3d(0, 0, 0);
 }
+.remember-me-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15px;
+    font-size: 14px;
+    color: #6c757d;
+}
+
+.remember-me-container input {
+    margin-right: 5px;
+}
