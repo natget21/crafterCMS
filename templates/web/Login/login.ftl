@@ -14,7 +14,7 @@
     <@crafter.body_top/>
 
     <div class="cont">
-        <div class="form sign-in">
+        <div class="form sign-in" action="/crafter-security-login" method="post">
             <h2>Welcome</h2>
             <label>
                 <span>Email</span>
