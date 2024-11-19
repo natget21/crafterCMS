@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<page>
+	<content-type>/page/cartpage</content-type>
+	<display-template>/templates/web/pages/cart/cart.ftl</display-template>
+	<no-template-required/>
+	<merge-strategy>inherit-levels</merge-strategy>
+	<objectGroupId>be4c</objectGroupId>
+	<objectId>be4c8f7b-67f4-e212-2dca-f63c7089e0b5</objectId>
+	<file-name>index.xml</file-name>
+	<folder-name>cart</folder-name>
+	<internal-name>cart</internal-name>
+	<navLabel>cart</navLabel>
+	<placeInNav>false</placeInNav>
+	<orderDefault_f>-1</orderDefault_f>
+	<createdDate>2024-11-19T15:13:27.489Z</createdDate>
+	<createdDate_dt>2024-11-19T15:13:27.489Z</createdDate_dt>
+	<lastModifiedDate>2024-11-19T15:13:27.489Z</lastModifiedDate>
+	<lastModifiedDate_dt>2024-11-19T15:13:27.489Z</lastModifiedDate_dt>
+</page>
