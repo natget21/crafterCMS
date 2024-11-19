@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<page>
+	<content-type>/page/loginpage</content-type>
+	<display-template>/templates/web/Login/login.ftl</display-template>
+	<no-template-required/>
+	<merge-strategy>inherit-levels</merge-strategy>
+	<objectGroupId>4304</objectGroupId>
+	<objectId>43048bb0-b95a-d57d-4747-c3cd08162693</objectId>
+	<placeInNav>false</placeInNav>
+	<orderDefault_f>-1</orderDefault_f>
+	<file-name>index.xml</file-name>
+	<folder-name>loginuser</folder-name>
+	<internal-name>LoginUser</internal-name>
+	<navLabel>LoginUser</navLabel>
+	<createdDate>2024-11-19T11:55:12.691Z</createdDate>
+	<createdDate_dt>2024-11-19T11:55:12.691Z</createdDate_dt>
+	<lastModifiedDate>2024-11-19T11:55:12.691Z</lastModifiedDate>
+	<lastModifiedDate_dt>2024-11-19T11:55:12.691Z</lastModifiedDate_dt>
+</page>
