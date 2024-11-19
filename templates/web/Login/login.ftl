@@ -15,6 +15,7 @@
 
     <div class="cont">
         <Form class="form sign-in" action="/crafter-security-login" method="post">
+         <input type="hidden" name="redirect" value="/" />
             <h2>Welcome</h2>
             <label>
                 <span>Username</span>
