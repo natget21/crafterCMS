@@ -31,12 +31,7 @@
     <div class="container-fluid">
         <div class="row px-xl-5">
             <div class="col-lg-8 table-responsive mb-5">
-                               <@crafter.renderComponent 
-                    contentTypeMap={
-                        "/site/components/Cart": "cartModel"  <!-- Replace with the correct content type -->
-                    } 
-                    contentTypeProps={} 
-                />
+                       <@renderComponent component = contentModel.header_o.item />
 
                </div>
         </div>
