@@ -43,7 +43,7 @@
                         </tr>
                     </thead>
                     <tbody class="align-middle">
-                    <p>Cart Component: ${cartComponent}</p>
+                    <p>Cart Component: ${cartComponent.getChildItems()}</p>
                         <#-- Loop through the cart component data -->
                         <#list cartComponent.getChildItems() as item>
                             <tr>
