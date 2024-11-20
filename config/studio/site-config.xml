@@ -232,4 +232,12 @@
             </paths>
         </monitor>
     </contentMonitoring>
+<security>
+   <login>
+      <formUrl>/studio/login</formUrl>
+      <defaultSuccessUrl>/studio</defaultSuccessUrl>
+      <alwaysUseDefaultSuccessUrl>false</alwaysUseDefaultSuccessUrl>
+      <failureUrl>/studio/login?login_error=true</failureUrl>
+   </login>
+</security>
 </site-config>

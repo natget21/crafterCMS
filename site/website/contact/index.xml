@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<page>
+	<content-type>/page/contact</content-type>
+	<display-template>/templates/web/pages/cart/contact.ftl</display-template>
+	<no-template-required/>
+	<merge-strategy>inherit-levels</merge-strategy>
+	<objectGroupId>3b2b</objectGroupId>
+	<objectId>3b2b1523-180d-1c2a-54b4-df91c5a97170</objectId>
+	<file-name>index.xml</file-name>
+	<folder-name>contact</folder-name>
+	<internal-name>contact</internal-name>
+	<navLabel>contact</navLabel>
+	<placeInNav>false</placeInNav>
+	<orderDefault_f>-1</orderDefault_f>
+	<createdDate>2024-11-20T06:13:19.943Z</createdDate>
+	<createdDate_dt>2024-11-20T06:13:19.943Z</createdDate_dt>
+	<lastModifiedDate>2024-11-20T06:13:19.943Z</lastModifiedDate>
+	<lastModifiedDate_dt>2024-11-20T06:13:19.943Z</lastModifiedDate_dt>
+</page>

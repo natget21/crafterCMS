@@ -66,5 +66,8 @@
         <group name="site_reviewer">
             <role>reviewer</role>
         </group>
+         <group name="Api">
+        <role>api</role>
+    </group>
     </groups>
 </role-mappings>
