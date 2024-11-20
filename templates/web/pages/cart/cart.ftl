@@ -40,11 +40,12 @@
                         <th>Remove</th>
                     </tr>
                 </thead>
-                <tbody class="align-middle">
+                 <tbody class="align-middle">
                     <@crafter.renderRepeatGroup group="${component.item_o.item}">
                         <tr>
                             <td class="align-middle">
-                                <img src="/static-assets/images/course.jpg" alt="${group.value}" style="width: 50px;"> 
+                                <#-- Image and Item Name -->
+                                <img src="${group.include}" alt="${group.value}" style="width: 50px;">
                                 ${group.value}
                             </td>
                             <td class="align-middle">
@@ -65,7 +66,9 @@
                                     </div>
                                 </div>
                             </td>
-                            <td class="align-middle">$${component.price_s?number * component.quantity_s?number}</td>
+                            <td class="align-middle">
+                                $${component.price_s?number * component.quantity_s?number}
+                            </td>
                             <td class="align-middle">
                                 <button class="btn btn-sm btn-danger"><i class="fa fa-times"></i></button>
                             </td>
