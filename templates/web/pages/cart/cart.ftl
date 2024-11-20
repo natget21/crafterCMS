@@ -41,12 +41,14 @@
                     </tr>
                 </thead>
                  <tbody class="align-middle">
-                      <@crafter.renderRepeatGroup field="${component.item_o.item}">
+                       <@crafter.renderRepeatGroup 
+                        model="${component}" 
+                        field="items_o.item" 
+                        collection="${component.items_o.item}">
                         <tr>
                             <td class="align-middle">
-                                <#-- Image and Item Name -->
-                                <img src="${field.include}" alt="${field.value}" style="width: 50px;">
-                                ${field.value}
+                                <img src="${item.include}" alt="${item.value}" style="width: 50px;">
+                                ${item.value}
                             </td>
                             <td class="align-middle">
                                 $${component.price_s}
