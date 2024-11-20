@@ -31,7 +31,13 @@
     <div class="container-fluid">
         <div class="row px-xl-5">
             <div class="col-lg-8 table-responsive mb-5">
-                                <@crafter.renderComponent component="/site/components/Cart"/>
+                               <@crafter.renderComponent 
+                    component="/site/components/Cart" 
+                    contentTypeMap={
+                        "/site/components/Cart": "cartModel"  <!-- Replace with the correct content type -->
+                    } 
+                    contentTypeProps={} 
+                />
 
                </div>
         </div>
