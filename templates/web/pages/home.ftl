@@ -1,3 +1,5 @@
+<#import "/templates/system/common/crafter.ftl" as crafter />
+
 <#include "header.ftl">
 
 <main>
