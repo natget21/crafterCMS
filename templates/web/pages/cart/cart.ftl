@@ -41,14 +41,15 @@
                     </tr>
                 </thead>
                  <tbody class="align-middle">
-                      <@crafter.renderRepeatGroup $group="${component.item_o.item}">
+                      <@crafter.renderRepeatGroup $field="${component.item_o.item}"
+                      item, index>
                         <tr>
                             <td class="align-middle">
                                 <img src="${item.include}" alt="${item.value}" style="width: 50px;">
                                 ${item.value}
                             </td>
                             <td class="align-middle">
-                                $${component.price_s}
+                                $${item.price_s}
                             </td>
                             <td class="align-middle">
                                 <div class="input-group quantity mx-auto" style="width: 100px;">
@@ -66,7 +67,7 @@
                                 </div>
                             </td>
                             <td class="align-middle">
-                                $${component.price_s?number * component.quantity_s?number}
+                                $${item.price_s?number * item.quantity_s?number}
                             </td>
                             <td class="align-middle">
                                 <button class="btn btn-sm btn-danger"><i class="fa fa-times"></i></button>
