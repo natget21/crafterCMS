@@ -41,9 +41,7 @@
                     </tr>
                 </thead>
                  <tbody class="align-middle">
-                       <@crafter.renderRepeatGroup 
-                        $model="${component}" 
-                        $collection="${component.items_o}">
+                      <@crafter.renderRepeatGroup $group="${component.item_o.item}">
                         <tr>
                             <td class="align-middle">
                                 <img src="${item.include}" alt="${item.value}" style="width: 50px;">
