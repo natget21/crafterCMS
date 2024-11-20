@@ -1,4 +1,4 @@
-<#assign cartComponent = siteItemService.getSiteItem("site/components/Cart")>
+<#assign cartComponent = siteItemService.getSiteTree("site/components/Cart")>
 <#import "/templates/system/common/crafter.ftl" as crafter />
 
 <!DOCTYPE html>
