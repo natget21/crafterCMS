@@ -1,4 +1,3 @@
-<#assign cartComponent = siteItemService.getSiteItem("site/components/Cart")>
 <#import "/templates/system/common/crafter.ftl" as crafter />
 
 <!DOCTYPE html>
@@ -43,7 +42,9 @@
                         </tr>
                     </thead>
                     <tbody class="align-middle">
-                    <p>Cart Component: ${cartComponent.getChildItems()}</p>
+                    <#assign cartComponent = siteItemService.getSiteItem(item.storeUrl)>
+                    <p>Cart Component: ${cartComponent}</p>
+                    
                         <#-- Loop through the cart component data -->
                         <#list cartComponent.getChildItems() as item>
                             <tr>
