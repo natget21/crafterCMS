@@ -1,5 +1,4 @@
-<#import "/templates/system/common/crafter.ftl" as crafter />
-
+<#assign cartData = crafter.api.get("/api/1/site/content_store/children.json?url=/site/components/Cart&crafterSite=hubmanagment")>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -25,73 +24,71 @@
     <@crafter.head />
 </head>
 
-
 <body>
 <@crafter.body_top/>
+
     <!-- Cart Start -->
-  <div class="container-fluid">
-    <div class="row px-xl-5">
-        <div class="col-lg-8 table-responsive mb-5">
-            <table class="table table-light table-borderless table-hover text-center mb-0">
-                <thead class="thead-dark">
-                    <tr>
-                        <th>Products</th>
-                        <th>Price</th>
-                        <th>Quantity</th>
-                        <th>Total</th>
-                        <th>Remove</th>
-                    </tr>
-                </thead>
-                <tbody class="align-middle">
-                    <#list cartItems as item>
-                        <#assign itemData = crafter.api.get("/api/1/site/content_store/component.json?url=" + item.key)>
-                        <#assign productName = itemData?eval["component"]["internal-name"]>
-                        <#assign productPrice = itemData?eval["component"]["price"]>
-                        <#assign productImage = "/static-assets/images/default-product.jpg"> <!-- Default Image -->
-                        <#if itemData?eval["component"]["image"]??>
-                            <#assign productImage = itemData?eval["component"]["image"]>
-                        </#if>
+    <div class="container-fluid">
+        <div class="row px-xl-5">
+            <div class="col-lg-8 table-responsive mb-5">
+                <table class="table table-light table-borderless table-hover text-center mb-0">
+                    <thead class="thead-dark">
                         <tr>
-                            <td class="align-middle">
-                                <img src="${productImage}" alt="${productName}" style="width: 50px;"> ${productName}
-                            </td>
-                            <td class="align-middle">$${productPrice}</td>
-                            <td class="align-middle">
-                                <div class="input-group quantity mx-auto" style="width: 100px;">
-                                    <div class="input-group-btn">
-                                        <button class="btn btn-sm btn-primary btn-minus">
-                                            <i class="fa fa-minus"></i>
-                                        </button>
-                                    </div>
-                                    <input type="text" class="form-control form-control-sm bg-secondary border-0 text-center" value="${item.value}">
-                                    <div class="input-group-btn">
-                                        <button class="btn btn-sm btn-primary btn-plus">
-                                            <i class="fa fa-plus"></i>
-                                        </button>
-                                    </div>
-                                </div>
-                            </td>
-                            <td class="align-middle">$${productPrice * item.value}</td>
-                            <td class="align-middle">
-                                <button class="btn btn-sm btn-danger"><i class="fa fa-times"></i></button>
-                            </td>
+                            <th>Products</th>
+                            <th>Price</th>
+                            <th>Quantity</th>
+                            <th>Total</th>
+                            <th>Remove</th>
                         </tr>
-                    </#list>
-                </tbody>
-            </table>
+                    </thead>
+                    <tbody class="align-middle">
+                        <#list cartData as item>
+                            <#assign component = item.descriptorDom["component"]>
+                            <#assign productName = component["internal-name"]!>
+                            <#assign productPrice = component["price_s"]!>
+                            <#assign productQuantity = component["quantity_s"]!>
+                            <#assign productImage = "/static-assets/images/course.jpg"> <!-- Default Image -->
+                            <#if component["image"]??>
+                                <#assign productImage = component["image"]>
+                            </#if>
+                            <tr>
+                                <td class="align-middle">
+                                    <img src="${productImage}" alt="${productName}" style="width: 50px;"> ${productName}
+                                </td>
+                                <td class="align-middle">$${productPrice}</td>
+                                <td class="align-middle">
+                                    <div class="input-group quantity mx-auto" style="width: 100px;">
+                                        <div class="input-group-btn">
+                                            <button class="btn btn-sm btn-primary btn-minus">
+                                                <i class="fa fa-minus"></i>
+                                            </button>
+                                        </div>
+                                        <input type="text" class="form-control form-control-sm bg-secondary border-0 text-center" value="${productQuantity}">
+                                        <div class="input-group-btn">
+                                            <button class="btn btn-sm btn-primary btn-plus">
+                                                <i class="fa fa-plus"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td class="align-middle">$${productPrice?number * productQuantity?number}</td>
+                                <td class="align-middle">
+                                    <button class="btn btn-sm btn-danger"><i class="fa fa-times"></i></button>
+                                </td>
+                            </tr>
+                        </#list>
+                    </tbody>
+                </table>
+            </div>
         </div>
     </div>
-</div>
     <!-- Cart End -->
 
-
     <!-- Back to Top -->
-<a href="#" class="btn btn-primary back-to-top"><i class="fa fa-angle-double-up"></i></a>
+    <a href="#" class="btn btn-primary back-to-top"><i class="fa fa-angle-double-up"></i></a>
 
-    
-<#include "/templates/web/fragments/scripts.ftl">
-<@crafter.body_bottom/>
+    <#include "/templates/web/fragments/scripts.ftl">
+    <@crafter.body_bottom/>
 
 </body>
-
 </html>
