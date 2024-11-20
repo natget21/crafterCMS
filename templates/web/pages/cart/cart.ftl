@@ -43,7 +43,7 @@
                     </thead>
                     <tbody class="align-middle">
                         <#-- Loop through the cart component data -->
-                        <#list cartItems as item>
+                        <#list cart as item>
                             <tr>
                                 <td class="align-middle"><img src="/static-assets/images/course.jpg" alt="" style="width: 50px;"> ${item.descriptorDom.component.item[0].value}</td>
                                 <td class="align-middle">${item.descriptorDom.component.price_s}</td>
