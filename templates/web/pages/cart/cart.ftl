@@ -43,7 +43,8 @@
                     </thead>
                     <tbody class="align-middle">
                         <#-- Loop through the cart component data -->
-                        <#list cart as item>
+                        <#if cartItems?? && cartItems?size > 0>
+                        <#list cartItems as item>
                             <tr>
                                 <td class="align-middle"><img src="/static-assets/images/course.jpg" alt="" style="width: 50px;"> ${item.descriptorDom.component.item[0].value}</td>
                                 <td class="align-middle">${item.descriptorDom.component.price_s}</td>
@@ -52,6 +53,9 @@
                                 <td class="align-middle"><button class="btn btn-sm btn-danger"><i class="fa fa-times"></i></button></td>
                             </tr>
                         </#list>
+                        <#else>
+    <p>No items in your cart.</p>
+</#if>
                     </tbody>
                 </table>
             </div>
