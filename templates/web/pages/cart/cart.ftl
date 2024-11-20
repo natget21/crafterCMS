@@ -43,8 +43,7 @@
                  <tbody class="align-middle">
                        <@crafter.renderRepeatGroup 
                         model="${component}" 
-                        field="items_o.item" 
-                        collection="${component.items_o.item}">
+                        collection="${component.items_o}">
                         <tr>
                             <td class="align-middle">
                                 <img src="${item.include}" alt="${item.value}" style="width: 50px;">
