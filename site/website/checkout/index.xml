@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<page>
+	<content-type>/page/checkoutpage</content-type>
+	<display-template>/templates/web/pages/cart/checkout.ftl</display-template>
+	<no-template-required/>
+	<merge-strategy>inherit-levels</merge-strategy>
+	<objectGroupId>4dde</objectGroupId>
+	<objectId>4dde030c-ed6d-a55e-cd17-2a5643110871</objectId>
+	<internal-name>checkout</internal-name>
+	<navLabel>checkout</navLabel>
+	<file-name>index.xml</file-name>
+	<folder-name>checkout</folder-name>
+	<placeInNav>false</placeInNav>
+	<orderDefault_f>-1</orderDefault_f>
+	<createdDate>2024-11-20T06:09:21.290Z</createdDate>
+	<createdDate_dt>2024-11-20T06:09:21.290Z</createdDate_dt>
+	<lastModifiedDate>2024-11-20T06:09:21.290Z</lastModifiedDate>
+	<lastModifiedDate_dt>2024-11-20T06:09:21.290Z</lastModifiedDate_dt>
+</page>
