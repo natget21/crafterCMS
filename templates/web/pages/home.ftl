@@ -2,16 +2,16 @@
 
 <!DOCTYPE html>
 <html lang="en">
-<#include "head.ftl">
+<#include "/templates/web/fragment/head.ftl">
 <body>
-    <#include "header.ftl">
+    <#include "/templates/web/fragment/header.ftl">
     <main>
-        <#include "carousel.ftl">
-        <#include "featured.ftl">
-        <#include "categories.ftl">
-        <#include "products.ftl">
+        <#include "/templates/web/components/carousel.ftl">
+        <#include "/templates/web/components/featured.ftl">
+        <#include "/templates/web/components/categories.ftl">
+        <#include "/templates/web/components/products.ftl">
     </main>
-    <#include "footer.ftl">
-    <#include "scripts.ftl">
+    <#include "/templates/web/fragment/footer.ftl">
+    <#include "/templates/web/fragment/scripts.ftl">
 </body>
 </html>
