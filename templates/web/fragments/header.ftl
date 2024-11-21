@@ -86,7 +86,7 @@
                         <div class="nav-item dropdown dropright">
                         <#assign categoriesTree = siteItemService.getSiteTree('/site/components/categories', 1)>
                             <#if categoriesTree?has_content>
-                            <#list categoriesTree.children as category>
+                            <#list categoriesTree.childItems as category>
                             <#assign categoryItem = siteItemService.getSiteItem(item.storeUrl) />
                             <a href="" class="nav-item nav-link">
                                 ${categoryItem.queryValue('categoryname_s')}
