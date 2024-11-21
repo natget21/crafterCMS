@@ -35,10 +35,10 @@
 <#if cartTree?has_content>
     <ul>
         <#list cartTree.childItems as item>
-             <#assign cartItem = siteItemService.getSiteItem(item.storeUrl) />
+             <#assign cartItem = siteItemService.getSiteTree(item.storeUrl,1) />
             <li>
                 <p>Quantity: ${cartItem.queryValue('quantity_s')}</p>
-              <#assign item_o = cartItem.queryValue('item_o') />
+              <#assign item_o = cartItem.queryValues('item_o') />
 <#if item_o?? && item_o.item?size > 0>
     <#assign courseUrl = item_o.item[0].key />
     <#assign courseModel = siteItemService.getSiteItem(courseUrl) />
