@@ -36,7 +36,7 @@
     <ul>
         <#list cartTree.childItems as item>
             <li>
-                <a href="${item.browserUri}">${item.name}</a>
+                <p>item</p>
             </li>
         </#list>
     </ul>
