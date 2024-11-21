@@ -31,7 +31,7 @@
     <div class="container-fluid">
         <div class="row px-xl-5">
             <div class="col-lg-8 table-responsive mb-5">
-    <#assign cartTree = siteItemService.getSiteTree('/site/components/Cart', 1, true)>
+    <#assign cartTree = siteItemService.getSiteTree('/site/components/Cart', 1)>
 <#if cartTree?has_content>
     <ul>
         <#list cartTree.children as item>
