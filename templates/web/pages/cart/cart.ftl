@@ -31,16 +31,17 @@
     <div class="container-fluid">
         <div class="row px-xl-5">
             <div class="col-lg-8 table-responsive mb-5">
-      <@crafter.cms.query>
+      <@crafter.cms.api>
                     <#-- Query all itemCart content type items -->
-                    <#assign itemCarts = crafter.query("/site/components/Cart").execute() />
-                </@crafter.cms.query>
+                    <#assign itemCarts = crafter.api("/api/1/site/content_store/children.json?url=/site/components/Cart").execute().items />
+                </@crafter.cms.api>
 
                 <#-- Iterate through the itemCart components -->
-                <#list itemCarts.items as itemCart>
+                <#list itemCarts as itemCart>
                     <div class="item-cart">
-                        <h2>${itemCart.quantity_s!""}</h2>
-                        <p>${itemCart.price_s!""}</p>
+                        <h2>${itemCart['title']!""}</h2>
+                        <p>${itemCart['description']!""}</p>
+                        <span>Quantity: ${itemCart['quantity_s']!""}</span>
                     </div>
                 </#list>
                </div>
