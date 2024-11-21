@@ -85,12 +85,31 @@
                     <div class="navbar-nav w-100">
                         <div class="nav-item dropdown dropright">
                         <#assign categoriesTree = siteItemService.getSiteTree('/site/components/categories', 1)>
+                        <#assign subCategoriesTree = siteItemService.getSiteTree('/site/components/sub_categories', 1)>
                             <#if categoriesTree?has_content>
                             <#list categoriesTree.childItems as category>
                             <#assign categoryItem = siteItemService.getSiteItem(category.storeUrl) />
-                            <a href="" class="nav-item nav-link">
+                            <div class="nav-item dropdown dropright">
+                            <a href="#" class="nav-item nav-link">
                                 ${categoryItem.queryValue('categoryname_s')}
+                                <i class="fa fa-angle-right float-right mt-1"></i>
                             </a>
+                            <#-- Match subcategories for this category -->
+                    <#assign relatedSubcategories = subCategoriesTree.childItems?filter(subcategory -> 
+                        subcategory.descriptorDom.component['category_o']?has_content &&
+                        subcategory.descriptorDom.component.category_o.item?some(it -> it.key == categoryItem.url)) />
+
+                    <#if relatedSubcategories?has_content>
+                        <div class="dropdown-menu position-absolute rounded-0 border-0 m-0">
+                            <#list relatedSubcategories as subcategory>
+                                <#assign subCategoryItem = siteItemService.getSiteItem(subcategory.storeUrl) />
+                                <a href="#" class="dropdown-item">
+                                    ${subCategoryItem.queryValue('subCategoryName_s')}
+                                </a>
+                            </#list>
+                        </div>
+                    </#if>
+                </div>
                              </#list>
                             <#else>
                                 <p>No categories found.</p>
