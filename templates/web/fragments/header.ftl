@@ -96,7 +96,7 @@
                             </a>
                            <#-- Match subcategories for this category -->
                   <#assign relatedSubcategories = subCategoriesTree.childItems?filter(subcategory -> 
-    siteItemService.getSiteItem(subcategory.storeUrl).category_o.item[0].key == categoryItem.url) />
+    siteItemService.getSiteItem(subcategory.storeUrl).category_o.item[0].key == category.storeUrl) />
 
                     <#if relatedSubcategories?has_content>
                         <div class="dropdown-menu position-absolute rounded-0 border-0 m-0">
