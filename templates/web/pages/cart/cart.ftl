@@ -32,8 +32,8 @@
         <div class="row px-xl-5">
             <div class="col-lg-8 table-responsive mb-5">
       <@crafter.cms.api>
-                    <#-- Query all itemCart content type items -->
-                    <#assign itemCarts = crafter.api("/api/1/site/content_store/children.json?url=/site/components/Cart").execute().items />
+                    <#-- Make an API request to fetch children of the Cart component -->
+                    <#assign cartItemsResponse = crafter.api("/api/1/site/content_store/children.json?url=/site/components/Cart&crafterSite=hubmanagment").execute() />
                 </@crafter.cms.api>
 
                 <#-- Iterate through the itemCart components -->
