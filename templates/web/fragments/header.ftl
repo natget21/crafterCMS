@@ -98,7 +98,6 @@
                   <#assign relatedSubcategories = subCategoriesTree.childItems?filter(subcategory -> 
     siteItemService.getSiteItem(subcategory.storeUrl).category_o.item[0].key == category.storeUrl) />
 
-                    <#if relatedSubcategories?has_content>
                         <div class="dropdown-menu position-absolute rounded-0 border-0 m-0">
                             <#list relatedSubcategories as subcategory>
                                 <#assign subCategoryItem = siteItemService.getSiteItem(subcategory.storeUrl) />
@@ -107,7 +106,6 @@
                                 </a>
                             </#list>
                         </div>
-                    </#if>
                 </div>
                              </#list>
                             <#else>
