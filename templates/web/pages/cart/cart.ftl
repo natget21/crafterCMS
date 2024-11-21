@@ -31,26 +31,16 @@
     <div class="container-fluid">
         <div class="row px-xl-5">
             <div class="col-lg-8 table-responsive mb-5">
-    <#assign cartTree = siteItemService.getSiteTree('/site/components/Cart', 1)>
+  <#assign cartTree = siteItemService.getSiteTree('/site/components/Cart', 1)>
 <#if cartTree?has_content>
     <ul>
         <#list cartTree.childItems as item>
-             <#assign cartItem = siteItemService.getSiteItem(item.storeUrl) />
-            <li>
-                <p>Quantity: ${cartItem.queryValue('quantity_s')}</p>
-                <p>${cartItem.queryValue('item_o')}</p>
-                 <#if cartItem.childItems?has_content>
-                    <ul>
-                        <#list cartItem.childItems as childItem>
-                        <p>${childItem}</p>
-                            <#assign childItemModel = siteItemService.getSiteItem(childItem.storeUrl) />
-                            <li>
-                                <p>Child Item: ${childItemModel.queryValue('name_s')}</p>
-                                <!-- Use childItemModel to access more fields of the child item -->
-                            </li>
-                        </#list>
-                    </ul>
-                </#if>
+            <#assign cartItem = siteItemService.getSiteItem(item.storeUrl) />
+            <p>Quantity: ${cartItem.queryValue('quantity_s')}</p>
+                <#assign relatedItem = siteItemService.getSiteItem(cartItem.item_o.item[0].key) />
+                
+                <li>
+                    <p>Course: ${relatedItem.queryValue('nome_s')}</p>
                 </li>
         </#list>
     </ul>
