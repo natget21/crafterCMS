@@ -84,23 +84,18 @@
                 <nav class="collapse position-absolute navbar navbar-vertical navbar-light align-items-start p-0 bg-light" id="navbar-vertical" style="width: calc(100% - 30px); z-index: 999;">
                     <div class="navbar-nav w-100">
                         <div class="nav-item dropdown dropright">
-                            <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Dresses <i class="fa fa-angle-right float-right mt-1"></i></a>
-                            <div class="dropdown-menu position-absolute rounded-0 border-0 m-0">
-                                <a href="" class="dropdown-item">Men's Dresses</a>
-                                <a href="" class="dropdown-item">Women's Dresses</a>
-                                <a href="" class="dropdown-item">Baby's Dresses</a>
-                            </div>
+                        <#assign categoriesTree = siteItemService.getSiteTree('/site/components/categories', 1)>
+                            <#if categoriesTree?has_content>
+                            <#list categoriesTree.children as category>
+                            <#assign categoryItem = siteItemService.getSiteItem(item.storeUrl) />
+                            <a href="" class="nav-item nav-link">
+                                ${categoryItem.queryValue('categoryname_s')}
+                            </a>
+                             </#list>
+                            <#else>
+                                <p>No categories found.</p>
+                            </#if>
                         </div>
-                        <a href="" class="nav-item nav-link">Shirts</a>
-                        <a href="" class="nav-item nav-link">Jeans</a>
-                        <a href="" class="nav-item nav-link">Swimwear</a>
-                        <a href="" class="nav-item nav-link">Sleepwear</a>
-                        <a href="" class="nav-item nav-link">Sportswear</a>
-                        <a href="" class="nav-item nav-link">Jumpsuits</a>
-                        <a href="" class="nav-item nav-link">Blazers</a>
-                        <a href="" class="nav-item nav-link">Jackets</a>
-                        <a href="" class="nav-item nav-link">Shoes</a>
-                    </div>
                 </nav>
             </div>
             <div class="col-lg-9">
