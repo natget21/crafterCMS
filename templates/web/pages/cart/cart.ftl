@@ -34,7 +34,7 @@
     <#assign cartTree = siteItemService.getSiteTree('/site/components/Cart', 1)>
 <#if cartTree?has_content>
     <ul>
-        <#list cartTree.children as item>
+        <#list cartTree.childItems as item>
             <li>
                 <a href="${item.browserUri}">${item.name}</a>
             </li>
