@@ -73,7 +73,9 @@
 <a href="#" class="btn btn-primary back-to-top"><i class="fa fa-angle-double-up"></i></a>
 
     
-<#include "/templates/web/fragments/scripts.ftl">
+	<#include "/templates/web/fragments/footer.ftl">
+
+    <#include "/templates/web/fragments/scripts.ftl">
 <@crafter.body_bottom/>
 
 </body>
