@@ -38,14 +38,7 @@
              <#assign cartItem = siteItemService.getSiteItem(item.storeUrl) />
             <li>
                 <p>Quantity: ${cartItem.queryValue('quantity_s')}</p>
-              <#assign item_o = cartItem.queryValues('item_o') />
-               <p>testt: ${item_o}</p>
-<#if item_o?? && item_o.item?size > 0>
-    <#assign courseUrl = item_o.item[0].key />
-    <#assign courseModel = siteItemService.getSiteItem(courseUrl) />
-    <p>Course Name: ${courseModel.queryValue('nome_s')}</p>
-    <!-- You can now use courseModel to access the fields of the course -->
-</#if>
+
                 </li>
         </#list>
     </ul>
