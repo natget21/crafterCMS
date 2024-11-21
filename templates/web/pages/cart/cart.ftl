@@ -36,7 +36,7 @@
     <ul>
         <#list cartTree.childItems as item>
             <li>
-                <p>item</p>
+                <p>${item}</p>
             </li>
         </#list>
     </ul>
