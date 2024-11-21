@@ -10,13 +10,13 @@
 	<folder-name/>
 	<internal-name>Studi di Fattibilità</internal-name>
 	<subCategoryName_s>Studi di Fattibilità</subCategoryName_s>
-	<category_o item-list="true">	<item>	<key>/site/components/categories/b433e04d-b38c-8349-62a6-5e4c3665a612.xml</key>
-	<value>api</value>
-	<include>/site/components/categories/b433e04d-b38c-8349-62a6-5e4c3665a612.xml</include>
+	<category_o item-list="true">	<item>	<key>/site/components/categories/3e7854fd-db5b-a6b8-a9ac-94cb8c2d2e0a-copy-4.xml</key>
+	<value>TEST BEFORE INVEST</value>
+	<include>/site/components/categories/3e7854fd-db5b-a6b8-a9ac-94cb8c2d2e0a-copy-4.xml</include>
 	<disableFlattening>false</disableFlattening>
 	</item></category_o>
 	<createdDate>2024-11-14T09:03:25.519Z</createdDate>
 	<createdDate_dt>2024-11-14T09:03:25.519Z</createdDate_dt>
-	<lastModifiedDate>2024-11-14T09:03:27.591Z</lastModifiedDate>
-	<lastModifiedDate_dt>2024-11-14T09:03:27.591Z</lastModifiedDate_dt>
+	<lastModifiedDate>2024-11-21T15:29:04.621Z</lastModifiedDate>
+	<lastModifiedDate_dt>2024-11-21T15:29:04.621Z</lastModifiedDate_dt>
 </component>
