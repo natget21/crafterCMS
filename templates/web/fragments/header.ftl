@@ -94,10 +94,10 @@
                                 ${categoryItem.queryValue('categoryname_s')}
                                 <i class="fa fa-angle-right float-right mt-1"></i>
                             </a>
-                            <#-- Match subcategories for this category -->
+                           <#-- Match subcategories for this category -->
                     <#assign relatedSubcategories = subCategoriesTree.childItems?filter(subcategory -> 
-                        subcategory.descriptorDom.component['category_o']?has_content &&
-                        subcategory.descriptorDom.component.category_o.item?some(it -> it.key == categoryItem.url)) />
+                        siteItemService.getSiteItem(subcategory.storeUrl).queryValue('category_o.item')?some(it -> 
+                            it.key == categoryItem.url)) />
 
                     <#if relatedSubcategories?has_content>
                         <div class="dropdown-menu position-absolute rounded-0 border-0 m-0">
