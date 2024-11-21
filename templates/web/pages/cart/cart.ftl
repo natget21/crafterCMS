@@ -19,8 +19,7 @@
     <!-- Font Awesome -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
 
-    <!-- Customized Bootstrap Stylesheet -->
-    <link href="/static-assets/css/style.css" rel="stylesheet">
+   <#include "/templates/web/fragments/scripts.ftl">
 
     <@crafter.head />
 </head>
