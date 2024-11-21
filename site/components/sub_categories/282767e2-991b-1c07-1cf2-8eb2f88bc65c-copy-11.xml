@@ -10,13 +10,13 @@
 	<folder-name/>
 	<internal-name>Formazione tailor made tecnica e manageriale</internal-name>
 	<subCategoryName_s>Formazione tailor made tecnica e manageriale</subCategoryName_s>
-	<category_o item-list="true">	<item>	<key>/site/components/categories/b433e04d-b38c-8349-62a6-5e4c3665a612.xml</key>
-	<value>api</value>
-	<include>/site/components/categories/b433e04d-b38c-8349-62a6-5e4c3665a612.xml</include>
+	<category_o item-list="true">	<item>	<key>/site/components/categories/3e7854fd-db5b-a6b8-a9ac-94cb8c2d2e0a-copy-3.xml</key>
+	<value>SKILLS AND TRAINING</value>
+	<include>/site/components/categories/3e7854fd-db5b-a6b8-a9ac-94cb8c2d2e0a-copy-3.xml</include>
 	<disableFlattening>false</disableFlattening>
 	</item></category_o>
 	<createdDate>2024-11-14T09:02:53.272Z</createdDate>
 	<createdDate_dt>2024-11-14T09:02:53.272Z</createdDate_dt>
-	<lastModifiedDate>2024-11-14T09:02:55.373Z</lastModifiedDate>
-	<lastModifiedDate_dt>2024-11-14T09:02:55.373Z</lastModifiedDate_dt>
+	<lastModifiedDate>2024-11-21T15:26:09.012Z</lastModifiedDate>
+	<lastModifiedDate_dt>2024-11-21T15:26:09.012Z</lastModifiedDate_dt>
 </component>
