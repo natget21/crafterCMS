@@ -100,10 +100,13 @@
                 <h5 class="section-title position-relative text-uppercase mb-3"><span class="bg-secondary pr-3">Cart Summary</span></h5>
              <div class="bg-light p-30 mb-5">
     <div class="border-bottom pb-2">
-        <#-- Calculate Subtotal dynamically by adding all item totals -->
+   <#-- Calculate Subtotal dynamically by adding all item totals -->
         <#assign subtotal = 0>
-        <#list cartItems as item>
-            <#assign subtotal = subtotal + (item.price?number * item.quantity?number)>
+        <#list cartTree.childItems as item>
+            <#assign cartItem = siteItemService.getSiteItem(item.storeUrl) />
+            <#assign relatedItem = siteItemService.getSiteItem(cartItem.item_o.item[0].key) />
+            <#-- Sum the total for each item -->
+            <#assign subtotal = subtotal + (relatedItem.queryValue('costo_s')?number * cartItem.queryValue('quantity_s')?number)>
         </#list>
 
         <div class="d-flex justify-content-between mb-3">
