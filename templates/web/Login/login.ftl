@@ -7,7 +7,6 @@
     <title>Login</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="/static-assets/css/login/login.css" rel="stylesheet">
-    <#include "/templates/web/fragments/head.ftl">
     <@crafter.head/>
 </head>
 <body>
