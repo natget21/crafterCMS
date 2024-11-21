@@ -38,7 +38,7 @@
              <#assign cartItem = siteItemService.getSiteItem(item.storeUrl) />
             <li>
                 <p>Quantity: ${cartItem.queryValue('quantity_s')}</p>
-                  <p>tesst: ${cartItem.queryValue('item_o')}</p>
+                  <p>tesst: ${cartItem.queryValue('price_s')}</p>
                   <#assign relatedItems = cartItem.queryValue('item_o.item') />
                 <#if relatedItems?has_content>
                     <ul>
