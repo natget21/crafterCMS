@@ -87,7 +87,7 @@
                         <#assign categoriesTree = siteItemService.getSiteTree('/site/components/categories', 1)>
                             <#if categoriesTree?has_content>
                             <#list categoriesTree.childItems as category>
-                            <#assign categoryItem = siteItemService.getSiteItem(item.storeUrl) />
+                            <#assign categoryItem = siteItemService.getSiteItem(category.storeUrl) />
                             <a href="" class="nav-item nav-link">
                                 ${categoryItem.queryValue('categoryname_s')}
                             </a>
