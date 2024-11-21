@@ -90,7 +90,7 @@
                             <#list categoriesTree.childItems as category>
                             <#assign categoryItem = siteItemService.getSiteItem(category.storeUrl) />
                             <div class="nav-item dropdown dropright">
-                            <a href="#" class="nav-item nav-link">
+                            <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">
                                 ${categoryItem.queryValue('categoryname_s')}
                                 <i class="fa fa-angle-right float-right mt-1"></i>
                             </a>
