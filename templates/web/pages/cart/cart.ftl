@@ -38,6 +38,20 @@
              <#assign cartItem = siteItemService.getSiteItem(item.storeUrl) />
             <li>
                 <p>Quantity: ${cartItem.queryValue('quantity_s')}</p>
+                  <#assign relatedItems = cartItem.queryValue('item_o.item') />
+                <#if relatedItems?has_content>
+                    <ul>
+                        <#list relatedItems as relatedItem>
+                            <#assign courseItem = siteItemService.getSiteItem(relatedItem.key) />
+                            <li>
+                                <p>Course Name: ${courseItem.queryValue('nome_s')}</p>
+                                <p>Course price: ${courseItem.queryValue('costo_s')}</p>
+                            </li>
+                        </#list>
+                    </ul>
+                <#else>
+                    <p>No related courses found.</p>
+                </#if>
                 </li>
         </#list>
     </ul>
