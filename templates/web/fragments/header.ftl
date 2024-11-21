@@ -96,7 +96,7 @@
                             </a>
                            <#-- Match subcategories for this category -->
                     <#assign relatedSubcategories = subCategoriesTree.childItems?filter(subcategory -> 
-                        siteItemService.getSiteItem(subcategory.storeUrl).queryValue('category_o.item')?some(it -> 
+                        siteItemService.getSiteItem(subcategory.storeUrl).category_o.item?some(it -> 
                             it.key == categoryItem.url)) />
 
                     <#if relatedSubcategories?has_content>
