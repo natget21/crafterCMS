@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component>
+	<content-type>/component/tags</content-type>
+	<display-template/>
+	<no-template-required>true</no-template-required>
+	<merge-strategy>inherit-levels</merge-strategy>
+	<objectGroupId>5829</objectGroupId>
+	<objectId>5829a209-0eac-43cd-c6d4-1d9ce1131155</objectId>
+	<file-name>5829a209-0eac-43cd-c6d4-1d9ce1131155.xml</file-name>
+	<folder-name/>
+	<internal-name>service</internal-name>
+	<tag_s>service</tag_s>
+	<createdDate>2024-11-21T16:32:10.002Z</createdDate>
+	<createdDate_dt>2024-11-21T16:32:10.002Z</createdDate_dt>
+	<lastModifiedDate>2024-11-21T16:32:10.002Z</lastModifiedDate>
+	<lastModifiedDate_dt>2024-11-21T16:32:10.002Z</lastModifiedDate_dt>
+</component>
