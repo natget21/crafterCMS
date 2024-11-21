@@ -101,7 +101,7 @@
                             <#list relatedSubcategories as subcategory>
                                 <#assign subCategoryItem = siteItemService.getSiteItem(subcategory.storeUrl) />
                                 <a href="#" class="dropdown-item">
-                                    ${subcategory}
+                                    hello
                                 </a>
                             </#list>
                         </div>
