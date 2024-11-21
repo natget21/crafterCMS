@@ -41,6 +41,7 @@
                  <#if cartItem.childItems?has_content>
                     <ul>
                         <#list cartItem.childItems as childItem>
+                        <p>${childItem}</p>
                             <#assign childItemModel = siteItemService.getSiteItem(childItem.storeUrl) />
                             <li>
                                 <p>Child Item: ${childItemModel.queryValue('name_s')}</p>
