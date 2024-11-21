@@ -10,13 +10,13 @@
 	<folder-name/>
 	<internal-name>Finanza agevolata ed Europrogettazione</internal-name>
 	<subCategoryName_s>Finanza agevolata ed Europrogettazione</subCategoryName_s>
-	<category_o item-list="true">	<item>	<key>/site/components/categories/b433e04d-b38c-8349-62a6-5e4c3665a612.xml</key>
-	<value>api</value>
-	<include>/site/components/categories/b433e04d-b38c-8349-62a6-5e4c3665a612.xml</include>
+	<category_o item-list="true">	<item>	<key>/site/components/categories/3e7854fd-db5b-a6b8-a9ac-94cb8c2d2e0a-copy-2.xml</key>
+	<value>ACCESS TO FINANCE</value>
+	<include>/site/components/categories/3e7854fd-db5b-a6b8-a9ac-94cb8c2d2e0a-copy-2.xml</include>
 	<disableFlattening>false</disableFlattening>
 	</item></category_o>
 	<createdDate>2024-11-14T08:56:43.830Z</createdDate>
 	<createdDate_dt>2024-11-14T08:56:43.830Z</createdDate_dt>
-	<lastModifiedDate>2024-11-14T08:56:46.575Z</lastModifiedDate>
-	<lastModifiedDate_dt>2024-11-14T08:56:46.575Z</lastModifiedDate_dt>
+	<lastModifiedDate>2024-11-21T15:25:08.289Z</lastModifiedDate>
+	<lastModifiedDate_dt>2024-11-21T15:25:08.289Z</lastModifiedDate_dt>
 </component>
