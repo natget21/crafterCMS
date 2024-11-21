@@ -83,12 +83,12 @@
                 </a>
                 <nav class="collapse position-absolute navbar navbar-vertical navbar-light align-items-start p-0 bg-light" id="navbar-vertical" style="width: calc(100% - 30px); z-index: 999;">
                     <div class="navbar-nav w-100">
-                        <div class="nav-item dropdown dropright">
                         <#assign categoriesTree = siteItemService.getSiteTree('/site/components/categories', 1)>
                         <#assign subCategoriesTree = siteItemService.getSiteTree('/site/components/sub_categories', 1)>
                             <#if categoriesTree?has_content>
                             <#list categoriesTree.childItems as category>
                             <#assign categoryItem = siteItemService.getSiteItem(category.storeUrl) />
+                            <div class="nav-item dropdown dropright">
                             <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">
                                 ${categoryItem.queryValue('categoryname_s')}
                                 <i class="fa fa-angle-right float-right mt-1"></i>
