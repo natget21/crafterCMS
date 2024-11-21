@@ -43,8 +43,7 @@
                 <#assign relatedItem = siteItemService.getSiteItem(relatedItemUrl) />
                 
                 <li>
-                    <p>Quantity: ${cartItem.queryValue('quantity_s')}</p>
-                    <p>Course: ${relatedItem.queryValue('value')}</p>
+                    <p>Course: ${relatedItem}</p>
                 </li>
             </#if>
                 </li>
