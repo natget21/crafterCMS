@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component>
+	<content-type>/component/taxonomy</content-type>
+	<display-template/>
+	<no-template-required>true</no-template-required>
+	<merge-strategy>inherit-levels</merge-strategy>
+	<objectGroupId>c75e</objectGroupId>
+	<objectId>c75e804a-1180-fd59-31b8-43b415f10bcb</objectId>
+	<file-name>c75e804a-1180-fd59-31b8-43b415f10bcb.xml</file-name>
+	<folder-name/>
+	<internal-name>Tags</internal-name>
+	<values_o item-list="true">	<item>	<key_s>service</key_s>
+	<value_s>service</value_s>
+	</item>	<item>	<key_s>Human</key_s>
+	<value_s>Human</value_s>
+	</item>	<item>	<key_s>PA</key_s>
+	<value_s>PA</value_s>
+	</item>	<item>	<key_s>PMI </key_s>
+	<value_s>PMI </value_s>
+	</item>	<item>	<key_s>Terzo settore</key_s>
+	<value_s>Terzo settore</value_s>
+	</item>	<item>	<key_s>Hw</key_s>
+	<value_s>Hw</value_s>
+	</item>	<item>	<key_s>Sftw</key_s>
+	<value_s>Sftw</value_s>
+	</item>	<item>	<key_s>Tag delle tecnologie digitali</key_s>
+	<value_s>Tag delle tecnologie digitali</value_s>
+	</item>	<item>	<key_s>Energy</key_s>
+	<value_s>Energy</value_s>
+	</item>	<item>	<key_s>Mobility</key_s>
+	<value_s>Mobility</value_s>
+	</item>	<item>	<key_s>Health</key_s>
+	<value_s>Health</value_s>
+	</item>	<item>	<key_s>Corsi formazione &lt;24 ore</key_s>
+	<value_s>Corsi formazione &lt;24 ore</value_s>
+	</item>	<item>	<key_s>online</key_s>
+	<value_s>online</value_s>
+	</item>	<item>	<key_s>in presenza</key_s>
+	<value_s>in presenza</value_s>
+	</item></values_o>
+	<createdDate>2024-11-21T17:09:23.497Z</createdDate>
+	<createdDate_dt>2024-11-21T17:09:23.497Z</createdDate_dt>
+	<lastModifiedDate>2024-11-21T17:09:23.497Z</lastModifiedDate>
+	<lastModifiedDate_dt>2024-11-21T17:09:23.497Z</lastModifiedDate_dt>
+</component>
