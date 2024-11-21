@@ -31,9 +31,18 @@
     <div class="container-fluid">
         <div class="row px-xl-5">
             <div class="col-lg-8 table-responsive mb-5">
-        <@crafter.h1 $field="quantity_s">
-            ${contentModel.quantity_s!""}
-          </@crafter.h1>
+      <@crafter.cms.query>
+                    <#-- Query all itemCart content type items -->
+                    <#assign itemCarts = crafter.query("/site/components/Cart").execute() />
+                </@crafter.cms.query>
+
+                <#-- Iterate through the itemCart components -->
+                <#list itemCarts.items as itemCart>
+                    <div class="item-cart">
+                        <h2>${itemCart.quantity_s!""}</h2>
+                        <p>${itemCart.price_s!""}</p>
+                    </div>
+                </#list>
                </div>
         </div>
     </div>
