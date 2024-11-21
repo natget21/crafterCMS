@@ -35,9 +35,10 @@
 <#if cartTree?has_content>
     <ul>
         <#list cartTree.childItems as item>
+             <#assign cartItem = siteItemService.getSiteItem(item.storeUrl) />
             <li>
-                <p>${item}</p>
-            </li>
+                <p>Quantity: ${cartItem.queryValue('quantity_s')}</p>
+                </li>
         </#list>
     </ul>
 <#else>
