@@ -1,37 +1,11 @@
-<#-- scripts.ftl -->
-<!-- jQuery -->
-<script src="/static-assets/js/jquery-2.1.0.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+<script src="/static-assets/js/lib/easing/easing.min.js"></script>
+<script src="/static-assets/js/lib/owlcarousel/owl.carousel.min.js"></script>
 
-<!-- Bootstrap -->
-<script src="/static-assets/js/popper.js"></script>
-<script src="/static-assets/js/bootstrap.min.js"></script>
+    <!-- Contact Javascript File -->
+<script src="/static-assets/js/mail/jqBootstrapValidation.min.js"></script>
+<script src="/static-assets/js/mail/contact.js"></script>
 
-<!-- Plugins -->
-<script src="/static-assets/js/owl-carousel.js"></script>
-<script src="/static-assets/js/accordions.js"></script>
-<script src="/static-assets/js/datepicker.js"></script>
-<script src="/static-assets/js/scrollreveal.min.js"></script>
-<script src="/static-assets/js/waypoints.min.js"></script>
-<script src="/static-assets/js/jquery.counterup.min.js"></script>
-<script src="/static-assets/js/imgfix.min.js"></script> 
-<script src="/static-assets/js/slick.js"></script> 
-<script src="/static-assets/js/lightbox.js"></script> 
-<script src="/static-assets/js/isotope.js"></script> 
-
-<!-- Global Init -->
-<script src="/static-assets/js/custom.js"></script>
-
-<script>
-    $(function() {
-        var selectedClass = "";
-        $("p").click(function(){
-            selectedClass = $(this).attr("data-rel");
-            $("#portfolio").fadeTo(50, 0.1);
-            $("#portfolio div").not("." + selectedClass).fadeOut();
-            setTimeout(function() {
-                $("." + selectedClass).fadeIn();
-                $("#portfolio").fadeTo(50, 1);
-            }, 500);
-        });
-    });
-</script>
+    <!-- Template Javascript -->
+<script src="/static-assets/js/js/main.js"></script>
