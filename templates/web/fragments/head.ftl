@@ -1,6 +1,4 @@
-<link rel="stylesheet" href="/static-assets/css/bootstrap.min.css">
-<link rel="stylesheet" href="/static-assets/css/font-awesome.css">
-<link rel="stylesheet" href="/static-assets/css/templatemo-hexashop.css">
-<link rel="stylesheet" href="/static-assets/css/owl-carousel.css">
-<link rel="stylesheet" href="/static-assets/css/lightbox.css">
-<link rel="stylesheet" href="/static-assets/css/style.css">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">  
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+<link href="/static-assets/js/lib/animate/animate.min.css" rel="stylesheet">
