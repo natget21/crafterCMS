@@ -40,7 +40,7 @@
                 <#assign relatedItem = siteItemService.getSiteItem(cartItem.item_o.item[0].key) />
                 
                 <li>
-                    <p>Course: ${relatedItem.queryValue('nome_s')}</p>
+                    <p>Course: ${relatedItem.queryValue('costo_s')}</p>
                 </li>
         </#list>
     </ul>
