@@ -70,7 +70,7 @@
                                         </div>
                                     </td>
                                     <td class="align-middle">
-                                        <#assign total = relatedItem.queryValue('costo_s') * cartItem.queryValue('quantity_s')>
+                                        <#assign total = (relatedItem.queryValue('costo_s')?number) * (cartItem.queryValue('quantity_s')?number)>
                                         ${total}
                                     </td>
                                     <td class="align-middle">
