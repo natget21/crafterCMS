@@ -20,6 +20,30 @@
         <div class="row px-xl-5">
            <!-- Shop Sidebar Start -->
             <div class="col-lg-3 col-md-4">
+            <h5 class="section-title position-relative text-uppercase mb-3">
+    <span class="bg-secondary pr-3">Filter by Tags</span>
+</h5>
+<div class="bg-light p-4 mb-30">
+    <form>
+        <#assign tagsTaxonomy = siteItemService.getSiteItem('/site/components/taxonomy/c75e804a-1180-fd59-31b8-43b415f10bcb.xml') />
+        <#assign tags = tagsTaxonomy.values_o.item />
+        
+        <#list tags?chunk(2) as row>
+            <div class="row mb-3">
+                <#list row as tag>
+                    <div class="col-6">
+                        <div class="custom-control custom-checkbox">
+                            <input type="checkbox" class="custom-control-input" id="tag-${tag.key_s}">
+                            <label class="custom-control-label" for="tag-${tag.key_s}">
+                                ${tag.value_s}
+                            </label>
+                        </div>
+                    </div>
+                </#list>
+            </div>
+        </#list>
+    </form>
+</div>
                 <!-- Price Start -->
                 <h5 class="section-title position-relative text-uppercase mb-3"><span class="bg-secondary pr-3">Filter by price</span></h5>
                 <div class="bg-light p-4 mb-30">
