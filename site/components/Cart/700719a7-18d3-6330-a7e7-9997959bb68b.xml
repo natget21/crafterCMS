@@ -8,16 +8,15 @@
 	<objectId>700719a7-18d3-6330-a7e7-9997959bb68b</objectId>
 	<file-name>700719a7-18d3-6330-a7e7-9997959bb68b.xml</file-name>
 	<folder-name/>
-	<internal-name>test</internal-name>
-	<price_s>10</price_s>
+	<internal-name>Cyber security</internal-name>
 	<quantity_s>1</quantity_s>
-	<item_o item-list="true">	<item>	<key>/site/components/items/course/d5c94272-2c9f-4fa7-a018-39c8408ca2de.xml</key>
-	<value>test course</value>
-	<include>/site/components/items/course/d5c94272-2c9f-4fa7-a018-39c8408ca2de.xml</include>
+	<item_o item-list="true">	<item>	<key>/site/components/items/course/c2bf7acd-8070-a373-d4c6-df252e9f5438.xml</key>
+	<value>CYBERSECURITY AWARENESS</value>
+	<include>/site/components/items/course/c2bf7acd-8070-a373-d4c6-df252e9f5438.xml</include>
 	<disableFlattening>false</disableFlattening>
 	</item></item_o>
 	<createdDate>2024-11-20T10:23:12.098Z</createdDate>
 	<createdDate_dt>2024-11-20T10:23:12.098Z</createdDate_dt>
-	<lastModifiedDate>2024-11-20T10:23:12.098Z</lastModifiedDate>
-	<lastModifiedDate_dt>2024-11-20T10:23:12.098Z</lastModifiedDate_dt>
+	<lastModifiedDate>2024-11-22T10:33:23.116Z</lastModifiedDate>
+	<lastModifiedDate_dt>2024-11-22T10:33:23.116Z</lastModifiedDate_dt>
 </component>
