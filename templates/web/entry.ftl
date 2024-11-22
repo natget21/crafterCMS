@@ -20,10 +20,7 @@
         <div class="row px-xl-5">
            <!-- Shop Sidebar Start -->
             <div class="col-lg-3 col-md-4">
-          <h5 class="section-title position-relative text-uppercase mb-3">
-    <span class="bg-secondary pr-3">Filter by Tags</span>
-</h5>
-<h5 class="section-title position-relative text-uppercase mb-3">
+         <h5 class="section-title position-relative text-uppercase mb-3">
     <span class="bg-secondary pr-3">Filter by Tags</span>
 </h5>
 <div class="bg-light p-4 mb-30">
@@ -31,10 +28,10 @@
         <#assign tagsTaxonomy = siteItemService.getSiteItem('/site/components/taxonomy/c75e804a-1180-fd59-31b8-43b415f10bcb.xml') />
         <#assign tags = tagsTaxonomy.values_o.item />
         
-        <#list tags?chunk(2) as row>
-            <div class="row mb-3">
-                <#list row as tag>
-                    <div class="col-6">
+        <#list tags as tag>
+            <#if tag.value_s?length > 30>
+                <div class="row mb-3">
+                    <div class="col-12">
                         <div class="custom-control custom-checkbox">
                             <input type="checkbox" class="custom-control-input" id="tag-${tag.key_s}">
                             <label class="custom-control-label" for="tag-${tag.key_s}">
@@ -42,8 +39,23 @@
                             </label>
                         </div>
                     </div>
-                </#list>
-            </div>
+                </div>
+            <#else>
+                <#if tags?index_of(tag) % 2 == 0>
+                    <div class="row mb-3">
+                </#if>
+                <div class="col-6">
+                    <div class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input" id="tag-${tag.key_s}">
+                        <label class="custom-control-label" for="tag-${tag.key_s}">
+                            ${tag.value_s}
+                        </label>
+                    </div>
+                </div>
+                <#if tags?index_of(tag) % 2 == 1 || tags?index_of(tag) == tags?size - 1>
+                    </div> <!-- Close row after two tags or if it's the last tag -->
+                </#if>
+            </#if>
         </#list>
     </form>
 </div>
