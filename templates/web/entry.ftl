@@ -109,9 +109,9 @@
                 </div>
                 <div class="text-center py-4">
                     <!-- Course Name -->
-                    <a class="h6 text-decoration-none text-truncate" href="">
-                        ${courseItem.queryValue('nome_s')}
-                    </a>
+                   <a class="h6 text-decoration-none" href="">
+    ${courseItem.queryValue('nome_s')}
+</a>
                     <!-- Course Price -->
                     <div class="d-flex align-items-center justify-content-center mt-2">
                         <h5>${courseItem.queryValue('costo_s')}</h5>
