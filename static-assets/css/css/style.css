@@ -9702,6 +9702,31 @@ a.text-dark:hover, a.text-dark:focus {
   animation: action 1s infinite alternate;
 }
 
+.product-item {
+    min-height: 400px; /* Set a minimum height to make all containers consistent */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.product-item .product-img {
+    max-height: 200px; /* Ensure the image doesn't stretch the container */
+    overflow: hidden;
+}
+
+.product-item .text-center {
+    flex-grow: 1; /* Ensures the content area takes the remaining space */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.product-item a.h6 {
+    word-wrap: break-word; /* Allows long names to wrap to the next line */
+    text-align: center;    /* Center align text */
+    white-space: normal;   /* Prevents text from staying in a single line */
+}
+
 @keyframes action {
   0% {
     transform: translateY(0);
