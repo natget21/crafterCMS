@@ -33,7 +33,7 @@
         
         <#-- Separate tags into small and large categories -->
         <#list tags as tag>
-            <#if tag.value_s?trim?length <= 30>
+            <#if tag.value_s?trim?length <= 10>
                 <#assign smallTags = smallTags + [tag]>
             <#else>
                 <#assign largeTags = largeTags + [tag]>
