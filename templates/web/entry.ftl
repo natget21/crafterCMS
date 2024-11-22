@@ -23,16 +23,18 @@
           <h5 class="section-title position-relative text-uppercase mb-3">
     <span class="bg-secondary pr-3">Filter by Tags</span>
 </h5>
+<h5 class="section-title position-relative text-uppercase mb-3">
+    <span class="bg-secondary pr-3">Filter by Tags</span>
+</h5>
 <div class="bg-light p-4 mb-30">
     <form>
         <#assign tagsTaxonomy = siteItemService.getSiteItem('/site/components/taxonomy/c75e804a-1180-fd59-31b8-43b415f10bcb.xml') />
         <#assign tags = tagsTaxonomy.values_o.item />
         
-        <#list tags as tag>
-            <#if tag.value_s?length > 20> <!-- Adjust the length as needed -->
-                <!-- Long tags go on their own row -->
-                <div class="row mb-3">
-                    <div class="col-12">
+        <#list tags?chunk(2) as row>
+            <div class="row mb-3">
+                <#list row as tag>
+                    <div class="col-6">
                         <div class="custom-control custom-checkbox">
                             <input type="checkbox" class="custom-control-input" id="tag-${tag.key_s}">
                             <label class="custom-control-label" for="tag-${tag.key_s}">
@@ -40,44 +42,8 @@
                             </label>
                         </div>
                     </div>
-                </div>
-            <#else>
-                <!-- Short tags can fit together in a row -->
-                <#assign nextTag = tags?index_of(tag) + 1>
-                <#if nextTag < tags?size && tags[nextTag].value_s?length <= 20> <!-- Check if next tag is short -->
-                    <div class="row mb-3">
-                        <div class="col-6">
-                            <div class="custom-control custom-checkbox">
-                                <input type="checkbox" class="custom-control-input" id="tag-${tag.key_s}">
-                                <label class="custom-control-label" for="tag-${tag.key_s}">
-                                    ${tag.value_s}
-                                </label>
-                            </div>
-                        </div>
-                        <div class="col-6">
-                            <div class="custom-control custom-checkbox">
-                                <input type="checkbox" class="custom-control-input" id="tag-${tags[nextTag].key_s}">
-                                <label class="custom-control-label" for="tag-${tags[nextTag].key_s}">
-                                    ${tags[nextTag].value_s}
-                                </label>
-                            </div>
-                        </div>
-                    </div>
-                    <#assign tags = tags?remove(nextTag)> <!-- Remove next tag from list after pairing -->
-                <#else>
-                    <!-- If no next short tag, just show the current tag -->
-                    <div class="row mb-3">
-                        <div class="col-12">
-                            <div class="custom-control custom-checkbox">
-                                <input type="checkbox" class="custom-control-input" id="tag-${tag.key_s}">
-                                <label class="custom-control-label" for="tag-${tag.key_s}">
-                                    ${tag.value_s}
-                                </label>
-                            </div>
-                        </div>
-                    </div>
-                </#if>
-            </#if>
+                </#list>
+            </div>
         </#list>
     </form>
 </div>
