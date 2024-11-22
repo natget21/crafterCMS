@@ -9703,7 +9703,7 @@ a.text-dark:hover, a.text-dark:focus {
 }
 
 .product-item {
-    min-height: 400px; /* Set a minimum height to make all containers consistent */
+    min-height: 350px; /* Set a minimum height to make all containers consistent */
     display: flex;
     flex-direction: column;
     justify-content: space-between;
