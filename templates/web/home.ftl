@@ -57,7 +57,7 @@
                     </form>
                 </div>
                 <!-- Price End -->
-                
+                </div>
             </div>
             <!-- Shop Sidebar End -->
 
