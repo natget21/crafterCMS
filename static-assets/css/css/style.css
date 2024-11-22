@@ -9727,6 +9727,20 @@ a.text-dark:hover, a.text-dark:focus {
     white-space: normal;   /* Prevents text from staying in a single line */
 }
 
+.tagRow {
+    display: flex;
+    flex-wrap: wrap; /* Ensures the tags wrap to the next line when necessary */
+}
+
+.tagCol {
+    flex: 1 1 45%; /* Ensures that each tag takes up no more than 50% of the width of the row */
+    margin-bottom: 10px; /* Adds spacing between rows */
+}
+
+.custom-control-label {
+    white-space: nowrap; /* Prevents text from breaking in the middle */
+}
+
 @keyframes action {
   0% {
     transform: translateY(0);
