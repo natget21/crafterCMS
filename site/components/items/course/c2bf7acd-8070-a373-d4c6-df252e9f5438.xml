@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component>
+	<content-type>/component/course</content-type>
+	<display-template/>
+	<no-template-required>true</no-template-required>
+	<merge-strategy>inherit-levels</merge-strategy>
+	<objectGroupId>c2bf</objectGroupId>
+	<objectId>c2bf7acd-8070-a373-d4c6-df252e9f5438</objectId>
+	<subcategory_o item-list="true">	<item>	<key>/site/components/sub_categories/282767e2-991b-1c07-1cf2-8eb2f88bc65c-copy-10.xml</key>
+	<value>Formazione a catalogo tecnica e manageriale</value>
+	<include>/site/components/sub_categories/282767e2-991b-1c07-1cf2-8eb2f88bc65c-copy-10.xml</include>
+	<disableFlattening>false</disableFlattening>
+	</item></subcategory_o>
+	<file-name>c2bf7acd-8070-a373-d4c6-df252e9f5438.xml</file-name>
+	<folder-name/>
+	<internal-name>CYBERSECURITY AWARENESS</internal-name>
+	<nome_s>CYBERSECURITY AWARENESS</nome_s>
+	<partner_s>"MADE SCARL"</partner_s>
+	<costo_s>500 euro + IVA</costo_s>
+	<durata_s>8 ore</durata_s>
+	<modalita_s>In presenza</modalita_s>
+	<obiettivo_s/>
+	<contenuto_s/>
+	<rivolto_s/>
+	<maxpartecipanti_s>10</maxpartecipanti_s>
+	<createdDate>2024-11-22T09:40:59.612Z</createdDate>
+	<createdDate_dt>2024-11-22T09:40:59.612Z</createdDate_dt>
+	<lastModifiedDate>2024-11-22T09:40:59.612Z</lastModifiedDate>
+	<lastModifiedDate_dt>2024-11-22T09:40:59.612Z</lastModifiedDate_dt>
+</component>
