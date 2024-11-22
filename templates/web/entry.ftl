@@ -95,33 +95,28 @@
 <#if courseTree?has_content>
     <#list courseTree.childItems as course>
         <#assign courseItem = siteItemService.getSiteItem(course.storeUrl) />
-        <div class="col-lg-4 col-md-6 col-sm-6 pb-1">
-            <div class="product-item bg-light mb-4">
-                <div class="product-img position-relative overflow-hidden">
-                    <!-- Replace static image source with dynamic content if available -->
-                    <img class="img-fluid w-100" src="/static-assets/images/product-1.jpg" alt="${courseItem.queryValue('nome_s')}">
-                    <div class="product-action">
-                        <a class="btn btn-outline-dark btn-square" href=""><i class="fa fa-shopping-cart"></i></a>
-                        <a class="btn btn-outline-dark btn-square" href=""><i class="far fa-heart"></i></a>
-                        <a class="btn btn-outline-dark btn-square" href=""><i class="fa fa-sync-alt"></i></a>
-                        <a class="btn btn-outline-dark btn-square" href=""><i class="fa fa-search"></i></a>
-                    </div>
-                </div>
-                <div class="text-center py-4">
-                    <!-- Course Name -->
-                   <a class="h6 text-decoration-none" href="">
-    ${courseItem.queryValue('nome_s')}
-</a>
-                    <!-- Course Price -->
-                    <div class="d-flex align-items-center justify-content-center mt-2">
-                        <h5>${courseItem.queryValue('costo_s')}</h5>
-                    </div>
-                     <div class="d-flex align-items-center justify-content-center mb-1">
-                        (${courseItem.queryValue('durata_s')})
-                    </div>
-                </div>
+       <div class="col-lg-4 col-md-6 col-sm-6 pb-1">
+    <div class="product-item bg-light mb-4">
+        <div class="product-img position-relative overflow-hidden">
+            <img class="img-fluid w-100" src="/static-assets/images/product-1.jpg" alt="${courseItem.queryValue('nome_s')}">
+            <div class="product-action">
+                <a class="btn btn-outline-dark btn-square" href=""><i class="fa fa-shopping-cart"></i></a>
+                <a class="btn btn-outline-dark btn-square" href=""><i class="far fa-heart"></i></a>
+                <a class="btn btn-outline-dark btn-square" href=""><i class="fa fa-sync-alt"></i></a>
+                <a class="btn btn-outline-dark btn-square" href=""><i class="fa fa-search"></i></a>
             </div>
         </div>
+        <div class="text-center py-4">
+            <a class="h6 text-decoration-none" href="">${courseItem.queryValue('nome_s')}</a>
+            <div class="d-flex align-items-center justify-content-center mt-2">
+                <h5>${courseItem.queryValue('costo_s')}</h5>
+            </div>
+            <div class="d-flex align-items-center justify-content-center mb-1">
+                (${courseItem.queryValue('durata_s')})
+            </div>
+        </div>
+    </div>
+</div>
     </#list>
 <#else>
     <p>No courses available.</p>
