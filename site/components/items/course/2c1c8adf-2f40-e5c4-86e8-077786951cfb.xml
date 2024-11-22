@@ -11,7 +11,7 @@
 	<internal-name>INTRODUZIONE ALLE TECNOLOGIE 4.0</internal-name>
 	<nome_s>INTRODUZIONE ALLE TECNOLOGIE 4.0</nome_s>
 	<partner_s>MADE SCARL</partner_s>
-	<costo_s>€ 1000 + IVA a partecipante</costo_s>
+	<costo_s>1000</costo_s>
 	<durata_s>Due moduli da 8 ore</durata_s>
 	<modalita_s>In presenza c/o MADE COMPETENCE CENTER</modalita_s>
 	<obiettivo_s/>
@@ -25,6 +25,7 @@
 	</item></subcategory_o>
 	<createdDate>2024-11-22T09:43:45.864Z</createdDate>
 	<createdDate_dt>2024-11-22T09:43:45.864Z</createdDate_dt>
-	<lastModifiedDate>2024-11-22T09:43:45.864Z</lastModifiedDate>
-	<lastModifiedDate_dt>2024-11-22T09:43:45.864Z</lastModifiedDate_dt>
+	<lastModifiedDate>2024-11-22T11:35:26.833Z</lastModifiedDate>
+	<lastModifiedDate_dt>2024-11-22T11:35:26.833Z</lastModifiedDate_dt>
+	<extra_costo_t>+ IVA a partecipante</extra_costo_t>
 </component>
