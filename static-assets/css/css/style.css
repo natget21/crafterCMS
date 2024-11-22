@@ -9710,7 +9710,7 @@ a.text-dark:hover, a.text-dark:focus {
 }
 
 .product-item .product-img {
-    max-height: 250px; /* Ensure the image doesn't stretch the container */
+    max-height: 300px; /* Ensure the image doesn't stretch the container */
     overflow: hidden;
 }
 
