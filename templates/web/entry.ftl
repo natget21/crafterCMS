@@ -167,9 +167,7 @@
             <a class="h6 text-decoration-none" href="">${courseItem.queryValue('nome_s')}</a>
            <div class="d-flex align-items-center justify-content-center mt-2">
     <h5>&euro;${courseItem.queryValue('costo_s')}</h5>
-    <#if courseItem.queryValue('extra_costo_t')?trim?length <= 15>
         <span> ${courseItem.queryValue('extra_costo_t')}</span>
-    </#if>
 </div>
             <div class="d-flex align-items-center justify-content-center mb-1">
                 (${courseItem.queryValue('durata_s')})
