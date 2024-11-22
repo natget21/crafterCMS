@@ -38,7 +38,7 @@
                                 
                                 <tr>
                                     <td class="align-middle">
-                                        <img src="/static-assets/images/course.jpg" alt="" style="width: 50px;">
+                                        <img src="/static-assets/images/techimage.jpg" alt="" style="width: 50px;">
                                         ${relatedItem.queryValue('nome_s')}
                                     </td>
                                     <td class="align-middle">${relatedItem.queryValue('costo_s')}</td>
