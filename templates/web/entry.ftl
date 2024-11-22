@@ -116,14 +116,8 @@
                     <div class="d-flex align-items-center justify-content-center mt-2">
                         <h5>${courseItem.queryValue('costo_s')}</h5>
                     </div>
-                    <!-- Ratings (Optional: Hardcoded for now) -->
-                    <div class="d-flex align-items-center justify-content-center mb-1">
-                        <small class="fa fa-star text-primary mr-1"></small>
-                        <small class="fa fa-star text-primary mr-1"></small>
-                        <small class="fa fa-star text-primary mr-1"></small>
-                        <small class="fa fa-star text-primary mr-1"></small>
-                        <small class="fa fa-star text-primary mr-1"></small>
-                        <small>(99)</small>
+                     <div class="d-flex align-items-center justify-content-center mb-1">
+                        (${courseItem.queryValue('durata_s')})
                     </div>
                 </div>
             </div>
