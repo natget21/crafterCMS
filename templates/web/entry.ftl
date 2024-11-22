@@ -29,7 +29,7 @@
         <#assign tags = tagsTaxonomy.values_o.item />
         
         <#list tags as tag>
-            <#if tag.value_s?length > 30>
+            <#if tag.value_s?length?gt(30)>
                 <div class="row mb-3">
                     <div class="col-12">
                         <div class="custom-control custom-checkbox">
