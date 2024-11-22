@@ -32,9 +32,9 @@
         <#assign tags = tagsTaxonomy.values_o.item />
         
         <#list tags?chunk(2) as row>
-            <div class="row mb-3">
+            <div class="tagRow mb-3">
                 <#list row as tag>
-                    <div class="col-6">
+                    <div class="tagCol col-6">
                         <div class="custom-control custom-checkbox">
                             <input type="checkbox" class="custom-control-input" id="tag-${tag.key_s}">
                             <label class="custom-control-label" for="tag-${tag.key_s}">
