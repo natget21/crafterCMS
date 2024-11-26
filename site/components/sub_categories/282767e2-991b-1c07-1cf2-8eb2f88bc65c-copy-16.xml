@@ -10,13 +10,13 @@
 	<folder-name/>
 	<internal-name>Eventi di Brokeraggio</internal-name>
 	<subCategoryName_s>Eventi di Brokeraggio</subCategoryName_s>
-	<category_o item-list="true">	<item>	<key>/site/components/categories/b433e04d-b38c-8349-62a6-5e4c3665a612.xml</key>
-	<value>api</value>
-	<include>/site/components/categories/b433e04d-b38c-8349-62a6-5e4c3665a612.xml</include>
+	<category_o item-list="true">	<item>	<key>/site/components/categories/3e7854fd-db5b-a6b8-a9ac-94cb8c2d2e0a-copy-5.xml</key>
+	<value>Networking, Ecosystem e Open Innovation</value>
+	<include>/site/components/categories/3e7854fd-db5b-a6b8-a9ac-94cb8c2d2e0a-copy-5.xml</include>
 	<disableFlattening>false</disableFlattening>
 	</item></category_o>
 	<createdDate>2024-11-14T09:05:16.345Z</createdDate>
 	<createdDate_dt>2024-11-14T09:05:16.345Z</createdDate_dt>
-	<lastModifiedDate>2024-11-14T09:05:18.528Z</lastModifiedDate>
-	<lastModifiedDate_dt>2024-11-14T09:05:18.528Z</lastModifiedDate_dt>
+	<lastModifiedDate>2024-11-21T15:24:37.539Z</lastModifiedDate>
+	<lastModifiedDate_dt>2024-11-21T15:24:37.539Z</lastModifiedDate_dt>
 </component>

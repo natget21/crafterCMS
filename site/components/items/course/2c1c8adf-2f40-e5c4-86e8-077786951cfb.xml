@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component>
+	<content-type>/component/course</content-type>
+	<display-template/>
+	<no-template-required>true</no-template-required>
+	<merge-strategy>inherit-levels</merge-strategy>
+	<objectGroupId>2c1c</objectGroupId>
+	<objectId>2c1c8adf-2f40-e5c4-86e8-077786951cfb</objectId>
+	<file-name>2c1c8adf-2f40-e5c4-86e8-077786951cfb.xml</file-name>
+	<folder-name/>
+	<internal-name>INTRODUZIONE ALLE TECNOLOGIE 4.0</internal-name>
+	<nome_s>INTRODUZIONE ALLE TECNOLOGIE 4.0</nome_s>
+	<partner_s>MADE SCARL</partner_s>
+	<costo_s>€ 1000 + IVA a partecipante</costo_s>
+	<durata_s>Due moduli da 8 ore</durata_s>
+	<modalita_s>In presenza c/o MADE COMPETENCE CENTER</modalita_s>
+	<obiettivo_s/>
+	<contenuto_s/>
+	<rivolto_s/>
+	<maxpartecipanti_s>10</maxpartecipanti_s>
+	<subcategory_o item-list="true">	<item>	<key>/site/components/sub_categories/282767e2-991b-1c07-1cf2-8eb2f88bc65c-copy-10.xml</key>
+	<value>Formazione a catalogo tecnica e manageriale</value>
+	<include>/site/components/sub_categories/282767e2-991b-1c07-1cf2-8eb2f88bc65c-copy-10.xml</include>
+	<disableFlattening>false</disableFlattening>
+	</item></subcategory_o>
+	<createdDate>2024-11-22T09:43:45.864Z</createdDate>
+	<createdDate_dt>2024-11-22T09:43:45.864Z</createdDate_dt>
+	<lastModifiedDate>2024-11-22T09:43:45.864Z</lastModifiedDate>
+	<lastModifiedDate_dt>2024-11-22T09:43:45.864Z</lastModifiedDate_dt>
+</component>

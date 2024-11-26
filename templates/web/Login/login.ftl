@@ -5,9 +5,8 @@
 <head>
     <meta charset="utf-8">
     <title>Login</title>
-    <link rel="stylesheet" href="/static-assets/css/bootstrap.min.css">
-    <link rel="stylesheet" href="/static-assets/css/login.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="/static-assets/css/login/login.css" rel="stylesheet">
     <@crafter.head/>
 </head>
 <body>

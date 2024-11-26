@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component>
+	<content-type>/component/course</content-type>
+	<display-template/>
+	<no-template-required>true</no-template-required>
+	<merge-strategy>inherit-levels</merge-strategy>
+	<objectGroupId>c72a</objectGroupId>
+	<objectId>c72a915d-1a9a-589d-c618-83a27034f1c8</objectId>
+	<file-name>c72a915d-1a9a-589d-c618-83a27034f1c8.xml</file-name>
+	<folder-name/>
+	<internal-name>INTRODUZIONE ALL’INTELLIGENZA ARTIFICIALE</internal-name>
+	<nome_s>INTRODUZIONE ALL’INTELLIGENZA ARTIFICIALE</nome_s>
+	<partner_s>MADE SCARL</partner_s>
+	<costo_s>€ 500 + iva a partecipante</costo_s>
+	<durata_s>8 ore in presenza</durata_s>
+	<modalita_s>In presenza c/o Ancona</modalita_s>
+	<obiettivo_s/>
+	<contenuto_s/>
+	<rivolto_s/>
+	<maxpartecipanti_s>20</maxpartecipanti_s>
+	<subcategory_o item-list="true">	<item>	<key>/site/components/sub_categories/282767e2-991b-1c07-1cf2-8eb2f88bc65c-copy-10.xml</key>
+	<value>Formazione a catalogo tecnica e manageriale</value>
+	<include>/site/components/sub_categories/282767e2-991b-1c07-1cf2-8eb2f88bc65c-copy-10.xml</include>
+	<disableFlattening>false</disableFlattening>
+	</item></subcategory_o>
+	<createdDate>2024-11-22T09:23:36.064Z</createdDate>
+	<createdDate_dt>2024-11-22T09:23:36.064Z</createdDate_dt>
+	<lastModifiedDate>2024-11-22T09:43:12.446Z</lastModifiedDate>
+	<lastModifiedDate_dt>2024-11-22T09:43:12.446Z</lastModifiedDate_dt>
+</component>
